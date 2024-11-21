@@ -1,0 +1,8 @@
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY setup_dp.py /app/
+
+CMD ["python", "setup_dp.py"]
