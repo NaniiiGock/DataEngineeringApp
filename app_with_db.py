@@ -3,17 +3,18 @@ from streamlit_google_auth import Authenticate
 import psycopg2
 from psycopg2.extras import RealDictCursor
 import pandas as pd
-import matplotlib.pyplot as plt
 import altair as alt
 import plotly.express as px
+import os
 
 DB_CONFIG = {
-    "host": "localhost",
-    "port": 5432,
-    "user": "lilianahotsko",      
-    "password": "passpost", 
-    "database": "postgres" 
+    "host": os.getenv("DB_HOST", "localhost"),
+    "port": os.getenv("DB_PORT", "5432"),
+    "user": os.getenv("DB_USER", "postgres"),
+    "password": os.getenv("DB_PASSWORD", "password"),
+    "database": os.getenv("DB_NAME", "mydatabase"),
 }
+
 
 def get_db_connection():
     return psycopg2.connect(
@@ -25,15 +26,31 @@ def get_db_connection():
     )
 
 def get_user_role(email):
+    """Fetch the user's role based on their email."""
     conn = get_db_connection()
     cursor = conn.cursor(cursor_factory=RealDictCursor)
     try:
-        cursor.execute("SELECT r.role_name FROM user_dim u JOIN role_dim r ON u.role_id = r.role_id WHERE u.email = %s", (email,))
+        query = """
+        SELECT r.role_name
+        FROM user_dim u
+        JOIN role_dim r ON u.role_id = r.role_id
+        WHERE u.email = %s
+        """
+        cursor.execute(query, (email,))
         result = cursor.fetchone()
-        return result['role_name'] if result else None
+
+        if result:
+            return result['role_name']
+        else:
+            print(f"User with email {email} not found or no role assigned.")
+            return None
+    except Exception as e:
+        print(f"Error fetching user role for email {email}: {e}")
+        return None
     finally:
         cursor.close()
         conn.close()
+
 
 def fetch_table_data(table_name):
     conn = get_db_connection()
@@ -46,11 +63,29 @@ def fetch_table_data(table_name):
         cursor.close()
         conn.close()
 
+
 def ensure_user_exists(email, name):
-    """Ensure the user exists in the database with the Regular User role."""
+    """Ensure the user exists in the database with the Regular User role, excluding predefined users."""
+    predefined_users = {
+        'nanigock@gmail.com': 'admin',
+        'liliana.hotsko@ucu.edu.ua': 'user'
+    }
     conn = get_db_connection()
     cursor = conn.cursor()
     try:
+        if email in predefined_users:
+            print(f"User {email} is predefined with role '{predefined_users[email]}'. Skipping creation.")
+            return
+
+        cursor.execute("SELECT role_id FROM role_dim WHERE role_name = 'user'")
+        user_role = cursor.fetchone()
+
+        if not user_role:
+            print("Error: 'user' role not found in role_dim. Check database initialization.")
+            return
+
+        user_role_id = user_role[0]
+
         cursor.execute("SELECT user_id FROM user_dim WHERE email = %s", (email,))
         result = cursor.fetchone()
 
@@ -58,17 +93,18 @@ def ensure_user_exists(email, name):
             cursor.execute(
                 """
                 INSERT INTO user_dim (email, name, role_id)
-                VALUES (%s, %s, (SELECT role_id FROM role_dim WHERE role_name = 'user'))
+                VALUES (%s, %s, %s)
                 """,
-                (email, name)
+                (email, name, user_role_id)
             )
             conn.commit()
-            print(f"New user {email} added to Regular User role.")
+            print(f"New user {email} added with role 'user'.")
     except Exception as e:
         print(f"Error ensuring user exists: {e}")
     finally:
         cursor.close()
         conn.close()
+
 
 
 authenticator = Authenticate(
@@ -176,7 +212,6 @@ if st.session_state['connected']:
                 width=800,
             )
             st.plotly_chart(scatter_chart, use_container_width=True)
-
 
     else:
         st.warning("Your role is undefined. Contact an admin.")
