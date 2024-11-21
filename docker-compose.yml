@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydatabase
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  streamlit:
+    build:
+      context: .
+    container_name: streamlit_app
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: mydatabase
+      DB_USER: postgres
+      DB_PASSWORD: password
+    command: >
+      sh -c "
+      python setup_db.py &&
+      streamlit run app_with_db.py --server.port=8501 --server.address=0.0.0.0"
+    ports:
+      - "8501:8501"
+
+
+volumes:
+  db_data:
