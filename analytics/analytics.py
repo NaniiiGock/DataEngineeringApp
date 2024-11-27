@@ -1,5 +1,6 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, Response
 import requests
+import pandas as pd
 
 def get_data():
 
@@ -51,3 +52,31 @@ def get_correlation():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
+@app.route('/analysis', methods=['POST'])
+def analysis1_endpoint():
+    """
+    Example of a request body:
+    {
+        "index": "fortune500",
+        "variables": ["profit", "weather"],
+        "aggregate": "mean"
+    }
+    :return:
+    """
+    body = request.get_json()
+    subset_profit_weather = ['profit', 'weather']
+    if (body['index'] == 'fortune500'
+            and all(elem in body['variables'] for elem in subset))\
+            and body['aggregate'] == 'mean':
+        df = pd.read_csv('profit_weather.csv')
+        return Response(df.to_csv(),
+                        mimetype='text/csv')
+
+    subset_profit_industry = ['profit', 'industry']
+    if (body['index'] == 'fortune500'
+            and all(elem in body['variables'] for elem in subset)) \
+            and body['aggregate'] == 'mean':
+        df = pd.read_csv('profit_industry.csv')
+        return Response(df.to_csv(),
+                        mimetype='text/csv')

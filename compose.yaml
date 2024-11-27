@@ -1,0 +1,21 @@
+services:
+  duckdb:
+    container_name: duckdb
+    build:
+      context: datesets_static/Dockerfile
+    volumes:
+      - ../mnt/tmp/03_duckdb/data:/app/data
+    stdin_open: true
+    tty: true
+    ports:
+      - "5000:5000"
+  analytics:
+    container_name: analytics
+    build:
+      context: analytics/Dockerfile
+    volumes:
+      - ../mnt/tmp/03_duckdb/data:/app/data
+    stdin_open: true
+    tty: true
+    ports:
+      - "5001:5001"
