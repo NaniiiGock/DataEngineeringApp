@@ -2,9 +2,9 @@ services:
   duckdb:
     container_name: duckdb
     build:
-      context: datesets_static/Dockerfile
+      context: ./datesets_static/
     volumes:
-      - ../mnt/tmp/03_duckdb/data:/app/data
+      - ./tmp/duckdb/data:/app/data
     stdin_open: true
     tty: true
     ports:
@@ -12,9 +12,9 @@ services:
   analytics:
     container_name: analytics
     build:
-      context: analytics/Dockerfile
+      context: ./analytics/
     volumes:
-      - ../mnt/tmp/03_duckdb/data:/app/data
+      - ./tmp/analytics:/lytics/
     stdin_open: true
     tty: true
     ports:
