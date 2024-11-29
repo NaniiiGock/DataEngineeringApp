@@ -26,7 +26,7 @@ RUN arch=$(dpkg --print-architecture) && \
     rm duckdb.zip
 
 # Install DuckDB via pip for Python use
-RUN pip install --no-cache-dir duckdb
+RUN pip install --no-cache-dir duckdb pandas
 
 # Set the default command to launch DuckDB CLI
 CMD ["duckdb"]

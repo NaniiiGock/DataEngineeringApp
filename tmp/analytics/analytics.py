@@ -4,6 +4,8 @@ import pandas as pd
 
 app = Flask(__name__)
 
+con = duckdb.connect("thunderfinance.db", read_only=True)
+
 @app.route('/')
 def home():
     return "Hello, this is a Flask Microservice"
@@ -47,14 +49,17 @@ def analysis1_endpoint():
     if (body['index'] == 'fortune500'
             and all(elem in body['variables'] for elem in subset))\
             and body['aggregate'] == 'mean':
-        df = pd.read_csv('profit_weather.csv')
-        return Response(df.to_csv(),
+        
+        query = f"""SELECT * from profit_weather"""
+        data = con.execute(query).fetchdf()
+        return Response(data.to_csv(),
                         mimetype='text/csv')
 
     subset_profit_industry = ['profit', 'industry']
     if (body['index'] == 'fortune500'
             and all(elem in body['variables'] for elem in subset)) \
             and body['aggregate'] == 'mean':
-        df = pd.read_csv('profit_industry.csv')
-        return Response(df.to_csv(),
+        query = f"""SELECT * from profit_industry"""
+        data = con.execute(query).fetchdf()
+        return Response(data.to_csv(),
                         mimetype='text/csv')

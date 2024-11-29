@@ -58,3 +58,6 @@ def analysis1_endpoint():
         df = pd.read_csv('profit_industry.csv')
         return Response(df.to_csv(),
                         mimetype='text/csv')
+    else:
+        return Response('<h3>Invalid request</h3>',
+                        mimetype='text/html')
