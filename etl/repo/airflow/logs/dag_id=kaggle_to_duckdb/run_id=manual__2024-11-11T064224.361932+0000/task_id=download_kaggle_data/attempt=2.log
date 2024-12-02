@@ -1,0 +1,45 @@
+[2024-11-11T06:47:27.639+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kaggle_to_duckdb.download_kaggle_data manual__2024-11-11T06:42:24.361932+00:00 [queued]>
+[2024-11-11T06:47:27.647+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kaggle_to_duckdb.download_kaggle_data manual__2024-11-11T06:42:24.361932+00:00 [queued]>
+[2024-11-11T06:47:27.648+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2024-11-11T06:47:27.660+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): download_kaggle_data> on 2024-11-11 06:42:24.361932+00:00
+[2024-11-11T06:47:27.670+0000] {standard_task_runner.py:57} INFO - Started process 1921 to run task
+[2024-11-11T06:47:27.674+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'kaggle_to_duckdb', 'download_kaggle_data', 'manual__2024-11-11T06:42:24.361932+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/business_etl_v1.py', '--cfg-path', '/tmp/tmp4rhg_w6e']
+[2024-11-11T06:47:27.680+0000] {standard_task_runner.py:85} INFO - Job 28: Subtask download_kaggle_data
+[2024-11-11T06:47:27.722+0000] {task_command.py:410} INFO - Running <TaskInstance: kaggle_to_duckdb.download_kaggle_data manual__2024-11-11T06:42:24.361932+00:00 [running]> on host 2a931195ce48
+[2024-11-11T06:47:27.794+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kaggle_to_duckdb' AIRFLOW_CTX_TASK_ID='download_kaggle_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-11T06:42:24.361932+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-11T06:42:24.361932+00:00'
+[2024-11-11T06:47:27.802+0000] {logging_mixin.py:150} INFO - Dataset URL: https://www.kaggle.com/datasets/mannmann2/fortune-500-corporate-headquarters
+[2024-11-11T06:47:28.277+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/business_etl_v1.py", line 23, in download_kaggle_dataset
+    kaggle.api.dataset_download_file(dataset, file_name, path='/data')
+  File "/home/airflow/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 1460, in dataset_download_file
+    _preload_content=False))
+  File "/home/airflow/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api.py", line 1682, in datasets_download_file_with_http_info
+    collection_formats=collection_formats)
+  File "/home/airflow/.local/lib/python3.7/site-packages/kaggle/api_client.py", line 318, in call_api
+    _preload_content, _request_timeout)
+  File "/home/airflow/.local/lib/python3.7/site-packages/kaggle/api_client.py", line 149, in __call_api
+    _request_timeout=_request_timeout)
+  File "/home/airflow/.local/lib/python3.7/site-packages/kaggle/api_client.py", line 339, in request
+    headers=headers)
+  File "/home/airflow/.local/lib/python3.7/site-packages/kaggle/rest.py", line 235, in GET
+    query_params=query_params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/kaggle/rest.py", line 225, in request
+    raise ApiException(http_resp=r)
+kaggle.rest.ApiException: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json', 'Date': 'Mon, 11 Nov 2024 06:47:29 GMT', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Set-Cookie': 'ka_sessionid=417d107a4b884ef3edf8ce9e98170ae4; max-age=2626560; path=/, GCLB=CP3isfaX3oKwERAD; path=/; HttpOnly', 'Vary': 'Accept-Encoding', 'X-Kaggle-MillisecondsElapsed': '281', 'X-Kaggle-RequestId': '7bfb3eddc8d034f82d40130ff73c8f71', 'X-Kaggle-ApiVersion': '1.6.17', 'X-Kaggle-HubVersion': '0.3.3', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload', 'Content-Security-Policy': "object-src 'none'; script-src 'nonce-2r0+7auIWCMy1+g3KSxhDQ==' 'report-sample' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; base-uri 'none'; report-uri https://csp.withgoogle.com/csp/kaggle/20201130; frame-src 'self' https://www.kaggleusercontent.com https://www.youtube.com/embed/ https://polygraph-cool.github.io https://www.google.com/recaptcha/ https://www.docdroid.com https://www.docdroid.net https://kaggle-static.storage.googleapis.com https://kkb-production.jupyter-proxy.kaggle.net https://kkb-production.firebaseapp.com https://kaggle-metastore.firebaseapp.com https://apis.google.com https://content-sheets.googleapis.com/ https://accounts.google.com/ https://storage.googleapis.com https://docs.google.com https://drive.google.com https://calendar.google.com/ ;", 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'})
+HTTP response body: b'{"code":404,"message":"Not found"}'
+
+[2024-11-11T06:47:28.297+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=kaggle_to_duckdb, task_id=download_kaggle_data, execution_date=20241111T064224, start_date=20241111T064727, end_date=20241111T064728
+[2024-11-11T06:47:28.312+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 28 for task download_kaggle_data ((404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json', 'Date': 'Mon, 11 Nov 2024 06:47:29 GMT', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Set-Cookie': 'ka_sessionid=417d107a4b884ef3edf8ce9e98170ae4; max-age=2626560; path=/, GCLB=CP3isfaX3oKwERAD; path=/; HttpOnly', 'Vary': 'Accept-Encoding', 'X-Kaggle-MillisecondsElapsed': '281', 'X-Kaggle-RequestId': '7bfb3eddc8d034f82d40130ff73c8f71', 'X-Kaggle-ApiVersion': '1.6.17', 'X-Kaggle-HubVersion': '0.3.3', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload', 'Content-Security-Policy': "object-src 'none'; script-src 'nonce-2r0+7auIWCMy1+g3KSxhDQ==' 'report-sample' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; base-uri 'none'; report-uri https://csp.withgoogle.com/csp/kaggle/20201130; frame-src 'self' https://www.kaggleusercontent.com https://www.youtube.com/embed/ https://polygraph-cool.github.io https://www.google.com/recaptcha/ https://www.docdroid.com https://www.docdroid.net https://kaggle-static.storage.googleapis.com https://kkb-production.jupyter-proxy.kaggle.net https://kkb-production.firebaseapp.com https://kaggle-metastore.firebaseapp.com https://apis.google.com https://content-sheets.googleapis.com/ https://accounts.google.com/ https://storage.googleapis.com https://docs.google.com https://drive.google.com https://calendar.google.com/ ;", 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'})
+HTTP response body: b'{"code":404,"message":"Not found"}'
+; 1921)
+[2024-11-11T06:47:28.328+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-11-11T06:47:28.374+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
