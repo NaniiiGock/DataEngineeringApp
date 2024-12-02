@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify, Response
-import requests
+import requests, duckdb, pandas
 import pandas as pd
 
 app = Flask(__name__)
+
+con = duckdb.connect("thunderfinance.db", read_only=True)
 
 @app.route('/')
 def home():
@@ -48,16 +50,20 @@ def analysis1_endpoint():
             and all(elem in body['variables'] for elem in subset))\
             and body['aggregate'] == 'mean':
         df = pd.read_csv('profit_weather.csv')
-        return Response(df.to_csv(),
-                        mimetype='text/csv')
+
+        query = f"""SELECT * from profit_weather"""
+        data = con.execute(query).fetchdf()
+        return Response(data.to_csv(), mimetype='text/csv')
 
     subset_profit_industry = ['profit', 'industry']
     if (body['index'] == 'fortune500'
             and all(elem in body['variables'] for elem in subset)) \
             and body['aggregate'] == 'mean':
         df = pd.read_csv('profit_industry.csv')
+
         return Response(df.to_csv(),
                         mimetype='text/csv')
     else:
+        # Return an error message as html
         return Response('<h3>Invalid request</h3>',
                         mimetype='text/html')
