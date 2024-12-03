@@ -1,10 +1,12 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
-import os
-import kaggle
+import sys
 import pandas as pd
+from pathlib import Path
+from zipfile import ZipFile
 import duckdb
+import kaggle.cli
 
 # Set up default arguments for the DAG
 default_args = {
@@ -16,33 +18,36 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 
-# Function to download dataset from Kaggle
-def download_kaggle_dataset(dataset: str, file_name: str):
-    # Use the Kaggle API to download the dataset
-    kaggle.api.authenticate()
-    kaggle.api.dataset_download_file(dataset, file_name, path='/data')
-    # Unzip if necessary
-    file_path = f'/data/{file_name}.zip'
-    if os.path.exists(file_path):
-        os.system(f'unzip -o {file_path} -d /data')
-        os.remove(file_path)
-    print(f"Dataset {file_name} downloaded and stored in /data")
+# Function to download and extract the Kaggle dataset
+def download_and_extract_dataset(dataset: str, zip_name: str):
+    # Use kaggle.cli to download the dataset
+    sys.argv = [sys.argv[0]] + f"datasets download {dataset}".split(" ")
+    kaggle.cli.main()
+    
+    # Extract the downloaded zip file
+    zip_path = Path(f"{zip_name}.zip")
+    if zip_path.exists():
+        with ZipFile(zip_path, 'r') as zfile:
+            zfile.extractall('./data')
+        zip_path.unlink()  # Remove the zip file after extraction
+        print(f"Dataset {zip_name} downloaded and extracted to ./data")
+    else:
+        raise FileNotFoundError(f"{zip_name}.zip not found after download.")
 
 # Function to load data into DuckDB
 def load_to_duckdb(file_name: str, table_name: str):
     # Define the DuckDB file location
-    db_path = '/data/my_duckdb_file.db'
-    # Load the CSV data into a DuckDB table
-    file_path = f'/data/{file_name}'
-    if os.path.exists(file_path):
-        # Read CSV with Pandas and load into DuckDB
+    db_path = './data/my_duckdb_file.db'
+    file_path = Path('./data') / file_name
+    if file_path.exists():
+        # Load CSV data using Pandas and insert into DuckDB
         df = pd.read_csv(file_path)
         conn = duckdb.connect(database=db_path, read_only=False)
         conn.execute(f"CREATE TABLE IF NOT EXISTS {table_name} AS SELECT * FROM df;")
         conn.close()
         print(f"Data from {file_name} loaded into DuckDB table {table_name}")
     else:
-        print(f"File {file_name} not found in /data")
+        raise FileNotFoundError(f"File {file_name} not found in ./data")
 
 # Define the DAG
 with DAG(
@@ -54,13 +59,13 @@ with DAG(
     catchup=False,
 ) as dag:
 
-    # Task to download data from Kaggle
+    # Task to download and extract data from Kaggle
     download_data = PythonOperator(
-        task_id='download_kaggle_data',
-        python_callable=download_kaggle_dataset,
+        task_id='download_and_extract_kaggle_data',
+        python_callable=download_and_extract_dataset,
         op_kwargs={
-            'dataset': 'mannmann2/fortune-500-corporate-headquarters',
-            'file_name': 'business.csv',
+            'dataset': 'winston56/fortune-500-data-2021',
+            'zip_name': 'fortune-500-data-2021',
         },
     )
 
@@ -69,8 +74,8 @@ with DAG(
         task_id='load_data_to_duckdb',
         python_callable=load_to_duckdb,
         op_kwargs={
-            'file_name': 'business.csv',
-            'table_name': 'business',
+            'file_name': 'Fortune_1000.csv',
+            'table_name': 'fortune_1000',
         },
     )
 
