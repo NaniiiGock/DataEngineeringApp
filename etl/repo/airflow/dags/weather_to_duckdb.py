@@ -28,7 +28,7 @@ def load_weather_data_to_duckdb():
 
     # Initialize table if it doesn't exist
     conn.execute(f"""
-        CREATE TABLE IF NOT EXISTS {table_name} (
+        CREATE OR REPLACE TABLE {table_name} (
             date TIMESTAMP,
             county_fips TEXT,
             datatype TEXT,
@@ -64,7 +64,7 @@ def load_weather_data_to_duckdb():
 
                     # Insert rows into DuckDB
                     conn.executemany(f"""
-                        INSERT INTO {table_name} (date, county_fips, datatype, value)
+                        INSERT INTO {table_name} (date, datatype, value, county_fips)
                         VALUES (?, ?, ?, ?)
                     """, aggregated_df.values.tolist())
 

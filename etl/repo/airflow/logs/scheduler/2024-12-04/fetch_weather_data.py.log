@@ -1405,3 +1405,563 @@
 [2024-12-04T10:46:29.095+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:46:29.094+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2024-12-04T10:46:29.142+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:46:29.142+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
 [2024-12-04T10:46:29.172+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.578 seconds
+[2024-12-04T10:46:59.678+0000] {processor.py:157} INFO - Started process (PID=1929) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:46:59.679+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:46:59.680+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:46:59.680+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:47:00.074+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:47:00.112+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:47:00.112+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:47:00.145+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:47:00.145+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:47:00.172+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.497 seconds
+[2024-12-04T10:47:30.359+0000] {processor.py:157} INFO - Started process (PID=2061) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:47:30.360+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:47:30.361+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:47:30.361+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:47:30.724+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:47:30.753+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:47:30.752+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:47:30.785+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:47:30.785+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:47:30.830+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.474 seconds
+[2024-12-04T10:48:01.423+0000] {processor.py:157} INFO - Started process (PID=2196) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:48:01.425+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:48:01.427+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:48:01.427+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:48:01.769+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:48:01.802+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:48:01.802+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:48:01.835+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:48:01.834+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:48:01.859+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.440 seconds
+[2024-12-04T10:48:32.083+0000] {processor.py:157} INFO - Started process (PID=2331) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:48:32.084+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:48:32.086+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:48:32.085+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:48:32.499+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:48:32.533+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:48:32.532+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:48:32.560+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:48:32.560+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:48:32.584+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.509 seconds
+[2024-12-04T10:49:02.950+0000] {processor.py:157} INFO - Started process (PID=2466) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:49:02.951+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:49:02.952+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:49:02.952+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:49:03.314+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:49:03.345+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:49:03.344+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:49:03.368+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:49:03.368+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:49:03.407+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.460 seconds
+[2024-12-04T10:49:33.462+0000] {processor.py:157} INFO - Started process (PID=2601) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:49:33.464+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:49:33.465+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:49:33.464+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:49:33.906+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:49:33.941+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:49:33.940+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:49:33.970+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:49:33.970+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:49:34.014+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.556 seconds
+[2024-12-04T10:50:04.369+0000] {processor.py:157} INFO - Started process (PID=2736) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:50:04.370+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:50:04.371+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:50:04.371+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:50:04.735+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:50:04.764+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:50:04.764+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:50:04.791+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:50:04.791+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:50:04.812+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.446 seconds
+[2024-12-04T10:50:35.086+0000] {processor.py:157} INFO - Started process (PID=2871) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:50:35.087+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:50:35.088+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:50:35.088+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:50:35.500+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:50:35.532+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:50:35.530+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:50:35.564+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:50:35.564+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:50:35.593+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.510 seconds
+[2024-12-04T10:51:05.890+0000] {processor.py:157} INFO - Started process (PID=3006) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:51:05.891+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:51:05.892+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:51:05.892+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:51:06.291+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:51:06.321+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:51:06.320+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:51:06.349+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:51:06.349+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:51:06.371+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.483 seconds
+[2024-12-04T10:51:36.676+0000] {processor.py:157} INFO - Started process (PID=3112) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:51:36.677+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:51:36.679+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:51:36.679+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:51:37.108+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:51:37.136+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:51:37.136+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:51:37.174+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:51:37.174+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:51:37.219+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.546 seconds
+[2024-12-04T10:52:07.368+0000] {processor.py:157} INFO - Started process (PID=3247) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:52:07.370+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:52:07.371+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:52:07.371+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:52:07.855+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:52:07.882+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:52:07.881+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:52:07.910+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:52:07.909+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:52:07.936+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.570 seconds
+[2024-12-04T10:52:38.121+0000] {processor.py:157} INFO - Started process (PID=3382) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:52:38.123+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:52:38.124+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:52:38.124+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:52:38.557+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:52:38.590+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:52:38.588+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:52:38.629+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:52:38.629+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:52:38.656+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.539 seconds
+[2024-12-04T10:53:09.440+0000] {processor.py:157} INFO - Started process (PID=3517) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:53:09.441+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:53:09.442+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:53:09.442+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:53:09.895+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:53:09.930+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:53:09.929+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:53:09.965+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:53:09.964+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:53:10.010+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.573 seconds
+[2024-12-04T10:53:40.366+0000] {processor.py:157} INFO - Started process (PID=3652) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:53:40.367+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:53:40.369+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:53:40.368+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:53:40.831+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:53:40.862+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:53:40.862+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:53:40.897+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:53:40.896+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:53:40.926+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.564 seconds
+[2024-12-04T10:54:11.227+0000] {processor.py:157} INFO - Started process (PID=3787) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:54:11.228+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:54:11.229+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:54:11.229+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:54:11.627+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:54:11.664+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:54:11.663+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:54:11.697+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:54:11.697+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:54:11.726+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.501 seconds
+[2024-12-04T10:54:41.798+0000] {processor.py:157} INFO - Started process (PID=3922) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:54:41.799+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:54:41.800+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:54:41.800+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:54:42.212+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:54:42.244+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:54:42.243+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:54:42.268+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:54:42.268+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:54:42.295+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.499 seconds
+[2024-12-04T10:55:12.450+0000] {processor.py:157} INFO - Started process (PID=4057) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:55:12.452+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:55:12.453+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:55:12.452+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:55:12.954+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:55:12.985+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:55:12.984+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:55:13.020+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:55:13.020+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:55:13.050+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.603 seconds
+[2024-12-04T10:55:43.393+0000] {processor.py:157} INFO - Started process (PID=4192) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:55:43.394+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:55:43.395+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:55:43.395+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:55:43.907+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:55:43.949+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:55:43.948+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:55:43.984+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:55:43.984+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:55:44.006+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.616 seconds
+[2024-12-04T10:56:14.151+0000] {processor.py:157} INFO - Started process (PID=4327) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:56:14.152+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:56:14.154+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:56:14.153+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:56:14.611+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:56:14.640+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:56:14.640+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:56:14.669+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:56:14.669+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:56:14.691+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.546 seconds
+[2024-12-04T10:56:44.848+0000] {processor.py:157} INFO - Started process (PID=4462) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:56:44.849+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:56:44.850+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:56:44.850+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:56:45.233+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:56:45.263+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:56:45.262+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:56:45.292+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:56:45.292+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:56:45.316+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.471 seconds
+[2024-12-04T10:57:15.435+0000] {processor.py:157} INFO - Started process (PID=4597) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:57:15.437+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:57:15.438+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:57:15.438+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:57:15.827+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:57:15.858+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:57:15.858+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:57:15.886+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:57:15.885+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:57:15.907+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.476 seconds
+[2024-12-04T10:57:45.961+0000] {processor.py:157} INFO - Started process (PID=4729) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:57:45.962+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:57:45.963+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:57:45.963+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:57:46.309+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:57:46.333+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:57:46.333+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:57:46.355+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:57:46.355+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:57:46.394+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.437 seconds
+[2024-12-04T10:58:16.519+0000] {processor.py:157} INFO - Started process (PID=4864) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:58:16.521+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:58:16.522+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:58:16.521+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:58:17.016+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:58:17.048+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:58:17.047+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:58:17.080+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:58:17.080+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:58:17.123+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.608 seconds
+[2024-12-04T10:58:47.491+0000] {processor.py:157} INFO - Started process (PID=5002) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:58:47.492+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:58:47.493+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:58:47.493+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:58:47.949+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:58:47.977+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:58:47.976+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:58:48.001+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:58:48.001+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:58:48.028+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.540 seconds
+[2024-12-04T10:59:18.367+0000] {processor.py:157} INFO - Started process (PID=5137) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:59:18.368+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:59:18.369+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:59:18.368+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:59:18.757+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:59:18.792+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:59:18.791+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:59:18.821+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:59:18.821+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:59:18.858+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.494 seconds
+[2024-12-04T10:59:49.638+0000] {processor.py:157} INFO - Started process (PID=5272) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:59:49.640+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T10:59:49.641+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:59:49.640+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:59:50.107+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T10:59:50.138+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:59:50.138+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T10:59:50.165+0000] {logging_mixin.py:150} INFO - [2024-12-04T10:59:50.165+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T10:59:50.195+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.559 seconds
+[2024-12-04T11:00:21.009+0000] {processor.py:157} INFO - Started process (PID=5407) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:00:21.010+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:00:21.011+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:00:21.010+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:00:21.382+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:00:21.410+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:00:21.409+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:00:21.436+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:00:21.435+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:00:21.471+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.466 seconds
+[2024-12-04T11:00:51.879+0000] {processor.py:157} INFO - Started process (PID=5542) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:00:51.880+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:00:51.881+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:00:51.881+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:00:52.299+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:00:52.328+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:00:52.327+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:00:52.353+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:00:52.353+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:00:52.390+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.514 seconds
+[2024-12-04T11:01:22.960+0000] {processor.py:157} INFO - Started process (PID=5706) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:01:22.962+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:01:22.964+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:01:22.963+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:01:23.475+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:01:23.518+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:01:23.517+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:01:23.556+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:01:23.556+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:01:23.599+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.646 seconds
+[2024-12-04T11:01:53.799+0000] {processor.py:157} INFO - Started process (PID=5884) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:01:53.800+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:01:53.801+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:01:53.801+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:01:54.184+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:01:54.206+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:01:54.206+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:01:54.228+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:01:54.228+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:01:54.248+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.451 seconds
+[2024-12-04T11:02:24.649+0000] {processor.py:157} INFO - Started process (PID=6019) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:02:24.650+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:02:24.651+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:02:24.651+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:02:25.008+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:02:25.036+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:02:25.035+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:02:25.065+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:02:25.064+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:02:25.112+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.466 seconds
+[2024-12-04T11:02:55.518+0000] {processor.py:157} INFO - Started process (PID=6186) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:02:55.520+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:02:55.521+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:02:55.520+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:02:55.971+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:02:56.003+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:02:56.002+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:02:56.035+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:02:56.035+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:02:56.060+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.545 seconds
+[2024-12-04T11:03:26.428+0000] {processor.py:157} INFO - Started process (PID=6321) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:03:26.429+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:03:26.430+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:03:26.430+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:03:26.735+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:03:26.766+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:03:26.765+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:03:26.788+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:03:26.788+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:03:26.822+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.396 seconds
+[2024-12-04T11:03:56.926+0000] {processor.py:157} INFO - Started process (PID=6456) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:03:56.928+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:03:56.930+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:03:56.929+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:03:57.520+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:03:57.566+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:03:57.565+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:03:57.601+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:03:57.600+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:03:57.634+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.714 seconds
+[2024-12-04T11:04:27.973+0000] {processor.py:157} INFO - Started process (PID=6633) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:04:27.975+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:04:27.976+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:04:27.975+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:04:28.531+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:04:28.571+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:04:28.571+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:04:28.616+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:04:28.615+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:04:28.648+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.678 seconds
+[2024-12-04T11:04:58.922+0000] {processor.py:157} INFO - Started process (PID=6768) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:04:58.923+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:04:58.925+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:04:58.924+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:04:59.315+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:04:59.344+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:04:59.344+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:04:59.376+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:04:59.376+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:04:59.403+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.484 seconds
+[2024-12-04T11:05:29.491+0000] {processor.py:157} INFO - Started process (PID=6903) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:05:29.493+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:05:29.495+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:05:29.494+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:05:30.066+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:05:30.106+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:05:30.105+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:05:30.148+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:05:30.148+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:05:30.185+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.699 seconds
+[2024-12-04T11:06:00.324+0000] {processor.py:157} INFO - Started process (PID=7038) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:06:00.325+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:06:00.326+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:06:00.326+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:06:00.764+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:06:00.806+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:06:00.805+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:06:00.843+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:06:00.843+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:06:00.876+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.555 seconds
+[2024-12-04T11:06:31.076+0000] {processor.py:157} INFO - Started process (PID=7173) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:06:31.078+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:06:31.079+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:06:31.079+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:06:31.514+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:06:31.544+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:06:31.543+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:06:31.571+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:06:31.571+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:06:31.594+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.522 seconds
+[2024-12-04T11:07:02.539+0000] {processor.py:157} INFO - Started process (PID=7308) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:07:02.540+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:07:02.541+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:07:02.540+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:07:02.954+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:07:02.984+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:07:02.984+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:07:03.017+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:07:03.017+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:07:03.039+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.503 seconds
+[2024-12-04T11:07:33.499+0000] {processor.py:157} INFO - Started process (PID=7443) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:07:33.501+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:07:33.504+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:07:33.503+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:07:33.861+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:07:33.895+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:07:33.895+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:07:33.924+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:07:33.924+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:07:33.949+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.454 seconds
+[2024-12-04T11:08:04.330+0000] {processor.py:157} INFO - Started process (PID=7578) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:08:04.331+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:08:04.332+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:08:04.332+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:08:04.716+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:08:04.748+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:08:04.747+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:08:04.789+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:08:04.789+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:08:04.820+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.493 seconds
+[2024-12-04T11:08:34.994+0000] {processor.py:157} INFO - Started process (PID=7754) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:08:34.996+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:08:34.997+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:08:34.997+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:08:35.538+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:08:35.576+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:08:35.576+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:08:35.621+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:08:35.621+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:08:35.655+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.665 seconds
+[2024-12-04T11:09:06.033+0000] {processor.py:157} INFO - Started process (PID=7890) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:09:06.035+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:09:06.037+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:09:06.036+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:09:06.419+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:09:06.454+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:09:06.453+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:09:06.493+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:09:06.492+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:09:06.545+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.517 seconds
+[2024-12-04T11:09:36.695+0000] {processor.py:157} INFO - Started process (PID=8025) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:09:36.697+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:09:36.698+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:09:36.698+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:09:37.122+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:09:37.155+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:09:37.154+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:09:37.190+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:09:37.190+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:09:37.218+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.527 seconds
+[2024-12-04T11:10:07.307+0000] {processor.py:157} INFO - Started process (PID=8160) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:10:07.309+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:10:07.310+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:10:07.310+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:10:07.655+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:10:07.682+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:10:07.682+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:10:07.703+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:10:07.703+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:10:07.736+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.432 seconds
+[2024-12-04T11:10:37.890+0000] {processor.py:157} INFO - Started process (PID=8295) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:10:37.891+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:10:37.892+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:10:37.892+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:10:38.223+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:10:38.250+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:10:38.250+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:10:38.274+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:10:38.274+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:10:38.289+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.402 seconds
+[2024-12-04T11:11:08.376+0000] {processor.py:157} INFO - Started process (PID=8430) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:11:08.377+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:11:08.378+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:11:08.378+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:11:08.847+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:11:08.883+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:11:08.882+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:11:08.911+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:11:08.911+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:11:08.954+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.583 seconds
+[2024-12-04T11:11:39.062+0000] {processor.py:157} INFO - Started process (PID=8565) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:11:39.063+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:11:39.064+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:11:39.064+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:11:39.420+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:11:39.449+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:11:39.449+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:11:39.473+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:11:39.473+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:11:39.493+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.434 seconds
+[2024-12-04T11:12:09.663+0000] {processor.py:157} INFO - Started process (PID=8700) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:12:09.665+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:12:09.666+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:12:09.666+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:12:10.077+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:12:10.113+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:12:10.112+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:12:10.142+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:12:10.141+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:12:10.180+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.520 seconds
+[2024-12-04T11:12:40.370+0000] {processor.py:157} INFO - Started process (PID=8835) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:12:40.371+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:12:40.372+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:12:40.372+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:12:40.670+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:12:40.696+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:12:40.696+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:12:40.720+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:12:40.719+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:12:40.739+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.372 seconds
+[2024-12-04T11:13:10.845+0000] {processor.py:157} INFO - Started process (PID=8970) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:13:10.846+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:13:10.847+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:13:10.846+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:13:11.269+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:13:11.301+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:13:11.300+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:13:11.328+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:13:11.328+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:13:11.352+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.510 seconds
+[2024-12-04T11:13:41.777+0000] {processor.py:157} INFO - Started process (PID=9105) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:13:41.778+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:13:41.779+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:13:41.779+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:13:42.113+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:13:42.138+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:13:42.138+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:13:42.161+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:13:42.161+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:13:42.181+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.407 seconds
+[2024-12-04T11:14:12.504+0000] {processor.py:157} INFO - Started process (PID=9240) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:14:12.506+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:14:12.507+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:14:12.506+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:14:12.855+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:14:12.884+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:14:12.884+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:14:12.914+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:14:12.914+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:14:12.938+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.436 seconds
+[2024-12-04T11:14:43.155+0000] {processor.py:157} INFO - Started process (PID=9375) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:14:43.156+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:14:43.157+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:14:43.157+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:14:43.515+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:14:43.538+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:14:43.538+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:14:43.560+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:14:43.560+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:14:43.577+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.427 seconds
+[2024-12-04T11:15:14.569+0000] {processor.py:157} INFO - Started process (PID=9510) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:15:14.571+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:15:14.572+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:15:14.572+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:15:15.041+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:15:15.081+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:15:15.081+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:15:15.104+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:15:15.103+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:15:15.144+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.577 seconds
+[2024-12-04T11:15:45.752+0000] {processor.py:157} INFO - Started process (PID=9645) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:15:45.753+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:15:45.755+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:15:45.755+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:15:46.255+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:15:46.299+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:15:46.298+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:15:46.336+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:15:46.335+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:15:46.380+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.637 seconds
+[2024-12-04T11:16:16.909+0000] {processor.py:157} INFO - Started process (PID=9780) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:16:16.910+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:16:16.911+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:16:16.911+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:16:17.269+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:16:17.299+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:16:17.298+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:16:17.322+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:16:17.322+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:16:17.364+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.458 seconds
+[2024-12-04T11:16:47.952+0000] {processor.py:157} INFO - Started process (PID=9915) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:16:47.953+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:16:47.954+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:16:47.954+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:16:48.342+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:16:48.369+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:16:48.368+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:16:48.390+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:16:48.390+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:16:48.426+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.479 seconds
+[2024-12-04T11:17:19.260+0000] {processor.py:157} INFO - Started process (PID=10050) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:17:19.261+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:17:19.261+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:17:19.261+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:17:19.698+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:17:19.736+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:17:19.735+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:17:19.767+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:17:19.766+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:17:19.793+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.537 seconds
+[2024-12-04T11:17:50.015+0000] {processor.py:157} INFO - Started process (PID=10185) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:17:50.017+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:17:50.018+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:17:50.018+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:17:50.360+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:17:50.391+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:17:50.390+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:17:50.413+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:17:50.413+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:17:50.454+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.442 seconds
+[2024-12-04T11:18:20.881+0000] {processor.py:157} INFO - Started process (PID=10320) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:18:20.882+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:18:20.884+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:18:20.883+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:18:21.294+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:18:21.326+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:18:21.326+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:18:21.355+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:18:21.355+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:18:21.383+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.507 seconds
+[2024-12-04T11:18:51.913+0000] {processor.py:157} INFO - Started process (PID=10455) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:18:51.914+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:18:51.915+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:18:51.915+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:18:52.354+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:18:52.392+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:18:52.391+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:18:52.424+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:18:52.424+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:18:52.472+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.563 seconds
+[2024-12-04T11:19:22.648+0000] {processor.py:157} INFO - Started process (PID=10590) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:19:22.649+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:19:22.650+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:19:22.649+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:19:22.958+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:19:22.990+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:19:22.989+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:19:23.015+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:19:23.014+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:19:23.033+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.389 seconds
+[2024-12-04T11:19:53.548+0000] {processor.py:157} INFO - Started process (PID=10725) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:19:53.549+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:19:53.551+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:19:53.550+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:19:53.869+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:19:53.893+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:19:53.893+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:19:53.914+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:19:53.914+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:19:53.947+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.406 seconds
+[2024-12-04T11:20:24.358+0000] {processor.py:157} INFO - Started process (PID=10860) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:20:24.360+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:20:24.361+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:20:24.360+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:20:24.763+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:20:24.796+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:20:24.796+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:20:24.834+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:20:24.834+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:20:24.886+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.531 seconds
+[2024-12-04T11:20:55.306+0000] {processor.py:157} INFO - Started process (PID=10995) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:20:55.308+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:20:55.309+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:20:55.309+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:20:55.726+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:20:55.754+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:20:55.753+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:20:55.779+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:20:55.778+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:20:55.801+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.501 seconds
+[2024-12-04T11:21:25.938+0000] {processor.py:157} INFO - Started process (PID=11130) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:21:25.940+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:21:25.941+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:21:25.941+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:21:26.334+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:21:26.362+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:21:26.361+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:21:26.390+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:21:26.390+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:21:26.409+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.475 seconds
+[2024-12-04T11:21:56.746+0000] {processor.py:157} INFO - Started process (PID=11265) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:21:56.748+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:21:56.750+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:21:56.749+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:21:57.231+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:21:57.266+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:21:57.265+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:21:57.300+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:21:57.300+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:21:57.328+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.585 seconds
+[2024-12-04T11:22:27.417+0000] {processor.py:157} INFO - Started process (PID=11400) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:22:27.418+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:22:27.419+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:22:27.419+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:22:27.745+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:22:27.771+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:22:27.771+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:22:27.793+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:22:27.793+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:22:27.832+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.418 seconds
+[2024-12-04T11:22:58.749+0000] {processor.py:157} INFO - Started process (PID=11538) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:22:58.750+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:22:58.751+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:22:58.751+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:22:59.150+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:22:59.176+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:22:59.175+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:22:59.199+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:22:59.199+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:22:59.219+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.473 seconds
+[2024-12-04T11:23:29.526+0000] {processor.py:157} INFO - Started process (PID=11673) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:23:29.527+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:23:29.528+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:23:29.528+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:23:29.919+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:23:29.943+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:23:29.942+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:23:29.967+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:23:29.967+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:23:30.002+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.481 seconds
+[2024-12-04T11:24:00.213+0000] {processor.py:157} INFO - Started process (PID=11808) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:24:00.214+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:24:00.215+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:24:00.214+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:24:00.560+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:24:00.587+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:24:00.586+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:24:00.608+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:24:00.608+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:24:00.626+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.416 seconds
+[2024-12-04T11:24:31.122+0000] {processor.py:157} INFO - Started process (PID=11958) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:24:31.123+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:24:31.124+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:24:31.123+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:24:31.537+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:24:31.567+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:24:31.566+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:24:31.601+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:24:31.601+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:24:31.633+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.515 seconds
+[2024-12-04T11:25:02.120+0000] {processor.py:157} INFO - Started process (PID=12093) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:25:02.121+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:25:02.123+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:25:02.123+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:25:02.523+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:25:02.553+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:25:02.552+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:25:02.586+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:25:02.586+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:25:02.617+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.500 seconds
+[2024-12-04T11:25:32.924+0000] {processor.py:157} INFO - Started process (PID=12228) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:25:32.925+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:25:32.926+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:25:32.926+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:25:33.259+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:25:33.283+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:25:33.282+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:25:33.306+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:25:33.306+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:25:33.324+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.402 seconds
+[2024-12-04T11:26:03.634+0000] {processor.py:157} INFO - Started process (PID=12300) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:26:03.635+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:26:03.636+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:26:03.636+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:26:04.028+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:26:04.069+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:26:04.068+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:26:04.109+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:26:04.108+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:26:04.141+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.509 seconds
+[2024-12-04T11:26:34.195+0000] {processor.py:157} INFO - Started process (PID=12432) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:26:34.196+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:26:34.197+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:26:34.197+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:26:34.630+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:26:34.670+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:26:34.669+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:26:34.697+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:26:34.697+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:26:34.724+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.534 seconds
+[2024-12-04T11:27:04.860+0000] {processor.py:157} INFO - Started process (PID=12567) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:27:04.862+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:27:04.863+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:27:04.862+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:27:05.288+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:27:05.316+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:27:05.315+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:27:05.339+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:27:05.339+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:27:05.363+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.506 seconds
+[2024-12-04T11:27:36.022+0000] {processor.py:157} INFO - Started process (PID=12702) to work on /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:27:36.023+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/fetch_weather_data.py for tasks to queue
+[2024-12-04T11:27:36.024+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:27:36.024+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:27:36.411+0000] {processor.py:836} INFO - DAG(s) dict_keys(['noaa_data_fetch']) retrieved from /opt/airflow/dags/fetch_weather_data.py
+[2024-12-04T11:27:36.438+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:27:36.437+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-04T11:27:36.462+0000] {logging_mixin.py:150} INFO - [2024-12-04T11:27:36.462+0000] {dag.py:3508} INFO - Setting next_dagrun for noaa_data_fetch to 2024-12-04T00:00:00+00:00, run_after=2024-12-05T00:00:00+00:00
+[2024-12-04T11:27:36.484+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/fetch_weather_data.py took 0.466 seconds

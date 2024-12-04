@@ -51,7 +51,7 @@ with DAG(
         python_callable=check_duckdb_file,
         op_kwargs={
             'db_path': './data/my_duckdb_file.db', 
-            'table_name': 'fortune_500', 
+            'table_name': 'weather_data', 
         },
     )
 
