@@ -2,6 +2,8 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 import sys
+import os
+import kaggle
 import pandas as pd
 import duckdb
 from pathlib import Path
