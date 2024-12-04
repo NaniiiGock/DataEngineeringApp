@@ -48,6 +48,8 @@ services:
     image: datacatering/duckdb:v1.1.1
     volumes:
       - ./data:/data  # Share a volume with dbt to store DuckDB files here
+    stdin_open: true
+    tty: true
 
   # Jupyter service environment for testing data processing
   jupyter:
