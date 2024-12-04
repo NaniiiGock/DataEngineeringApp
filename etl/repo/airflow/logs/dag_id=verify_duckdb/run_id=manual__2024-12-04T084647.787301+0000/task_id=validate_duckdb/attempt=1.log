@@ -1,0 +1,22 @@
+[2024-12-04T08:46:48.979+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: verify_duckdb.validate_duckdb manual__2024-12-04T08:46:47.787301+00:00 [queued]>
+[2024-12-04T08:46:48.988+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: verify_duckdb.validate_duckdb manual__2024-12-04T08:46:47.787301+00:00 [queued]>
+[2024-12-04T08:46:48.988+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-12-04T08:46:49.000+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): validate_duckdb> on 2024-12-04 08:46:47.787301+00:00
+[2024-12-04T08:46:49.005+0000] {standard_task_runner.py:57} INFO - Started process 2907 to run task
+[2024-12-04T08:46:49.008+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'verify_duckdb', 'validate_duckdb', 'manual__2024-12-04T08:46:47.787301+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/verify_duckdb.py', '--cfg-path', '/tmp/tmp3488te7x']
+[2024-12-04T08:46:49.012+0000] {standard_task_runner.py:85} INFO - Job 106: Subtask validate_duckdb
+[2024-12-04T08:46:49.052+0000] {task_command.py:410} INFO - Running <TaskInstance: verify_duckdb.validate_duckdb manual__2024-12-04T08:46:47.787301+00:00 [running]> on host e919c4bb8fbe
+[2024-12-04T08:46:49.132+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='verify_duckdb' AIRFLOW_CTX_TASK_ID='validate_duckdb' AIRFLOW_CTX_EXECUTION_DATE='2024-12-04T08:46:47.787301+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-04T08:46:47.787301+00:00'
+[2024-12-04T08:46:49.655+0000] {logging_mixin.py:150} INFO - First few rows from fortune_500:
+[2024-12-04T08:46:49.671+0000] {logging_mixin.py:150} INFO -               X             Y  ...                        WEBSITE  PROFIT
+0 -1.293321e+07  5.403709e+06  ...  HTTPS://WWW.ALBERTSONS.COM/#1  -502.2
+1 -1.292942e+07  5.392879e+06  ...        HTTPS://WWW.MICRON.COM/  -276.0
+2 -8.842930e+06  4.313449e+06  ...       HTTPS://WWW.LABCORP.COM/   732.1
+3 -1.357618e+07  4.507432e+06  ...   HTTPS://WWW.LAMRESEARCH.COM/   914.0
+4 -1.357871e+07  4.508509e+06  ...    HTTPS://WWW.SYNNEXCORP.COM/   234.9
+
+[5 rows x 22 columns]
+[2024-12-04T08:46:49.674+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-12-04T08:46:49.685+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=verify_duckdb, task_id=validate_duckdb, execution_date=20241204T084647, start_date=20241204T084648, end_date=20241204T084649
+[2024-12-04T08:46:49.743+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-12-04T08:46:49.761+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

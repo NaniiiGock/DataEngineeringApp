@@ -64,8 +64,8 @@ with DAG(
         task_id='download_and_extract_kaggle_data',
         python_callable=download_and_extract_dataset,
         op_kwargs={
-            'dataset': 'winston56/fortune-500-data-2021',
-            'zip_name': 'fortune-500-data-2021',
+            'dataset': 'mannmann2/fortune-500-corporate-headquarters',
+            'zip_name': 'fortune-500-corporate-headquarters',
         },
     )
 
@@ -74,8 +74,8 @@ with DAG(
         task_id='load_data_to_duckdb',
         python_callable=load_to_duckdb,
         op_kwargs={
-            'file_name': 'Fortune_1000.csv',
-            'table_name': 'fortune_1000',
+            'file_name': 'Fortune_500_Corporate_Headquarters.csv',
+            'table_name': 'fortune_500',
         },
     )
 

@@ -27,6 +27,7 @@ services:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
     ports:
       - "8082:8080"
     depends_on:

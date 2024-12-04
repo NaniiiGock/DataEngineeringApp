@@ -1,0 +1,14 @@
+[2024-12-04T08:50:01.737+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kaggle_to_duckdb.load_data_to_duckdb manual__2024-12-04T08:44:55.874899+00:00 [queued]>
+[2024-12-04T08:50:01.749+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kaggle_to_duckdb.load_data_to_duckdb manual__2024-12-04T08:44:55.874899+00:00 [queued]>
+[2024-12-04T08:50:01.750+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2024-12-04T08:50:01.766+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): load_data_to_duckdb> on 2024-12-04 08:44:55.874899+00:00
+[2024-12-04T08:50:01.777+0000] {standard_task_runner.py:57} INFO - Started process 3501 to run task
+[2024-12-04T08:50:01.781+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'kaggle_to_duckdb', 'load_data_to_duckdb', 'manual__2024-12-04T08:44:55.874899+00:00', '--job-id', '107', '--raw', '--subdir', 'DAGS_FOLDER/business_etl_v1.py', '--cfg-path', '/tmp/tmp5sfs8jk3']
+[2024-12-04T08:50:01.784+0000] {standard_task_runner.py:85} INFO - Job 107: Subtask load_data_to_duckdb
+[2024-12-04T08:50:01.850+0000] {task_command.py:410} INFO - Running <TaskInstance: kaggle_to_duckdb.load_data_to_duckdb manual__2024-12-04T08:44:55.874899+00:00 [running]> on host e919c4bb8fbe
+[2024-12-04T08:50:01.955+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kaggle_to_duckdb' AIRFLOW_CTX_TASK_ID='load_data_to_duckdb' AIRFLOW_CTX_EXECUTION_DATE='2024-12-04T08:44:55.874899+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-04T08:44:55.874899+00:00'
+[2024-12-04T08:50:01.997+0000] {logging_mixin.py:150} INFO - Data from Fortune_500_Corporate_Headquarters.csv loaded into DuckDB table fortune_500
+[2024-12-04T08:50:01.998+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-12-04T08:50:02.008+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=kaggle_to_duckdb, task_id=load_data_to_duckdb, execution_date=20241204T084455, start_date=20241204T085001, end_date=20241204T085002
+[2024-12-04T08:50:02.037+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-12-04T08:50:02.053+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
