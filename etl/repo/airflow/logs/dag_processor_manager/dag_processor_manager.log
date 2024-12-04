@@ -2845,3 +2845,23 @@ File Path                                  PID  Runtime      # DAGs    # Errors 
 /opt/airflow/dags/fetch_weather_data.py   4417  0.02s             1           0  0.45s           2024-12-04T09:14:37
 /opt/airflow/dags/verify_duckdb.py                                1           0  0.14s           2024-12-04T09:14:37
 ================================================================================
+[2024-12-04T09:15:37.606+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.81s           2024-12-04T09:15:08
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.61s           2024-12-04T09:15:26
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.14s           2024-12-04T09:15:08
+================================================================================
+[2024-12-04T09:16:08.078+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.68s           2024-12-04T09:15:39
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.56s           2024-12-04T09:15:56
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.23s           2024-12-04T09:15:38
+================================================================================
