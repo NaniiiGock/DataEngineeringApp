@@ -6,6 +6,8 @@ import pandas as pd
 import altair as alt
 import plotly.express as px
 import os
+from datetime import datetime
+
 
 DB_CONFIG = {
     "host": os.getenv("DB_HOST", "localhost"),
@@ -116,7 +118,7 @@ authenticator = Authenticate(
 
 authenticator.check_authentification()
 
-st.title("Streamlit Google Auth Example with Database Viewer")
+st.title("REVENUE INSIGHTS DASHBOARD")
 
 if st.session_state['connected']:
     st.write('Hello, '+ st.session_state['user_info'].get('name'))
@@ -144,6 +146,37 @@ if st.session_state['connected']:
             st.subheader("User Dashboard")
     
         st.subheader("Visualization from CSV Files")
+
+        # --- Filters Section ---
+        st.sidebar.header("Filters")
+
+        # Date Filters
+        start_date = st.sidebar.date_input("Start Date", value=datetime(2023, 1, 1))
+        end_date = st.sidebar.date_input("End Date", value=datetime(2023, 12, 31))
+
+        if start_date > end_date:
+            st.sidebar.error("Start date must be earlier than the end date.")
+
+        # Company Filter
+        df_companies = pd.read_csv("companies.csv")  # Load companies from a CSV file
+        company_list = df_companies['company_name'].unique()
+        selected_company = st.sidebar.selectbox(
+            "Select a Company",
+            options=["All"] + list(company_list),
+            index=0,
+            help="Choose a company to filter the data."
+        )
+
+        def apply_filters(df, start_date, end_date, selected_company):
+            """Filter DataFrame based on the selected date range and company."""
+            filtered_df = df[
+                (df['date'] >= pd.Timestamp(start_date)) &
+                (df['date'] <= pd.Timestamp(end_date))
+            ]
+            if selected_company != "All":
+                filtered_df = filtered_df[filtered_df['company_name'] == selected_company]
+            return filtered_df
+
         tab1, tab2, tab3 = st.tabs(["📈 Sales Trend", "📊 Product Sales", "🔍 Ad Campaign ROI"])
 
         with tab1:
