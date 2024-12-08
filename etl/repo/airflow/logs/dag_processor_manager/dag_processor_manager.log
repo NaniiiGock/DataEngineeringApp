@@ -6144,3 +6144,620 @@ File Path                                PID    Runtime      # DAGs    # Errors 
 /opt/airflow/dags/verify_duckdb.py                                1           0  0.28s           2024-12-08T14:29:45
 /opt/airflow/dags/weather_to_duckdb.py                            1           0  0.60s           2024-12-08T14:29:45
 ================================================================================
+[2024-12-08T14:30:42.947+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.87s           2024-12-08T14:30:16
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.76s           2024-12-08T14:30:16
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.30s           2024-12-08T14:30:16
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.65s           2024-12-08T14:30:17
+================================================================================
+[2024-12-08T14:31:13.504+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.17s           2024-12-08T14:30:48
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.78s           2024-12-08T14:30:47
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.43s           2024-12-08T14:30:47
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.77s           2024-12-08T14:30:48
+================================================================================
+[2024-12-08T14:31:44.255+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.90s           2024-12-08T14:31:19
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.75s           2024-12-08T14:31:18
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.33s           2024-12-08T14:31:18
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.80s           2024-12-08T14:31:19
+================================================================================
+[2024-12-08T14:32:14.335+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.09s           2024-12-08T14:31:50
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.78s           2024-12-08T14:31:49
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.45s           2024-12-08T14:31:48
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.76s           2024-12-08T14:31:50
+================================================================================
+[2024-12-08T14:32:44.501+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.83s           2024-12-08T14:32:22
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.49s           2024-12-08T14:32:19
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.28s           2024-12-08T14:32:19
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.60s           2024-12-08T14:32:22
+================================================================================
+[2024-12-08T14:33:11.534+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2024-12-08T14:33:11.592+0000] {manager.py:761} INFO - There are 4 files in /opt/airflow/dags
+[2024-12-08T14:33:14.642+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.92s           2024-12-08T14:32:53
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.60s           2024-12-08T14:32:50
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.22s           2024-12-08T14:32:49
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.68s           2024-12-08T14:32:53
+================================================================================
+[2024-12-08T14:33:44.996+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.98s           2024-12-08T14:33:25
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.50s           2024-12-08T14:33:21
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.24s           2024-12-08T14:33:20
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.68s           2024-12-08T14:33:24
+================================================================================
+[2024-12-08T14:34:15.566+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.95s           2024-12-08T14:33:56
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.53s           2024-12-08T14:33:51
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.21s           2024-12-08T14:33:51
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.55s           2024-12-08T14:33:55
+================================================================================
+[2024-12-08T14:34:45.906+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.70s           2024-12-08T14:34:27
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.57s           2024-12-08T14:34:22
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.23s           2024-12-08T14:34:21
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.58s           2024-12-08T14:34:26
+================================================================================
+[2024-12-08T14:35:16.241+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.75s           2024-12-08T14:34:58
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.63s           2024-12-08T14:34:53
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.21s           2024-12-08T14:34:52
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.66s           2024-12-08T14:34:56
+================================================================================
+[2024-12-08T14:35:46.690+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.77s           2024-12-08T14:35:29
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.65s           2024-12-08T14:35:25
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.20s           2024-12-08T14:35:22
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.57s           2024-12-08T14:35:27
+================================================================================
+[2024-12-08T14:36:16.834+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.89s           2024-12-08T14:36:00
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.50s           2024-12-08T14:35:56
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.20s           2024-12-08T14:35:52
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.61s           2024-12-08T14:35:58
+================================================================================
+[2024-12-08T14:36:47.566+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  0.77s           2024-12-08T14:36:31
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.54s           2024-12-08T14:36:27
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.24s           2024-12-08T14:36:23
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.59s           2024-12-08T14:36:29
+================================================================================
+[2024-12-08T14:37:17.854+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.47s           2024-12-08T14:37:03
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.50s           2024-12-08T14:36:58
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.19s           2024-12-08T14:36:54
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.62s           2024-12-08T14:37:00
+================================================================================
+[2024-12-08T14:37:47.904+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.23s           2024-12-08T14:37:34
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.19s           2024-12-08T14:37:29
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.51s           2024-12-08T14:37:25
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.96s           2024-12-08T14:37:31
+================================================================================
+[2024-12-08T14:38:11.615+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2024-12-08T14:38:11.788+0000] {manager.py:761} INFO - There are 4 files in /opt/airflow/dags
+[2024-12-08T14:38:17.919+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.19s           2024-12-08T14:38:06
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.03s           2024-12-08T14:38:01
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.45s           2024-12-08T14:37:56
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.06s           2024-12-08T14:38:03
+================================================================================
+[2024-12-08T14:38:48.516+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.36s           2024-12-08T14:38:38
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.00s           2024-12-08T14:38:33
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.39s           2024-12-08T14:38:27
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.10s           2024-12-08T14:38:35
+================================================================================
+[2024-12-08T14:39:18.700+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.33s           2024-12-08T14:39:10
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.96s           2024-12-08T14:39:04
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.42s           2024-12-08T14:38:58
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.11s           2024-12-08T14:39:07
+================================================================================
+[2024-12-08T14:39:49.394+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.27s           2024-12-08T14:39:42
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.10s           2024-12-08T14:39:36
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.37s           2024-12-08T14:39:28
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.12s           2024-12-08T14:39:39
+================================================================================
+[2024-12-08T14:40:19.472+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.28s           2024-12-08T14:40:14
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.00s           2024-12-08T14:40:07
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.32s           2024-12-08T14:39:59
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.22s           2024-12-08T14:40:11
+================================================================================
+[2024-12-08T14:40:50.231+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.44s           2024-12-08T14:40:46
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.93s           2024-12-08T14:40:39
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.45s           2024-12-08T14:40:30
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.24s           2024-12-08T14:40:43
+================================================================================
+[2024-12-08T14:41:20.272+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.19s           2024-12-08T14:41:18
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.99s           2024-12-08T14:41:10
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.38s           2024-12-08T14:41:01
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.17s           2024-12-08T14:41:14
+================================================================================
+[2024-12-08T14:41:50.435+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.20s           2024-12-08T14:41:49
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.24s           2024-12-08T14:41:42
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.41s           2024-12-08T14:41:32
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.16s           2024-12-08T14:41:46
+================================================================================
+[2024-12-08T14:42:21.220+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py      3972  1.04s             1           0  1.20s           2024-12-08T14:41:49
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.12s           2024-12-08T14:42:13
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.37s           2024-12-08T14:42:03
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.95s           2024-12-08T14:42:18
+================================================================================
+[2024-12-08T14:42:51.227+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.56s           2024-12-08T14:42:21
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.99s           2024-12-08T14:42:44
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.35s           2024-12-08T14:42:33
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.14s           2024-12-08T14:42:49
+================================================================================
+[2024-12-08T14:43:11.632+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2024-12-08T14:43:11.701+0000] {manager.py:761} INFO - There are 4 files in /opt/airflow/dags
+[2024-12-08T14:43:21.897+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.58s           2024-12-08T14:42:53
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.00s           2024-12-08T14:43:15
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.42s           2024-12-08T14:43:04
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.28s           2024-12-08T14:43:21
+================================================================================
+[2024-12-08T14:43:52.240+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.39s           2024-12-08T14:43:25
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.16s           2024-12-08T14:43:47
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.42s           2024-12-08T14:43:35
+/opt/airflow/dags/weather_to_duckdb.py    4345  1.03s             1           0  1.28s           2024-12-08T14:43:21
+================================================================================
+[2024-12-08T14:44:22.491+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.55s           2024-12-08T14:43:56
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.14s           2024-12-08T14:44:18
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.44s           2024-12-08T14:44:06
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.31s           2024-12-08T14:43:52
+================================================================================
+[2024-12-08T14:44:52.740+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.27s           2024-12-08T14:44:29
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.08s           2024-12-08T14:44:49
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.43s           2024-12-08T14:44:37
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.22s           2024-12-08T14:44:23
+================================================================================
+[2024-12-08T14:45:23.323+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.61s           2024-12-08T14:45:01
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.09s           2024-12-08T14:45:21
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.44s           2024-12-08T14:45:08
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.96s           2024-12-08T14:44:55
+================================================================================
+[2024-12-08T14:45:53.379+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.59s           2024-12-08T14:45:33
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.93s           2024-12-08T14:45:52
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.35s           2024-12-08T14:45:38
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.95s           2024-12-08T14:45:27
+================================================================================
+[2024-12-08T14:46:23.467+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.32s           2024-12-08T14:46:04
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.97s           2024-12-08T14:46:23
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.36s           2024-12-08T14:46:09
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.24s           2024-12-08T14:45:58
+================================================================================
+[2024-12-08T14:46:54.042+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.31s           2024-12-08T14:46:36
+/opt/airflow/dags/fetch_weather_data.py   5136  0.01s             1           0  0.97s           2024-12-08T14:46:23
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.40s           2024-12-08T14:46:40
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.89s           2024-12-08T14:46:30
+================================================================================
+[2024-12-08T14:47:24.083+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.33s           2024-12-08T14:47:08
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.80s           2024-12-08T14:46:54
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.47s           2024-12-08T14:47:10
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.27s           2024-12-08T14:47:01
+================================================================================
+[2024-12-08T14:47:54.327+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.47s           2024-12-08T14:47:39
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.13s           2024-12-08T14:47:26
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.53s           2024-12-08T14:47:41
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.28s           2024-12-08T14:47:33
+================================================================================
+[2024-12-08T14:48:12.046+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2024-12-08T14:48:12.241+0000] {manager.py:761} INFO - There are 4 files in /opt/airflow/dags
+[2024-12-08T14:48:24.444+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.53s           2024-12-08T14:48:11
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.22s           2024-12-08T14:47:57
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.38s           2024-12-08T14:48:12
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.21s           2024-12-08T14:48:04
+================================================================================
+[2024-12-08T14:48:54.453+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.57s           2024-12-08T14:48:43
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.06s           2024-12-08T14:48:29
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.55s           2024-12-08T14:48:42
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.04s           2024-12-08T14:48:36
+================================================================================
+[2024-12-08T14:49:25.022+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.50s           2024-12-08T14:49:15
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.03s           2024-12-08T14:49:00
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.48s           2024-12-08T14:49:13
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.85s           2024-12-08T14:49:07
+================================================================================
+[2024-12-08T14:49:55.233+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.50s           2024-12-08T14:49:48
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.98s           2024-12-08T14:49:32
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.32s           2024-12-08T14:49:44
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.22s           2024-12-08T14:49:38
+================================================================================
+[2024-12-08T14:50:25.256+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.40s           2024-12-08T14:50:19
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.12s           2024-12-08T14:50:03
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.33s           2024-12-08T14:50:15
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.11s           2024-12-08T14:50:09
+================================================================================
+[2024-12-08T14:50:55.630+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.63s           2024-12-08T14:50:51
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.12s           2024-12-08T14:50:34
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.31s           2024-12-08T14:50:45
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.09s           2024-12-08T14:50:40
+================================================================================
+[2024-12-08T14:51:25.679+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.66s           2024-12-08T14:51:24
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.90s           2024-12-08T14:51:05
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.39s           2024-12-08T14:51:16
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.16s           2024-12-08T14:51:12
+================================================================================
+[2024-12-08T14:51:55.820+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.55s           2024-12-08T14:51:55
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.83s           2024-12-08T14:51:37
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.37s           2024-12-08T14:51:47
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.11s           2024-12-08T14:51:44
+================================================================================
+[2024-12-08T14:52:26.279+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py      6555  0.01s             1           0  1.55s           2024-12-08T14:51:55
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.11s           2024-12-08T14:52:08
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.38s           2024-12-08T14:52:18
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.19s           2024-12-08T14:52:16
+================================================================================
+[2024-12-08T14:52:56.455+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.32s           2024-12-08T14:52:27
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.05s           2024-12-08T14:52:40
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.43s           2024-12-08T14:52:49
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  0.99s           2024-12-08T14:52:47
+================================================================================
+[2024-12-08T14:53:12.577+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2024-12-08T14:53:12.677+0000] {manager.py:761} INFO - There are 4 files in /opt/airflow/dags
+[2024-12-08T14:53:27.222+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.44s           2024-12-08T14:52:59
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.88s           2024-12-08T14:53:12
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.39s           2024-12-08T14:53:20
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.27s           2024-12-08T14:53:20
+================================================================================
+[2024-12-08T14:53:57.382+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.62s           2024-12-08T14:53:31
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.06s           2024-12-08T14:53:44
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.46s           2024-12-08T14:53:50
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.05s           2024-12-08T14:53:51
+================================================================================
+[2024-12-08T14:54:27.551+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.57s           2024-12-08T14:54:04
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.12s           2024-12-08T14:54:15
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.50s           2024-12-08T14:54:21
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.20s           2024-12-08T14:54:22
+================================================================================
+[2024-12-08T14:54:57.599+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.48s           2024-12-08T14:54:36
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.95s           2024-12-08T14:54:46
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.36s           2024-12-08T14:54:52
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.15s           2024-12-08T14:54:54
+================================================================================
+[2024-12-08T14:55:27.769+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.56s           2024-12-08T14:55:08
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.09s           2024-12-08T14:55:18
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.32s           2024-12-08T14:55:22
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.05s           2024-12-08T14:55:25
+================================================================================
+[2024-12-08T14:55:58.494+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.49s           2024-12-08T14:55:40
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.10s           2024-12-08T14:55:50
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.30s           2024-12-08T14:55:53
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.11s           2024-12-08T14:55:57
+================================================================================
+[2024-12-08T14:56:29.106+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.57s           2024-12-08T14:56:12
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.86s           2024-12-08T14:56:21
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.35s           2024-12-08T14:56:24
+/opt/airflow/dags/weather_to_duckdb.py    7603  1.02s             1           0  1.11s           2024-12-08T14:55:57
+================================================================================
+[2024-12-08T14:56:59.259+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.43s           2024-12-08T14:56:43
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.91s           2024-12-08T14:56:52
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.48s           2024-12-08T14:56:55
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.23s           2024-12-08T14:56:29
+================================================================================
+[2024-12-08T14:57:29.471+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.46s           2024-12-08T14:57:16
+/opt/airflow/dags/fetch_weather_data.py                           1           0  1.05s           2024-12-08T14:57:23
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.42s           2024-12-08T14:57:26
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.21s           2024-12-08T14:57:01
+================================================================================
+[2024-12-08T14:57:59.549+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/business_etl_v1.py                              1           0  1.43s           2024-12-08T14:57:47
+/opt/airflow/dags/fetch_weather_data.py                           1           0  0.88s           2024-12-08T14:57:55
+/opt/airflow/dags/verify_duckdb.py                                1           0  0.37s           2024-12-08T14:57:56
+/opt/airflow/dags/weather_to_duckdb.py                            1           0  1.08s           2024-12-08T14:57:33
+================================================================================
+[2024-12-08T14:58:12.762+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2024-12-08T14:58:12.879+0000] {manager.py:761} INFO - There are 4 files in /opt/airflow/dags
