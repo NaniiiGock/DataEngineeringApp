@@ -4,6 +4,8 @@ services:
   db:
     image: postgres:13
     container_name: postgres_db
+
+    
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
@@ -27,6 +29,7 @@ services:
       DB_PASSWORD: password
     command: >
       sh -c "
+      ./wait-for-postgres.sh db &&
       python setup_db.py &&
       streamlit run app_with_db.py --server.port=8501 --server.address=0.0.0.0"
     ports:
