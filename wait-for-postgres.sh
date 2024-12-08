@@ -7,7 +7,7 @@ cmd="$@"
 
 until pg_isready -h "$host" -p 5432; do
   echo "Postgres is unavailable - sleeping"
-  sleep 1
+  sleep 3
 done
 
 echo "Postgres is up - executing command"
