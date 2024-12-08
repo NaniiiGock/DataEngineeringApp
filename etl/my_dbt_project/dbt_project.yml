@@ -38,3 +38,7 @@ models:
         path: ./data/my_duckdb_file.db  # Path to your DuckDB file
         threads: 1
 
+vars:
+  duckdb_database: './data/my_duckdb_file.db'
+
+
