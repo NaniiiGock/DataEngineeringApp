@@ -35,5 +35,18 @@ for file_name in os.listdir(DATA_DIR):
             except json.JSONDecodeError:
                 print(f"Invalid JSON: {file_name}")
 
-master_df.to_csv("master_weather_data.csv", )
+# Pivot the dataframe
+pivoted_df = master_df.pivot_table(
+    index=['date', 'county_fips'],  # Keep date and county_fips as indices
+    columns='datatype',            # Pivot based on datatype
+    values='value',                # Use value as the data to populate the table
+    aggfunc='first'                # Use 'first' as we don't expect duplicates
+).reset_index()
+
+# Flatten the column hierarchy created by pivot_table
+pivoted_df.columns.name = None
+
+pivoted_df.to_csv('data/master_weather_data.csv', index=False)
+
+
             
