@@ -1,6 +1,3 @@
-SELECT
-  COUNTYFIPS,
-  RANK,
-  REVENUES,
-  EMPLOYEES
-FROM fortune_500
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'main'
