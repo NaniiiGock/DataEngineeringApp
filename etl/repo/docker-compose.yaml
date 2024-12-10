@@ -38,6 +38,7 @@ services:
   dbt:
     image: ghcr.io/dbt-labs/dbt-core:1.8.8
     container_name: dbt
+    stdin_open: true
     tty: true
     environment:
       DBT_PROFILES_DIR: "/dbt"

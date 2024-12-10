@@ -775,3 +775,178 @@
 [2024-12-10T09:52:08.358+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:52:08.357+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2024-12-10T09:52:08.383+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:52:08.383+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:52:08.383018+00:00, run_after=2024-12-10T09:52:08.383018+00:00
 [2024-12-10T09:52:08.404+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.555 seconds
+[2024-12-10T09:53:44.956+0000] {processor.py:157} INFO - Started process (PID=287) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:53:44.958+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:53:44.959+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:53:44.959+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:53:45.790+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:53:45.803+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:53:45.802+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:53:45.831+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:53:45.831+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:53:45.831067+00:00, run_after=2024-12-10T09:53:45.831067+00:00
+[2024-12-10T09:53:45.854+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.902 seconds
+[2024-12-10T09:54:16.148+0000] {processor.py:157} INFO - Started process (PID=441) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:54:16.149+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:54:16.151+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:54:16.150+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:54:16.997+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:54:17.032+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:54:17.032+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:54:17.059+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:54:17.058+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:54:17.058451+00:00, run_after=2024-12-10T09:54:17.058451+00:00
+[2024-12-10T09:54:17.083+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.940 seconds
+[2024-12-10T09:54:47.581+0000] {processor.py:157} INFO - Started process (PID=632) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:54:47.582+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:54:47.583+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:54:47.583+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:54:48.148+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:54:48.173+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:54:48.172+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:54:48.196+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:54:48.196+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:54:48.196343+00:00, run_after=2024-12-10T09:54:48.196343+00:00
+[2024-12-10T09:54:48.219+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.641 seconds
+[2024-12-10T09:55:19.083+0000] {processor.py:157} INFO - Started process (PID=767) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:55:19.084+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:55:19.085+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:55:19.085+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:55:19.636+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:55:19.663+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:55:19.662+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:55:19.690+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:55:19.690+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:55:19.690024+00:00, run_after=2024-12-10T09:55:19.690024+00:00
+[2024-12-10T09:55:19.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.637 seconds
+[2024-12-10T09:55:50.017+0000] {processor.py:157} INFO - Started process (PID=902) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:55:50.018+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:55:50.019+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:55:50.019+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:55:50.675+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:55:50.703+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:55:50.703+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:55:50.730+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:55:50.730+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:55:50.730368+00:00, run_after=2024-12-10T09:55:50.730368+00:00
+[2024-12-10T09:55:50.752+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.739 seconds
+[2024-12-10T09:56:35.228+0000] {processor.py:157} INFO - Started process (PID=287) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:56:35.229+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:56:35.231+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:56:35.230+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:56:36.006+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:56:36.025+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:56:36.024+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:56:36.054+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:56:36.054+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:56:36.054275+00:00, run_after=2024-12-10T09:56:36.054275+00:00
+[2024-12-10T09:56:36.078+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.853 seconds
+[2024-12-10T09:57:06.347+0000] {processor.py:157} INFO - Started process (PID=441) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:57:06.348+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:57:06.349+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:57:06.349+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:57:07.023+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:57:07.050+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:57:07.050+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:57:07.081+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:57:07.080+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:57:07.080691+00:00, run_after=2024-12-10T09:57:07.080691+00:00
+[2024-12-10T09:57:07.106+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.763 seconds
+[2024-12-10T09:57:37.800+0000] {processor.py:157} INFO - Started process (PID=576) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:57:37.801+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:57:37.802+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:57:37.802+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:57:38.451+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:57:38.475+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:57:38.474+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:57:38.498+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:57:38.498+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:57:38.498156+00:00, run_after=2024-12-10T09:57:38.498156+00:00
+[2024-12-10T09:57:38.517+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.720 seconds
+[2024-12-10T09:58:08.831+0000] {processor.py:157} INFO - Started process (PID=711) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:58:08.833+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:58:08.834+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:58:08.834+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:58:09.429+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:58:09.457+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:58:09.456+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:58:09.479+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:58:09.479+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:58:09.479363+00:00, run_after=2024-12-10T09:58:09.479363+00:00
+[2024-12-10T09:58:09.495+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.668 seconds
+[2024-12-10T09:58:40.391+0000] {processor.py:157} INFO - Started process (PID=846) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:58:40.392+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:58:40.393+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:58:40.393+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:58:41.021+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:58:41.049+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:58:41.049+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:58:41.071+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:58:41.071+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:58:41.071365+00:00, run_after=2024-12-10T09:58:41.071365+00:00
+[2024-12-10T09:58:41.090+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.702 seconds
+[2024-12-10T09:59:11.483+0000] {processor.py:157} INFO - Started process (PID=981) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:59:11.484+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:59:11.485+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:59:11.484+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:59:12.160+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:59:12.188+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:59:12.187+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:59:12.214+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:59:12.213+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:59:12.213685+00:00, run_after=2024-12-10T09:59:12.213685+00:00
+[2024-12-10T09:59:12.236+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.756 seconds
+[2024-12-10T09:59:43.123+0000] {processor.py:157} INFO - Started process (PID=1140) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:59:43.124+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T09:59:43.125+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:59:43.125+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:59:43.720+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T09:59:43.747+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:59:43.746+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T09:59:43.773+0000] {logging_mixin.py:150} INFO - [2024-12-10T09:59:43.772+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T09:59:43.772784+00:00, run_after=2024-12-10T09:59:43.772784+00:00
+[2024-12-10T09:59:43.792+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.672 seconds
+[2024-12-10T10:00:14.520+0000] {processor.py:157} INFO - Started process (PID=1290) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:00:14.522+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:00:14.523+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:00:14.523+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:00:14.982+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:00:15.010+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:00:15.009+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:00:15.035+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:00:15.035+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:00:15.035152+00:00, run_after=2024-12-10T10:00:15.035152+00:00
+[2024-12-10T10:00:15.058+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.540 seconds
+[2024-12-10T10:00:45.320+0000] {processor.py:157} INFO - Started process (PID=1427) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:00:45.321+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:00:45.322+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:00:45.322+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:00:45.800+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:00:45.829+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:00:45.828+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:00:45.853+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:00:45.853+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:00:45.853003+00:00, run_after=2024-12-10T10:00:45.853003+00:00
+[2024-12-10T10:00:45.876+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.559 seconds
+[2024-12-10T10:01:16.181+0000] {processor.py:157} INFO - Started process (PID=1562) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:01:16.183+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:01:16.184+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:01:16.183+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:01:16.653+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:01:16.681+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:01:16.680+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:01:16.707+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:01:16.706+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:01:16.706691+00:00, run_after=2024-12-10T10:01:16.706691+00:00
+[2024-12-10T10:01:16.728+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.552 seconds
+[2024-12-10T10:01:47.072+0000] {processor.py:157} INFO - Started process (PID=1697) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:01:47.073+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:01:47.074+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:01:47.074+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:01:47.517+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:01:47.545+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:01:47.544+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:01:47.569+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:01:47.569+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:01:47.569366+00:00, run_after=2024-12-10T10:01:47.569366+00:00
+[2024-12-10T10:01:47.590+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.522 seconds
+[2024-12-10T10:02:18.318+0000] {processor.py:157} INFO - Started process (PID=1832) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:02:18.320+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:02:18.321+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:02:18.321+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:02:18.899+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:02:18.932+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:02:18.931+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:02:18.966+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:02:18.965+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:02:18.965629+00:00, run_after=2024-12-10T10:02:18.965629+00:00
+[2024-12-10T10:02:18.986+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.671 seconds
+[2024-12-10T10:02:49.378+0000] {processor.py:157} INFO - Started process (PID=1967) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:02:49.379+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:02:49.380+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:02:49.380+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:02:49.834+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:02:49.865+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:02:49.865+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:02:49.892+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:02:49.892+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:02:49.891923+00:00, run_after=2024-12-10T10:02:49.891923+00:00
+[2024-12-10T10:02:49.910+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.535 seconds
+[2024-12-10T10:03:20.746+0000] {processor.py:157} INFO - Started process (PID=2102) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:03:20.747+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:03:20.748+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:03:20.748+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:03:21.251+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:03:21.282+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:03:21.282+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:03:21.311+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:03:21.310+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:03:21.310646+00:00, run_after=2024-12-10T10:03:21.310646+00:00
+[2024-12-10T10:03:21.339+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.596 seconds
+[2024-12-10T10:03:52.335+0000] {processor.py:157} INFO - Started process (PID=2237) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:03:52.336+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:03:52.337+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:03:52.337+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:03:52.797+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:03:52.827+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:03:52.827+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:03:52.854+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:03:52.854+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:03:52.854459+00:00, run_after=2024-12-10T10:03:52.854459+00:00
+[2024-12-10T10:03:52.877+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.547 seconds
+[2024-12-10T10:04:23.177+0000] {processor.py:157} INFO - Started process (PID=2372) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:04:23.179+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:04:23.180+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:04:23.180+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:04:23.740+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:04:23.770+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:04:23.770+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:04:23.797+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:04:23.797+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:04:23.797206+00:00, run_after=2024-12-10T10:04:23.797206+00:00
+[2024-12-10T10:04:23.818+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.645 seconds
+[2024-12-10T10:05:55.685+0000] {processor.py:157} INFO - Started process (PID=287) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:05:55.686+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:05:55.687+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:05:55.687+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:05:56.349+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:05:56.360+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:05:56.359+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:05:56.383+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:05:56.383+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:05:56.383058+00:00, run_after=2024-12-10T10:05:56.383058+00:00
+[2024-12-10T10:05:56.405+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.723 seconds
+[2024-12-10T10:06:26.637+0000] {processor.py:157} INFO - Started process (PID=439) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:06:26.638+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:06:26.639+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:06:26.639+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:06:27.324+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:06:27.357+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:06:27.356+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:06:27.381+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:06:27.381+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:06:27.380982+00:00, run_after=2024-12-10T10:06:27.380982+00:00
+[2024-12-10T10:06:27.405+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.773 seconds
+[2024-12-10T10:06:57.666+0000] {processor.py:157} INFO - Started process (PID=576) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:06:57.668+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:06:57.669+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:06:57.669+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:06:58.316+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:06:58.347+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:06:58.347+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:06:58.374+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:06:58.373+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:06:58.373820+00:00, run_after=2024-12-10T10:06:58.373820+00:00
+[2024-12-10T10:06:58.393+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.732 seconds
+[2024-12-10T10:07:28.984+0000] {processor.py:157} INFO - Started process (PID=728) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:07:28.986+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-10T10:07:28.987+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:07:28.986+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:07:29.567+0000] {processor.py:836} INFO - DAG(s) dict_keys(['kaggle_to_noaa']) retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-10T10:07:29.591+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:07:29.590+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:07:29.614+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:07:29.614+0000] {dag.py:3508} INFO - Setting next_dagrun for kaggle_to_noaa to 2024-12-09T10:07:29.614000+00:00, run_after=2024-12-10T10:07:29.614000+00:00
+[2024-12-10T10:07:29.635+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.655 seconds
