@@ -2,31 +2,32 @@
 erDiagram
     BusinessFACT }|--|| BusinessDIM : ranks
     BusinessFACT {
-        int id PK
-        int business_id FK
-        int rank
-        int employees
-        int revenues
-        int profit
+        int ID PK
+        int BUSINESSID FK
+        int RANK
+        int EMPLOYEES
+        int REVENUES
+        int PROFIT
     }
     CountyDIM ||--|{ BusinessDIM : contains
     CountyDIM {
-        int county_fips PK
-        string state
+        int COUNTYFIPS PK
+        string COUNTY
+        string STATE
     }
     BusinessDIM{
-        int id PK
-        string name
-        int county_fips FK
+        int ID PK
+        string NAME
+        int COUNTYFIPS FK
     }
     WeatherFACT }|--|| CountyDIM : occurs_in
     WeatherFACT {
-        int id PK
-        int county_fips FK
-        date date
-        int tmin
-        int tmax
-        int tavg
-        int prcp
+        int ID PK
+        int COUNTYFIPS FK
+        date DATE
+        int TMIN
+        int TMAX
+        int TAV
+        int PRCP
     }
 ```
