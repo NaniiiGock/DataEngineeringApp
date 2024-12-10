@@ -1,0 +1,8 @@
+models:
+  my_dbt_project:
+    target: dev
+    outputs:
+      dev:
+        type: duckdb
+        path: ./data/my_duckdb_file.db  # Path to your DuckDB file
+        threads: 1

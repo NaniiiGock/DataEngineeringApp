@@ -33,18 +33,18 @@ with DAG(
     start_date=datetime(2024, 1, 1),
     catchup=False,
 ) as dag:
+    
+    check_dir = BashOperator(
+    task_id='check_current_directory',
+    bash_command='pwd'  # This will print the current directory
+    )
 
     # Task 1: Run dbt inside Docker
     run_dbt = BashOperator(
         task_id='run_dbt',
-        bash_command=(
-            "docker run --rm "
-            "-v $(pwd)/repo:/app "
-            "-v $(pwd)/repo/my_dbt_project:/app/my_dbt_project "
-            "ghcr.io/dbt-labs/dbt-core:1.8.8 "
-            "run --project-dir /app/my_dbt_project"
-        )
+        bash_command='docker run --rm -v /home/airflow/repo:/app dbt-labs/dbt-core run --project-dir /app/my_dbt_project'
     )
+
 
 
 
@@ -55,4 +55,4 @@ with DAG(
     )
 
     # Define task dependencies
-    run_dbt >> query_duckdb
+    check_dir >> run_dbt >> query_duckdb
