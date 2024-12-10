@@ -1,7 +1,7 @@
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
-from datetime import datetime
+from datetime import datetime, timedelta
 import duckdb
 
 # Define default arguments
@@ -37,8 +37,15 @@ with DAG(
     # Task 1: Run dbt inside Docker
     run_dbt = BashOperator(
         task_id='run_dbt',
-        bash_command='docker run --rm -v $(pwd)/repo:/app dbt-container run --project-dir /app/my_dbt_project'
+        bash_command=(
+            "docker run --rm "
+            "-v $(pwd)/repo:/app "
+            "-v $(pwd)/repo/my_dbt_project:/app/my_dbt_project "
+            "ghcr.io/dbt-labs/dbt-core:1.8.8 "
+            "run --project-dir /app/my_dbt_project"
+        )
     )
+
 
 
     # Task 2: Query the new table in DuckDB

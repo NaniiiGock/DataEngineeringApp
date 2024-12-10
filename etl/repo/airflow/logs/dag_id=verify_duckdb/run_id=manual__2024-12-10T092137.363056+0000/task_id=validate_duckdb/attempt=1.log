@@ -1,0 +1,20 @@
+[2024-12-10T09:21:38.470+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: verify_duckdb.validate_duckdb manual__2024-12-10T09:21:37.363056+00:00 [queued]>
+[2024-12-10T09:21:38.482+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: verify_duckdb.validate_duckdb manual__2024-12-10T09:21:37.363056+00:00 [queued]>
+[2024-12-10T09:21:38.483+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-12-10T09:21:38.501+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): validate_duckdb> on 2024-12-10 09:21:37.363056+00:00
+[2024-12-10T09:21:38.506+0000] {standard_task_runner.py:57} INFO - Started process 1365 to run task
+[2024-12-10T09:21:38.509+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'verify_duckdb', 'validate_duckdb', 'manual__2024-12-10T09:21:37.363056+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/verify_duckdb.py', '--cfg-path', '/tmp/tmpjkmtxtqq']
+[2024-12-10T09:21:38.513+0000] {standard_task_runner.py:85} INFO - Job 6: Subtask validate_duckdb
+[2024-12-10T09:21:38.568+0000] {task_command.py:410} INFO - Running <TaskInstance: verify_duckdb.validate_duckdb manual__2024-12-10T09:21:37.363056+00:00 [running]> on host 6f9ff553374d
+[2024-12-10T09:21:38.660+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='verify_duckdb' AIRFLOW_CTX_TASK_ID='validate_duckdb' AIRFLOW_CTX_EXECUTION_DATE='2024-12-10T09:21:37.363056+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-10T09:21:37.363056+00:00'
+[2024-12-10T09:21:39.255+0000] {logging_mixin.py:150} INFO - First few rows from weather_data:
+[2024-12-10T09:21:39.267+0000] {logging_mixin.py:150} INFO -         date county_fips datatype    value
+0 2016-01-01       01073     PRCP  0.00000
+1 2016-01-01       01073     TAVG  4.20000
+2 2016-01-01       01073     TMAX  6.40000
+3 2016-01-01       01073     TMIN  1.95000
+4 2016-01-02       01073     PRCP  0.01875
+[2024-12-10T09:21:39.270+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-12-10T09:21:39.281+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=verify_duckdb, task_id=validate_duckdb, execution_date=20241210T092137, start_date=20241210T092138, end_date=20241210T092139
+[2024-12-10T09:21:39.326+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-12-10T09:21:39.345+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
