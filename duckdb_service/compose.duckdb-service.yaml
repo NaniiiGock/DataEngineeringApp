@@ -1,0 +1,10 @@
+services:
+  duckdb:
+    container_name: duckdb-service
+     
+    build:
+      context: .
+    volumes:
+      - ./data:/app/data
+    stdin_open: true
+    tty: true
