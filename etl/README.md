@@ -93,21 +93,21 @@ For ease of use, we want to have a column for each observation. To accomplish th
 3) loads the pivoted table back into the database.
 
 # The datasets in more detail
+*See DICTIONARY.MD for comprehensive explanation of datasets after transformations*
 We are working with two data sources
 1) The Corporate Headquarters dataset (or the business data)
 2) Weather observations for the counties of these headquarters
 
-The Corporate Headquarters' data is for the Fortune 500 companies of 2017.
-It's a dataset from Kaggle.
-Pulled using kaggle.cli as part of a Airflow DAG.
-It goes into DuckDB for storage.
-pull data >> store data in duckdb
+**The Corporate Headquarters' data**  is for the Fortune 500 companies of 2017.
+It's a dataset from Kaggle from the user ARMAN.
+[Link to dataset](https://www.kaggle.com/datasets/mannmann2/fortune-500-corporate-headquarters)
+
+The list only contains US companies and for these we have measurements like the company's rank in the list, their revenues and profits and number of employees - all for the year 2016 which precedes the year of the ranking.
 
 The weather data is from NOAA.
-It's pulled using NOAA's API from the ghcnd dataset which is historical daily weather dataset.
+It's pulled using NOAA's API from the ghcnd dataset which is *global historical daily weather dataset*.
 The data query is filtered using the county fips codes (unique identifiers for US counties) which we get from the corporate headquarters dataset. That way we don't pull any irrelevant data.
 Also, we only pull data for the year 2016 - which is the year on which the Fortune 500 2017 list was compiled.
-pull corporate data >> store corporate data >> pull weather data
 
 The data is stored first in json files - each json file contains weather observations for a single county. The contents of said json files are aggregated. The reason being, a single county will have multiple weather stations - we want to take an average over these different stations so that we have a single average measurement for each day.
 
