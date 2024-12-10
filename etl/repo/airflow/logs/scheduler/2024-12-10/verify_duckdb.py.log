@@ -971,3 +971,241 @@
 [2024-12-10T10:07:28.202+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:07:28.202+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2024-12-10T10:07:28.235+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:07:28.235+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
 [2024-12-10T10:07:28.356+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.259 seconds
+[2024-12-10T10:14:56.964+0000] {processor.py:157} INFO - Started process (PID=270) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:14:56.965+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:14:56.967+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:14:56.966+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:14:57.026+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:14:57.042+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:14:57.042+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:14:57.073+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:14:57.073+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:14:57.095+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.136 seconds
+[2024-12-10T10:15:27.395+0000] {processor.py:157} INFO - Started process (PID=384) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:15:27.396+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:15:27.397+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:15:27.396+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:15:27.444+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:15:27.472+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:15:27.472+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:15:27.496+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:15:27.496+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:15:27.516+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.126 seconds
+[2024-12-10T10:15:58.436+0000] {processor.py:157} INFO - Started process (PID=557) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:15:58.437+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:15:58.438+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:15:58.438+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:15:58.505+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:15:58.547+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:15:58.547+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:15:58.589+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:15:58.589+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:15:58.621+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.188 seconds
+[2024-12-10T10:16:28.944+0000] {processor.py:157} INFO - Started process (PID=654) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:16:28.946+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:16:28.949+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:16:28.949+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:16:29.179+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:16:29.313+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:16:29.312+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:16:29.497+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:16:29.496+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:16:30.521+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 1.588 seconds
+[2024-12-10T10:17:00.710+0000] {processor.py:157} INFO - Started process (PID=786) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:17:00.711+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:17:00.712+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:17:00.712+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:17:00.767+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:17:00.801+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:17:00.801+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:17:00.938+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:17:00.938+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:17:00.960+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.253 seconds
+[2024-12-10T10:17:31.293+0000] {processor.py:157} INFO - Started process (PID=921) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:17:31.294+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:17:31.295+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:17:31.295+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:17:31.358+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:17:31.514+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:17:31.514+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:17:31.538+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:17:31.538+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:17:31.558+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.269 seconds
+[2024-12-10T10:18:02.026+0000] {processor.py:157} INFO - Started process (PID=1056) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:18:02.027+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:18:02.028+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:18:02.028+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:18:02.080+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:18:02.203+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:18:02.203+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:18:02.227+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:18:02.227+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:18:02.246+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.223 seconds
+[2024-12-10T10:18:32.474+0000] {processor.py:157} INFO - Started process (PID=1191) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:18:32.475+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:18:32.476+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:18:32.476+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:18:32.609+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:18:32.633+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:18:32.633+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:18:32.655+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:18:32.655+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:18:32.676+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.205 seconds
+[2024-12-10T10:19:03.483+0000] {processor.py:157} INFO - Started process (PID=1326) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:19:03.484+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:19:03.485+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:19:03.485+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:19:03.536+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:19:03.567+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:19:03.567+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:19:03.597+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:19:03.597+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:19:03.621+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.142 seconds
+[2024-12-10T10:19:33.667+0000] {processor.py:157} INFO - Started process (PID=1461) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:19:33.668+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:19:33.670+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:19:33.670+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:19:33.740+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:19:33.778+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:19:33.778+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:19:33.808+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:19:33.808+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:19:33.834+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.171 seconds
+[2024-12-10T10:20:03.959+0000] {processor.py:157} INFO - Started process (PID=1596) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:20:03.960+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:20:03.962+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:20:03.962+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:20:04.020+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:20:04.050+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:20:04.049+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:20:04.077+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:20:04.077+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:20:04.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.142 seconds
+[2024-12-10T10:20:34.613+0000] {processor.py:157} INFO - Started process (PID=1731) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:20:34.615+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:20:34.616+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:20:34.616+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:20:34.686+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:20:34.724+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:20:34.724+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:20:34.752+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:20:34.751+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:20:34.777+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.167 seconds
+[2024-12-10T10:21:04.982+0000] {processor.py:157} INFO - Started process (PID=1866) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:21:04.984+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:21:04.985+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:21:04.984+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:21:05.044+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:21:05.076+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:21:05.075+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:21:05.104+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:21:05.104+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:21:05.135+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.156 seconds
+[2024-12-10T10:21:35.618+0000] {processor.py:157} INFO - Started process (PID=2001) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:21:35.619+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:21:35.620+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:21:35.619+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:21:35.675+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:21:35.708+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:21:35.707+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:21:35.734+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:21:35.734+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:21:35.758+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.144 seconds
+[2024-12-10T10:22:05.833+0000] {processor.py:157} INFO - Started process (PID=2136) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:22:05.834+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:22:05.835+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:22:05.835+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:22:05.890+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:22:05.918+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:22:05.918+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:22:05.944+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:22:05.944+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:22:05.966+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.136 seconds
+[2024-12-10T10:22:36.346+0000] {processor.py:157} INFO - Started process (PID=2271) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:22:36.348+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:22:36.349+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:22:36.348+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:22:36.404+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:22:36.435+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:22:36.434+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:22:36.463+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:22:36.462+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:22:36.491+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.148 seconds
+[2024-12-10T10:23:06.555+0000] {processor.py:157} INFO - Started process (PID=2406) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:23:06.556+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:23:06.557+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:23:06.557+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:23:06.607+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:23:06.636+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:23:06.636+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:23:06.664+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:23:06.664+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:23:06.690+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.138 seconds
+[2024-12-10T10:23:37.340+0000] {processor.py:157} INFO - Started process (PID=2541) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:23:37.341+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:23:37.342+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:23:37.342+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:23:37.397+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:23:37.430+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:23:37.430+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:23:37.455+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:23:37.455+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:23:37.478+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.142 seconds
+[2024-12-10T10:24:07.968+0000] {processor.py:157} INFO - Started process (PID=2676) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:24:07.969+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:24:07.970+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:24:07.970+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:24:08.025+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:24:08.055+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:24:08.055+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:24:08.082+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:24:08.082+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:24:08.102+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.138 seconds
+[2024-12-10T10:24:38.327+0000] {processor.py:157} INFO - Started process (PID=2811) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:24:38.329+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:24:38.330+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:24:38.330+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:24:38.435+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:24:38.477+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:24:38.477+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:24:38.506+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:24:38.506+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:24:38.532+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.209 seconds
+[2024-12-10T10:25:08.655+0000] {processor.py:157} INFO - Started process (PID=2946) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:25:08.656+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:25:08.657+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:25:08.657+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:25:08.708+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:25:08.739+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:25:08.738+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:25:08.767+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:25:08.767+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:25:08.789+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.137 seconds
+[2024-12-10T10:25:38.951+0000] {processor.py:157} INFO - Started process (PID=3081) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:25:38.952+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:25:38.953+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:25:38.953+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:25:39.006+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:25:39.039+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:25:39.039+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:25:39.068+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:25:39.068+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:25:39.091+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.144 seconds
+[2024-12-10T10:26:09.263+0000] {processor.py:157} INFO - Started process (PID=3216) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:26:09.264+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:26:09.265+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:26:09.265+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:26:09.319+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:26:09.351+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:26:09.351+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:26:09.378+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:26:09.378+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:26:09.405+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.146 seconds
+[2024-12-10T10:26:39.787+0000] {processor.py:157} INFO - Started process (PID=3351) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:26:39.790+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:26:39.792+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:26:39.792+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:26:39.890+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:26:39.945+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:26:39.944+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:26:39.993+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:26:39.993+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:26:40.028+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.248 seconds
+[2024-12-10T10:27:10.369+0000] {processor.py:157} INFO - Started process (PID=3486) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:27:10.370+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:27:10.371+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:27:10.371+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:27:10.438+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:27:10.475+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:27:10.475+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:27:10.508+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:27:10.508+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:27:10.539+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.174 seconds
+[2024-12-10T10:27:40.773+0000] {processor.py:157} INFO - Started process (PID=3621) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:27:40.774+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:27:40.775+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:27:40.775+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:27:40.836+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:27:40.871+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:27:40.870+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:27:40.900+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:27:40.900+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:27:40.924+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.154 seconds
+[2024-12-10T10:28:11.829+0000] {processor.py:157} INFO - Started process (PID=3756) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:28:11.831+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:28:11.833+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:28:11.832+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:28:11.973+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:28:12.043+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:28:12.043+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:28:12.127+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:28:12.126+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:28:12.191+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.370 seconds
+[2024-12-10T10:28:42.557+0000] {processor.py:157} INFO - Started process (PID=3891) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:28:42.559+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:28:42.561+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:28:42.560+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:28:42.664+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:28:42.750+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:28:42.749+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:28:42.804+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:28:42.803+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:28:42.836+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.285 seconds
+[2024-12-10T10:29:12.934+0000] {processor.py:157} INFO - Started process (PID=4026) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:29:12.935+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:29:12.936+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:29:12.935+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:29:12.986+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:29:13.016+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:29:13.016+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:29:13.045+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:29:13.045+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:29:13.071+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.140 seconds
+[2024-12-10T10:29:43.420+0000] {processor.py:157} INFO - Started process (PID=4161) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:29:43.421+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:29:43.423+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:29:43.422+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:29:43.478+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:29:43.510+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:29:43.509+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:29:43.539+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:29:43.539+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:29:43.564+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.147 seconds
+[2024-12-10T10:30:13.635+0000] {processor.py:157} INFO - Started process (PID=4296) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:30:13.636+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:30:13.637+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:30:13.637+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:30:13.693+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:30:13.725+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:30:13.724+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:30:13.753+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:30:13.753+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:30:13.774+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.143 seconds
+[2024-12-10T10:30:44.160+0000] {processor.py:157} INFO - Started process (PID=4431) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:30:44.162+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:30:44.165+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:30:44.164+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:30:44.242+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:30:44.285+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:30:44.285+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:30:44.325+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:30:44.324+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:30:44.360+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.204 seconds
+[2024-12-10T10:31:15.127+0000] {processor.py:157} INFO - Started process (PID=4566) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:31:15.128+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:31:15.129+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:31:15.128+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:31:15.179+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:31:15.210+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:31:15.210+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:31:15.239+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:31:15.238+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:31:15.260+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.137 seconds
+[2024-12-10T10:31:45.558+0000] {processor.py:157} INFO - Started process (PID=4701) to work on /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:31:45.559+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/verify_duckdb.py for tasks to queue
+[2024-12-10T10:31:45.560+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:31:45.560+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:31:45.624+0000] {processor.py:836} INFO - DAG(s) dict_keys(['verify_duckdb']) retrieved from /opt/airflow/dags/verify_duckdb.py
+[2024-12-10T10:31:45.658+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:31:45.657+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T10:31:45.686+0000] {logging_mixin.py:150} INFO - [2024-12-10T10:31:45.686+0000] {dag.py:3508} INFO - Setting next_dagrun for verify_duckdb to None, run_after=None
+[2024-12-10T10:31:45.711+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/verify_duckdb.py took 0.157 seconds
