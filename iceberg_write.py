@@ -9,7 +9,7 @@ spark = SparkSession.builder \
     .config("spark.jars", "jars/iceberg-spark-runtime-3.5_2.12-1.7.1.jar") \
     .getOrCreate()
 
-json_folder_path = "/Users/lilianahotsko/Desktop/DataEngineeringApp/Jsons"
+json_folder_path = "Jsons"
 
 df = spark.read.json(f"{json_folder_path}/*.json")
 
