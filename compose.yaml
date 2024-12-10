@@ -1,21 +1,41 @@
+include:
+#   - compose.airflow-service.yaml
+  - ../Test/duckdb_service/compose.duckdb-service.yaml
 services:
-  duckdb:
-    container_name: duckdb
+  sl:
+    container_name: sl
     build:
-      context: ./datesets_static/
+      context: /workspaces/Test/03_streamlit/ # Build from the Dockerfile
     volumes:
-      - ./tmp/duckdb/data:/app/data
-    stdin_open: true
-    tty: true
+      - ./03_streamlit/app:/app_sl  # Bind mount the app directory for dynamic updates
     ports:
-      - "5000:5000"
+      - "8501:8501"  # Map Streamlit port to localhost
+      - "8502:8502"  # Map alternative port to localhost
+    networks:
+      - dwh
   analytics:
     container_name: analytics
     build:
-      context: ./analytics/
-    volumes:
-      - ./tmp/analytics:/lytics/
-    stdin_open: true
-    tty: true
+      context: 02_analytics/
     ports:
-      - "5001:5001"
+      - 5001:5001
+    volumes:
+      - ./02_analytics:/serving
+    networks:
+      - dwh
+
+  db:
+    container_name: db
+    image: postgres:latest
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes:
+      - /workspaces/01_data:/serving
+    networks:
+      - dwh
+
+networks:
+  dwh:
+
+volumes:
+  01_data: {}
