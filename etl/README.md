@@ -11,3 +11,12 @@ Also, we only pull data for the year 2016 - which is the year on which the Fortu
 pull corporate data >> store corporate data >> pull weather data
 
 The data is stored first in json files - each json file contains weather observations for a single county. The contents of said json files are aggregated. The reason being, a single county will have multiple weather stations - we want to take an average over these different stations so that we have a single average measurement for each day.
+
+# Debugging / problems
+
+* If you're having problems with getting Docker up, try <docker build -t my_airflow_image .>
+* After that, try to up Docker again.
+* If you're still having issues, say Airflow isn't initializing, then the problem might be with initializing postgres for Airflow.
+* run <docker-compose run airflow bash>
+* in the bash <airflow db init>
+* now and afterwards, Airflow should initialize fine.
