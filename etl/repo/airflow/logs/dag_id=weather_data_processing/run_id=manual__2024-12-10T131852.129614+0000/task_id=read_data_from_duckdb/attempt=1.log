@@ -1,0 +1,26 @@
+[2024-12-10T13:18:53.968+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_processing.read_data_from_duckdb manual__2024-12-10T13:18:52.129614+00:00 [queued]>
+[2024-12-10T13:18:53.984+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_processing.read_data_from_duckdb manual__2024-12-10T13:18:52.129614+00:00 [queued]>
+[2024-12-10T13:18:53.984+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-12-10T13:18:54.001+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): read_data_from_duckdb> on 2024-12-10 13:18:52.129614+00:00
+[2024-12-10T13:18:54.008+0000] {standard_task_runner.py:57} INFO - Started process 10127 to run task
+[2024-12-10T13:18:54.011+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'weather_data_processing', 'read_data_from_duckdb', 'manual__2024-12-10T13:18:52.129614+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/weather_transform.py', '--cfg-path', '/tmp/tmp57aezwkw']
+[2024-12-10T13:18:54.013+0000] {standard_task_runner.py:85} INFO - Job 38: Subtask read_data_from_duckdb
+[2024-12-10T13:18:54.069+0000] {task_command.py:410} INFO - Running <TaskInstance: weather_data_processing.read_data_from_duckdb manual__2024-12-10T13:18:52.129614+00:00 [running]> on host 134bb3434cfb
+[2024-12-10T13:18:54.169+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_data_processing' AIRFLOW_CTX_TASK_ID='read_data_from_duckdb' AIRFLOW_CTX_EXECUTION_DATE='2024-12-10T13:18:52.129614+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-10T13:18:52.129614+00:00'
+[2024-12-10T13:18:54.218+0000] {python.py:183} INFO - Done. Returned value was:             date county_fips datatype     value
+0     2016-01-01       01073     PRCP  0.000000
+1     2016-01-01       01073     TAVG  4.200000
+2     2016-01-01       01073     TMAX  6.400000
+3     2016-01-01       01073     TMIN  1.950000
+4     2016-01-02       01073     PRCP  0.018750
+...          ...         ...      ...       ...
+40695 2016-04-05       55139     TMAX  3.350000
+40696 2016-04-05       55139     TMIN -4.400000
+40697 2016-04-06       55139     PRCP  5.585714
+40698 2016-04-06       55139     TMAX  6.950000
+40699 2016-04-06       55139     TMIN -2.800000
+
+[40700 rows x 4 columns]
+[2024-12-10T13:18:54.319+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=weather_data_processing, task_id=read_data_from_duckdb, execution_date=20241210T131852, start_date=20241210T131853, end_date=20241210T131854
+[2024-12-10T13:18:54.345+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-12-10T13:18:54.379+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

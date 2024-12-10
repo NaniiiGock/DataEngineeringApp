@@ -28,7 +28,7 @@ def pivot_data(**kwargs):
 
 # Function to load the pivoted data back into DuckDB
 def load_data_to_duckdb(**kwargs):
-    tables = kwargs['ti'].xcom_pull(task_ids='transform_data')
+    tables = kwargs['ti'].xcom_pull(task_ids='pivot_data')
     db_path = './data/my_duckdb_file.db'
     conn = duckdb.connect(database=db_path, read_only=False)
     

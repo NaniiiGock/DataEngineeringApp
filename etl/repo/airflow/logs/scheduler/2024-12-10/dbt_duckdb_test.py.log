@@ -1388,3 +1388,213 @@ NameError: name 'timedelta' is not defined
 [2024-12-10T13:17:17.484+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:17:17.484+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2024-12-10T13:17:17.510+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:17:17.509+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
 [2024-12-10T13:17:17.534+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.143 seconds
+[2024-12-10T13:17:47.826+0000] {processor.py:157} INFO - Started process (PID=9519) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:17:47.827+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:17:47.828+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:17:47.828+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:17:47.886+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:17:47.920+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:17:47.919+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:17:47.948+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:17:47.948+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:17:47.987+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.165 seconds
+[2024-12-10T13:18:18.072+0000] {processor.py:157} INFO - Started process (PID=9824) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:18:18.074+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:18:18.075+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:18:18.075+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:18:18.130+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:18:18.162+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:18:18.162+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:18:18.191+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:18:18.191+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:18:18.213+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.145 seconds
+[2024-12-10T13:18:48.411+0000] {processor.py:157} INFO - Started process (PID=10071) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:18:48.412+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:18:48.414+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:18:48.413+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:18:48.505+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:18:48.578+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:18:48.578+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:18:48.644+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:18:48.644+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:18:48.680+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.275 seconds
+[2024-12-10T13:19:19.060+0000] {processor.py:157} INFO - Started process (PID=10386) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:19:19.061+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:19:19.062+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:19:19.062+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:19:19.127+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:19:19.160+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:19:19.160+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:19:19.188+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:19:19.188+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:19:19.210+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.154 seconds
+[2024-12-10T13:19:49.914+0000] {processor.py:157} INFO - Started process (PID=10577) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:19:49.915+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:19:49.916+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:19:49.916+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:19:49.972+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:19:50.004+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:19:50.004+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:19:50.030+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:19:50.029+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:19:50.053+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.142 seconds
+[2024-12-10T13:20:20.669+0000] {processor.py:157} INFO - Started process (PID=10768) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:20:20.670+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:20:20.671+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:20:20.670+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:20:20.725+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:20:20.758+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:20:20.758+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:20:20.787+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:20:20.786+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:20:20.808+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.143 seconds
+[2024-12-10T13:20:51.469+0000] {processor.py:157} INFO - Started process (PID=10959) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:20:51.470+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:20:51.471+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:20:51.471+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:20:51.528+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:20:51.559+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:20:51.559+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:20:51.589+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:20:51.588+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:20:51.615+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.149 seconds
+[2024-12-10T13:21:22.111+0000] {processor.py:157} INFO - Started process (PID=11150) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:21:22.112+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:21:22.113+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:21:22.112+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:21:22.163+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:21:22.192+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:21:22.191+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:21:22.217+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:21:22.217+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:21:22.238+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.130 seconds
+[2024-12-10T13:21:52.901+0000] {processor.py:157} INFO - Started process (PID=11341) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:21:52.902+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:21:52.903+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:21:52.903+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:21:52.964+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:21:52.992+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:21:52.992+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:21:53.016+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:21:53.016+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:21:53.039+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.141 seconds
+[2024-12-10T13:22:23.616+0000] {processor.py:157} INFO - Started process (PID=11532) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:22:23.617+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:22:23.618+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:22:23.618+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:22:23.676+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:22:23.706+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:22:23.706+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:22:23.731+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:22:23.731+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:22:23.755+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.143 seconds
+[2024-12-10T13:22:54.373+0000] {processor.py:157} INFO - Started process (PID=11723) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:22:54.374+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:22:54.375+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:22:54.375+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:22:54.428+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:22:54.458+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:22:54.457+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:22:54.489+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:22:54.488+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:22:54.511+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.141 seconds
+[2024-12-10T13:23:24.678+0000] {processor.py:157} INFO - Started process (PID=11960) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:23:24.679+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:23:24.680+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:23:24.680+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:23:24.729+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:23:24.760+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:23:24.759+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:23:24.786+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:23:24.786+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:23:24.808+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.134 seconds
+[2024-12-10T13:23:55.504+0000] {processor.py:157} INFO - Started process (PID=12151) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:23:55.505+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:23:55.506+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:23:55.506+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:23:55.558+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:23:55.588+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:23:55.587+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:23:55.611+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:23:55.611+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:23:55.635+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.134 seconds
+[2024-12-10T13:24:25.795+0000] {processor.py:157} INFO - Started process (PID=12342) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:24:25.796+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:24:25.797+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:24:25.797+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:24:25.848+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:24:25.877+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:24:25.877+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:24:25.901+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:24:25.901+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:24:25.924+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.133 seconds
+[2024-12-10T13:24:56.577+0000] {processor.py:157} INFO - Started process (PID=12533) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:24:56.578+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:24:56.579+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:24:56.579+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:24:56.646+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:24:56.679+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:24:56.679+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:24:56.705+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:24:56.704+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:24:56.724+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.150 seconds
+[2024-12-10T13:25:27.273+0000] {processor.py:157} INFO - Started process (PID=12724) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:25:27.274+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:25:27.275+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:25:27.275+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:25:27.324+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:25:27.353+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:25:27.353+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:25:27.379+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:25:27.379+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:25:27.403+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.134 seconds
+[2024-12-10T13:25:58.126+0000] {processor.py:157} INFO - Started process (PID=12915) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:25:58.127+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:25:58.128+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:25:58.128+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:25:58.177+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:25:58.204+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:25:58.204+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:25:58.229+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:25:58.229+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:25:58.252+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.129 seconds
+[2024-12-10T13:26:28.444+0000] {processor.py:157} INFO - Started process (PID=13106) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:26:28.445+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:26:28.446+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:26:28.446+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:26:28.504+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:26:28.537+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:26:28.537+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:26:28.568+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:26:28.568+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:26:28.591+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.151 seconds
+[2024-12-10T13:26:58.636+0000] {processor.py:157} INFO - Started process (PID=13297) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:26:58.637+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:26:58.638+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:26:58.638+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:26:58.689+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:26:58.721+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:26:58.721+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:26:58.750+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:26:58.750+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:26:58.770+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.137 seconds
+[2024-12-10T13:27:28.964+0000] {processor.py:157} INFO - Started process (PID=13463) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:27:28.965+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:27:28.966+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:27:28.966+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:27:29.017+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:27:29.063+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:27:29.062+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:27:29.113+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:27:29.113+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:27:29.144+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.184 seconds
+[2024-12-10T13:27:59.644+0000] {processor.py:157} INFO - Started process (PID=13654) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:27:59.645+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:27:59.646+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:27:59.646+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:27:59.706+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:27:59.751+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:27:59.751+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:27:59.796+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:27:59.795+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:27:59.818+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.178 seconds
+[2024-12-10T13:28:30.081+0000] {processor.py:157} INFO - Started process (PID=13784) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:28:30.082+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:28:30.083+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:28:30.083+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:28:30.132+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:28:30.161+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:28:30.160+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:28:30.186+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:28:30.185+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:28:30.206+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.128 seconds
+[2024-12-10T13:29:00.325+0000] {processor.py:157} INFO - Started process (PID=13975) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:29:00.327+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:29:00.328+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:29:00.328+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:29:00.384+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:29:00.417+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:29:00.417+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:29:00.443+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:29:00.443+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:29:00.464+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.144 seconds
+[2024-12-10T13:29:30.629+0000] {processor.py:157} INFO - Started process (PID=14166) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:29:30.630+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:29:30.631+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:29:30.631+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:29:30.687+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:29:30.717+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:29:30.717+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:29:30.741+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:29:30.741+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:29:30.762+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.137 seconds
+[2024-12-10T13:30:01.279+0000] {processor.py:157} INFO - Started process (PID=14357) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:30:01.280+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:30:01.281+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:30:01.281+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:30:01.334+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:30:01.363+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:30:01.363+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:30:01.389+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:30:01.389+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:30:01.410+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.134 seconds
+[2024-12-10T13:30:31.587+0000] {processor.py:157} INFO - Started process (PID=14548) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:30:31.588+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:30:31.589+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:30:31.589+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:30:31.642+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:30:31.673+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:30:31.673+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:30:31.699+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:30:31.699+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:30:31.724+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.140 seconds
+[2024-12-10T13:31:02.142+0000] {processor.py:157} INFO - Started process (PID=14739) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:31:02.143+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:31:02.144+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:31:02.144+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:31:02.195+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:31:02.224+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:31:02.224+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:31:02.254+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:31:02.254+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:31:02.279+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.141 seconds
+[2024-12-10T13:31:32.347+0000] {processor.py:157} INFO - Started process (PID=14930) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:31:32.348+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:31:32.349+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:31:32.349+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:31:32.402+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:31:32.431+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:31:32.431+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:31:32.455+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:31:32.455+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:31:32.478+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.135 seconds
+[2024-12-10T13:32:02.955+0000] {processor.py:157} INFO - Started process (PID=15121) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:32:02.956+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:32:02.957+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:32:02.957+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:32:03.009+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:32:03.038+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:32:03.038+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:32:03.062+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:32:03.061+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:32:03.083+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.131 seconds
+[2024-12-10T13:32:33.801+0000] {processor.py:157} INFO - Started process (PID=15370) to work on /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:32:33.804+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_duckdb_test.py for tasks to queue
+[2024-12-10T13:32:33.807+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:32:33.806+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:32:33.924+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt_dag_example']) retrieved from /opt/airflow/dags/dbt_duckdb_test.py
+[2024-12-10T13:32:34.008+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:32:34.007+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:32:34.080+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:32:34.080+0000] {dag.py:3508} INFO - Setting next_dagrun for dbt_dag_example to None, run_after=None
+[2024-12-10T13:32:34.149+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_duckdb_test.py took 0.352 seconds
