@@ -5,8 +5,10 @@ host="$1"
 shift
 cmd="$@"
 
+echo "Waiting for PostgreSQL at $host:5432"
+
 until pg_isready -h "$host" -p 5432; do
-  echo "Postgres is unavailable - sleeping"
+  echo "$(date) - Postgres is unavailable - sleeping"
   sleep 3
 done
 
