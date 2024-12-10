@@ -7,7 +7,7 @@ import pandas as pd
 
 # Function to read the data from DuckDB
 def read_data_from_duckdb():
-    db_path = "./repo/data/my_duckdb_file.db"
+    db_path = './data/my_duckdb_file.db'
     conn = duckdb.connect(database=db_path, read_only=False)
     # Read the "fortune_500" table into a pandas DataFrame
     df = conn.execute("SELECT * FROM fortune_500").fetchdf()
@@ -37,12 +37,12 @@ def transform_data(**kwargs):
     county_dim = county_dim.drop_duplicates()
 
     # Return transformed tables
-    return {'business_fact': business_fact, 'business_dim': business_dim, 'county_dim': county_dim}
+    return {'BusinessFACT': business_fact, 'BusinessDIM': business_dim, 'CountyDIM': county_dim}
 
 # Function to load the transformed data into DuckDB
 def load_data_to_duckdb(**kwargs):
     tables = kwargs['ti'].xcom_pull(task_ids='transform_data')
-    db_path = "./repo/data/my_duckdb_file.db"
+    db_path = './data/my_duckdb_file.db'
     conn = duckdb.connect(database=db_path, read_only=False)
     
     # Load each DataFrame into DuckDB as a table if it doesn't exist

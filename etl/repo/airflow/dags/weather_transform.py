@@ -7,7 +7,7 @@ import pandas as pd
 
 # Function to read the data from DuckDB
 def read_data_from_duckdb():
-    db_path = "./repo/data/my_duckdb_file.db"
+    db_path = "./data/my_duckdb_file.db"
     conn = duckdb.connect(database=db_path, read_only=False)
     # Read the "weather_data" table into a pandas DataFrame
     df = conn.execute("SELECT * FROM weather_data").fetchdf()
@@ -24,22 +24,20 @@ def pivot_data(**kwargs):
     pivot_df.columns = [col if isinstance(col, str) else col[1] for col in pivot_df.columns]
     pivot_df['ID'] = pivot_df.index
     pivot_df.rename(columns={'date': 'DATE', 'county_fips': 'COUNTYFIPS'}, inplace=True)
-    return pivot_df
+    return {'WeatherFACT': pivot_df}
 
 # Function to load the pivoted data back into DuckDB
 def load_data_to_duckdb(**kwargs):
-    pivot_df = kwargs['ti'].xcom_pull(task_ids='pivot_data')
-    db_path = "./repo/data/my_duckdb_file.db"
+    tables = kwargs['ti'].xcom_pull(task_ids='transform_data')
+    db_path = './data/my_duckdb_file.db'
     conn = duckdb.connect(database=db_path, read_only=False)
     
-    # Load the DataFrame into the DuckDB database as a table if it doesn't exist
-    table_name = 'WeatherFACT'
-    conn.execute(f"""
-    CREATE TABLE IF NOT EXISTS {table_name} AS
-    SELECT * FROM df
-    """)
-    # Use pandas to insert data (optional, but ensures compatibility)
-    conn.execute(f"INSERT INTO {table_name} SELECT * FROM df", {'df': pivot_df})
+    # Load each DataFrame into DuckDB as a table if it doesn't exist
+    for table_name, df in tables.items():
+        conn.execute(f"""
+        CREATE TABLE IF NOT EXISTS {table_name} AS 
+        SELECT * FROM df
+        """)
     
     conn.close()
 

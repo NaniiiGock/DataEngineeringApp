@@ -54,3 +54,325 @@
 [2024-12-10T12:46:50.726+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:46:50.726+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2024-12-10T12:46:50.756+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:46:50.756+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
 [2024-12-10T12:46:50.783+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.850 seconds
+[2024-12-10T12:54:14.516+0000] {processor.py:157} INFO - Started process (PID=232) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:54:14.517+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:54:14.518+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:54:14.518+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:54:15.223+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:54:15.254+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:54:15.253+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:54:15.286+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:54:15.285+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:54:15.313+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.801 seconds
+[2024-12-10T12:54:46.206+0000] {processor.py:157} INFO - Started process (PID=561) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:54:46.208+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:54:46.209+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:54:46.209+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:54:46.782+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:54:46.811+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:54:46.811+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:54:46.835+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:54:46.835+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:54:46.853+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.651 seconds
+[2024-12-10T12:55:17.477+0000] {processor.py:157} INFO - Started process (PID=753) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:55:17.478+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:55:17.481+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:55:17.481+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:55:18.080+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:55:18.111+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:55:18.111+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:55:18.135+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:55:18.135+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:55:18.154+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.681 seconds
+[2024-12-10T12:55:48.283+0000] {processor.py:157} INFO - Started process (PID=980) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:55:48.284+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:55:48.285+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:55:48.284+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:55:49.025+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:55:49.055+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:55:49.054+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:55:49.087+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:55:49.087+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:55:49.112+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.833 seconds
+[2024-12-10T12:56:19.333+0000] {processor.py:157} INFO - Started process (PID=1171) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:56:19.334+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:56:19.335+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:56:19.335+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:56:20.015+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:56:20.048+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:56:20.047+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:56:20.080+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:56:20.080+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:56:20.108+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.779 seconds
+[2024-12-10T12:56:50.881+0000] {processor.py:157} INFO - Started process (PID=1362) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:56:50.883+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:56:50.884+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:56:50.884+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:56:51.777+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:56:51.830+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:56:51.829+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:56:51.881+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:56:51.881+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:56:51.929+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 1.055 seconds
+[2024-12-10T12:57:22.998+0000] {processor.py:157} INFO - Started process (PID=1553) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:57:22.999+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:57:23.000+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:57:23.000+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:57:23.752+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:57:23.777+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:57:23.776+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:57:23.801+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:57:23.801+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:57:23.822+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.828 seconds
+[2024-12-10T12:57:54.145+0000] {processor.py:157} INFO - Started process (PID=1868) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:57:54.146+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:57:54.147+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:57:54.147+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:57:54.700+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:57:54.727+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:57:54.726+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:57:54.752+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:57:54.752+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:57:54.776+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.635 seconds
+[2024-12-10T12:58:24.948+0000] {processor.py:157} INFO - Started process (PID=2059) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:58:24.949+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:58:24.950+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:58:24.949+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:58:25.381+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:58:25.415+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:58:25.414+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:58:25.442+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:58:25.441+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:58:25.462+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.518 seconds
+[2024-12-10T12:58:55.742+0000] {processor.py:157} INFO - Started process (PID=2250) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:58:55.743+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:58:55.743+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:58:55.743+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:58:56.194+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:58:56.226+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:58:56.226+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:58:56.254+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:58:56.254+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:58:56.293+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.556 seconds
+[2024-12-10T12:59:26.811+0000] {processor.py:157} INFO - Started process (PID=2464) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:59:26.813+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:59:26.814+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:59:26.814+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:59:27.283+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:59:27.315+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:59:27.315+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:59:27.359+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:59:27.358+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:59:27.402+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.594 seconds
+[2024-12-10T12:59:57.565+0000] {processor.py:157} INFO - Started process (PID=2670) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T12:59:57.566+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T12:59:57.567+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:59:57.567+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:59:58.038+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T12:59:58.071+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:59:58.070+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T12:59:58.154+0000] {logging_mixin.py:150} INFO - [2024-12-10T12:59:58.154+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T12:59:58.208+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.648 seconds
+[2024-12-10T13:00:28.376+0000] {processor.py:157} INFO - Started process (PID=2862) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:00:28.377+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:00:28.379+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:00:28.378+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:00:28.875+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:00:28.923+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:00:28.922+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:00:28.954+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:00:28.954+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:00:28.983+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.612 seconds
+[2024-12-10T13:00:59.381+0000] {processor.py:157} INFO - Started process (PID=3055) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:00:59.382+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:00:59.384+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:00:59.383+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:00:59.894+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:00:59.922+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:00:59.921+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:00:59.952+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:00:59.952+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:00:59.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.599 seconds
+[2024-12-10T13:01:30.151+0000] {processor.py:157} INFO - Started process (PID=3262) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:01:30.152+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:01:30.153+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:01:30.153+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:01:30.541+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:01:30.571+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:01:30.571+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:01:30.597+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:01:30.597+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:01:30.618+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.469 seconds
+[2024-12-10T13:02:00.782+0000] {processor.py:157} INFO - Started process (PID=3453) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:02:00.783+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:02:00.784+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:02:00.784+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:02:01.172+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:02:01.200+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:02:01.199+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:02:01.224+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:02:01.224+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:02:01.243+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.464 seconds
+[2024-12-10T13:02:31.444+0000] {processor.py:157} INFO - Started process (PID=3644) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:02:31.445+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:02:31.446+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:02:31.446+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:02:31.898+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:02:31.932+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:02:31.932+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:02:31.962+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:02:31.962+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:02:31.991+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.551 seconds
+[2024-12-10T13:03:02.639+0000] {processor.py:157} INFO - Started process (PID=3881) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:03:02.640+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:03:02.641+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:03:02.641+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:03:03.110+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:03:03.139+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:03:03.139+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:03:03.165+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:03:03.164+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:03:03.193+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.557 seconds
+[2024-12-10T13:03:33.941+0000] {processor.py:157} INFO - Started process (PID=4072) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:03:33.943+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:03:33.944+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:03:33.944+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:03:34.480+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:03:34.518+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:03:34.517+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:03:34.551+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:03:34.551+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:03:34.576+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.639 seconds
+[2024-12-10T13:04:05.169+0000] {processor.py:157} INFO - Started process (PID=4291) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:04:05.170+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:04:05.171+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:04:05.171+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:04:05.563+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:04:05.592+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:04:05.592+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:04:05.619+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:04:05.619+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:04:05.644+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.478 seconds
+[2024-12-10T13:04:35.730+0000] {processor.py:157} INFO - Started process (PID=4454) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:04:35.731+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:04:35.732+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:04:35.731+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:04:36.163+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:04:36.194+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:04:36.194+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:04:36.218+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:04:36.218+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:04:36.238+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.512 seconds
+[2024-12-10T13:05:06.559+0000] {processor.py:157} INFO - Started process (PID=4645) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:05:06.561+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:05:06.562+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:05:06.562+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:05:06.990+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:05:07.019+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:05:07.019+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:05:07.047+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:05:07.047+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:05:07.072+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.516 seconds
+[2024-12-10T13:05:37.364+0000] {processor.py:157} INFO - Started process (PID=4836) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:05:37.365+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:05:37.366+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:05:37.366+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:05:37.793+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:05:37.820+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:05:37.820+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:05:37.846+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:05:37.846+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:05:37.869+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.508 seconds
+[2024-12-10T13:06:08.174+0000] {processor.py:157} INFO - Started process (PID=5027) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:06:08.175+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:06:08.176+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:06:08.176+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:06:08.670+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:06:08.706+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:06:08.706+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:06:08.745+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:06:08.744+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:06:08.773+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.601 seconds
+[2024-12-10T13:06:38.837+0000] {processor.py:157} INFO - Started process (PID=5218) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:06:38.838+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:06:38.839+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:06:38.839+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:06:39.268+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:06:39.304+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:06:39.303+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:06:39.331+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:06:39.331+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:06:39.353+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.519 seconds
+[2024-12-10T13:07:09.551+0000] {processor.py:157} INFO - Started process (PID=5409) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:07:09.553+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:07:09.554+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:07:09.554+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:07:09.984+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:07:10.018+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:07:10.017+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:07:10.046+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:07:10.046+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:07:10.068+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.520 seconds
+[2024-12-10T13:07:40.257+0000] {processor.py:157} INFO - Started process (PID=5600) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:07:40.258+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:07:40.259+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:07:40.258+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:07:40.717+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:07:40.743+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:07:40.742+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:07:40.766+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:07:40.766+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:07:40.790+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.536 seconds
+[2024-12-10T13:08:10.884+0000] {processor.py:157} INFO - Started process (PID=5791) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:08:10.886+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:08:10.887+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:08:10.886+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:08:11.390+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:08:11.427+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:08:11.427+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:08:11.462+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:08:11.461+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:08:11.486+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.605 seconds
+[2024-12-10T13:08:41.685+0000] {processor.py:157} INFO - Started process (PID=5982) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:08:41.686+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:08:41.688+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:08:41.687+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:08:42.090+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:08:42.117+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:08:42.117+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:08:42.142+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:08:42.141+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:08:42.167+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.485 seconds
+[2024-12-10T13:09:12.377+0000] {processor.py:157} INFO - Started process (PID=6173) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:09:12.378+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:09:12.379+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:09:12.379+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:09:12.785+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:09:12.815+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:09:12.814+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:09:12.841+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:09:12.841+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:09:12.860+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.487 seconds
+[2024-12-10T13:09:43.399+0000] {processor.py:157} INFO - Started process (PID=6364) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:09:43.401+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:09:43.402+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:09:43.401+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:09:43.883+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:09:43.918+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:09:43.916+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:09:43.952+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:09:43.951+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:09:43.984+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.587 seconds
+[2024-12-10T13:10:14.154+0000] {processor.py:157} INFO - Started process (PID=6555) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:10:14.155+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:10:14.156+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:10:14.156+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:10:14.586+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:10:14.614+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:10:14.614+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:10:14.642+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:10:14.642+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:10:14.663+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.513 seconds
+[2024-12-10T13:10:18.236+0000] {processor.py:157} INFO - Started process (PID=6628) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:10:18.237+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:10:18.237+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:10:18.237+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:10:18.688+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:10:18.720+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:10:18.720+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:10:18.748+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:10:18.748+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:10:18.779+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.546 seconds
+[2024-12-10T13:10:49.138+0000] {processor.py:157} INFO - Started process (PID=6819) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:10:49.140+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:10:49.142+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:10:49.141+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:10:49.803+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:10:49.850+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:10:49.849+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:10:49.899+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:10:49.899+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:10:49.939+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.805 seconds
+[2024-12-10T13:11:20.078+0000] {processor.py:157} INFO - Started process (PID=7035) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:11:20.082+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:11:20.085+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:11:20.084+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:11:20.584+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:11:20.615+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:11:20.614+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:11:20.647+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:11:20.647+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:11:20.670+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.598 seconds
+[2024-12-10T13:11:51.244+0000] {processor.py:157} INFO - Started process (PID=7254) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:11:51.245+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:11:51.246+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:11:51.246+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:11:51.633+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:11:51.663+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:11:51.662+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:11:51.690+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:11:51.690+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:11:51.711+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.471 seconds
+[2024-12-10T13:12:21.946+0000] {processor.py:157} INFO - Started process (PID=7445) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:12:21.947+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:12:21.948+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:12:21.948+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:12:22.373+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:12:22.403+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:12:22.402+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:12:22.428+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:12:22.428+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:12:22.449+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.506 seconds
+[2024-12-10T13:12:52.854+0000] {processor.py:157} INFO - Started process (PID=7636) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:12:52.856+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:12:52.857+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:12:52.856+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:12:53.232+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:12:53.261+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:12:53.261+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:12:53.287+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:12:53.287+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:12:53.310+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.459 seconds
+[2024-12-10T13:13:23.507+0000] {processor.py:157} INFO - Started process (PID=7850) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:13:23.508+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:13:23.509+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:13:23.509+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:13:23.911+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:13:23.938+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:13:23.937+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:13:23.964+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:13:23.964+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:13:23.987+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.484 seconds
+[2024-12-10T13:13:54.285+0000] {processor.py:157} INFO - Started process (PID=8018) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:13:54.286+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:13:54.287+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:13:54.287+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:13:54.825+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:13:54.869+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:13:54.868+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:13:54.909+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:13:54.909+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:13:54.938+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.658 seconds
+[2024-12-10T13:14:25.388+0000] {processor.py:157} INFO - Started process (PID=8209) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:14:25.389+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:14:25.390+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:14:25.390+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:14:25.898+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:14:25.927+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:14:25.926+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:14:25.956+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:14:25.956+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:14:25.987+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.602 seconds
+[2024-12-10T13:14:57.056+0000] {processor.py:157} INFO - Started process (PID=8425) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:14:57.057+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:14:57.058+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:14:57.057+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:14:57.438+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:14:57.465+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:14:57.465+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:14:57.490+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:14:57.490+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:14:57.512+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.459 seconds
+[2024-12-10T13:15:27.673+0000] {processor.py:157} INFO - Started process (PID=8644) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:15:27.674+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:15:27.675+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:15:27.674+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:15:28.056+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:15:28.084+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:15:28.084+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:15:28.112+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:15:28.112+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:15:28.131+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.463 seconds
+[2024-12-10T13:15:58.370+0000] {processor.py:157} INFO - Started process (PID=8835) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:15:58.370+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:15:58.371+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:15:58.371+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:15:58.785+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:15:58.820+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:15:58.819+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:15:58.850+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:15:58.850+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:15:58.873+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.506 seconds
+[2024-12-10T13:16:29.279+0000] {processor.py:157} INFO - Started process (PID=9051) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:16:29.280+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:16:29.281+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:16:29.281+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:16:29.653+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:16:29.683+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:16:29.683+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:16:29.709+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:16:29.709+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:16:29.731+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.455 seconds
+[2024-12-10T13:17:00.504+0000] {processor.py:157} INFO - Started process (PID=9242) to work on /opt/airflow/dags/business_transform.py
+[2024-12-10T13:17:00.505+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_transform.py for tasks to queue
+[2024-12-10T13:17:00.506+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:17:00.506+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:17:01.027+0000] {processor.py:836} INFO - DAG(s) dict_keys(['fortune_500_data_processing']) retrieved from /opt/airflow/dags/business_transform.py
+[2024-12-10T13:17:01.057+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:17:01.056+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-10T13:17:01.083+0000] {logging_mixin.py:150} INFO - [2024-12-10T13:17:01.083+0000] {dag.py:3508} INFO - Setting next_dagrun for fortune_500_data_processing to None, run_after=None
+[2024-12-10T13:17:01.105+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_transform.py took 0.603 seconds

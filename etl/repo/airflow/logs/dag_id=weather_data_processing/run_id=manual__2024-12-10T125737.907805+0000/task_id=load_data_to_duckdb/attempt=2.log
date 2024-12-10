@@ -1,0 +1,28 @@
+[2024-12-10T13:02:45.327+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_processing.load_data_to_duckdb manual__2024-12-10T12:57:37.907805+00:00 [queued]>
+[2024-12-10T13:02:45.336+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_processing.load_data_to_duckdb manual__2024-12-10T12:57:37.907805+00:00 [queued]>
+[2024-12-10T13:02:45.336+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2024-12-10T13:02:45.353+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): load_data_to_duckdb> on 2024-12-10 12:57:37.907805+00:00
+[2024-12-10T13:02:45.358+0000] {standard_task_runner.py:57} INFO - Started process 3799 to run task
+[2024-12-10T13:02:45.361+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'weather_data_processing', 'load_data_to_duckdb', 'manual__2024-12-10T12:57:37.907805+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/weather_transform.py', '--cfg-path', '/tmp/tmpxlzfxi4i']
+[2024-12-10T13:02:45.364+0000] {standard_task_runner.py:85} INFO - Job 31: Subtask load_data_to_duckdb
+[2024-12-10T13:02:45.413+0000] {task_command.py:410} INFO - Running <TaskInstance: weather_data_processing.load_data_to_duckdb manual__2024-12-10T12:57:37.907805+00:00 [running]> on host 134bb3434cfb
+[2024-12-10T13:02:45.516+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_data_processing' AIRFLOW_CTX_TASK_ID='load_data_to_duckdb' AIRFLOW_CTX_EXECUTION_DATE='2024-12-10T12:57:37.907805+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-10T12:57:37.907805+00:00'
+[2024-12-10T13:02:45.654+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/weather_transform.py", line 40, in load_data_to_duckdb
+    """)
+duckdb.duckdb.CatalogException: Catalog Error: Table with name df does not exist!
+Did you mean "pg_depend"?
+LINE 3:     SELECT * FROM df
+                          ^
+[2024-12-10T13:02:45.666+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=weather_data_processing, task_id=load_data_to_duckdb, execution_date=20241210T125737, start_date=20241210T130245, end_date=20241210T130245
+[2024-12-10T13:02:45.678+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 31 for task load_data_to_duckdb (Catalog Error: Table with name df does not exist!
+Did you mean "pg_depend"?
+LINE 3:     SELECT * FROM df
+                          ^; 3799)
+[2024-12-10T13:02:45.695+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-12-10T13:02:45.714+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
