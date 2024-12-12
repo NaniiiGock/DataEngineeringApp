@@ -22,7 +22,7 @@ services:
 
   streamlit:
     build:
-      context: .
+      context: ./UI
     container_name: streamlit_app
     depends_on:
       - db
