@@ -46,6 +46,8 @@ services:
       - ./dbt:/dbt  # Mount dbt project folder
       - ./data:/data  # Folder to store data pulled from APIs, etc.
     working_dir: /dbt
+    ports:
+      - "18080:8080"
 
   duckdb:
     image: datacatering/duckdb:v1.1.1

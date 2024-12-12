@@ -42,7 +42,7 @@ with DAG(
     # Task 1: Run dbt inside Docker
     run_dbt = BashOperator(
         task_id='run_dbt',
-        bash_command='docker run --rm -v /home/airflow/repo:/app dbt-labs/dbt-core run --project-dir /app/my_dbt_project'
+        bash_command='docker exec -i dbt dbt run --models business_transformed'
     )
 
 
