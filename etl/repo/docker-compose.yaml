@@ -27,6 +27,7 @@ services:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
     ports:
       - "8082:8080"
     depends_on:
@@ -36,17 +37,24 @@ services:
 
   dbt:
     image: ghcr.io/dbt-labs/dbt-core:1.8.8
+    container_name: dbt
+    stdin_open: true
+    tty: true
     environment:
       DBT_PROFILES_DIR: "/dbt"
     volumes:
       - ./dbt:/dbt  # Mount dbt project folder
       - ./data:/data  # Folder to store data pulled from APIs, etc.
     working_dir: /dbt
+    ports:
+      - "18080:8080"
 
   duckdb:
     image: datacatering/duckdb:v1.1.1
     volumes:
       - ./data:/data  # Share a volume with dbt to store DuckDB files here
+    stdin_open: true
+    tty: true
 
   # Jupyter service environment for testing data processing
   jupyter:

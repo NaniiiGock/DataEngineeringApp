@@ -1,0 +1,24 @@
+[2024-12-10T09:19:19.657+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_dag_example.run_dbt manual__2024-12-10T09:19:18.819830+00:00 [queued]>
+[2024-12-10T09:19:19.667+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_dag_example.run_dbt manual__2024-12-10T09:19:18.819830+00:00 [queued]>
+[2024-12-10T09:19:19.667+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-12-10T09:19:19.684+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): run_dbt> on 2024-12-10 09:19:18.819830+00:00
+[2024-12-10T09:19:19.687+0000] {standard_task_runner.py:57} INFO - Started process 664 to run task
+[2024-12-10T09:19:19.691+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dbt_dag_example', 'run_dbt', 'manual__2024-12-10T09:19:18.819830+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/dbt_duckdb_test.py', '--cfg-path', '/tmp/tmpca19c7zn']
+[2024-12-10T09:19:19.694+0000] {standard_task_runner.py:85} INFO - Job 5: Subtask run_dbt
+[2024-12-10T09:19:19.746+0000] {task_command.py:410} INFO - Running <TaskInstance: dbt_dag_example.run_dbt manual__2024-12-10T09:19:18.819830+00:00 [running]> on host 6f9ff553374d
+[2024-12-10T09:19:19.842+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_dag_example' AIRFLOW_CTX_TASK_ID='run_dbt' AIRFLOW_CTX_EXECUTION_DATE='2024-12-10T09:19:18.819830+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-10T09:19:18.819830+00:00'
+[2024-12-10T09:19:19.844+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-12-10T09:19:19.845+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'docker run --rm -v $(pwd)/repo:/app dbt-container run --project-dir /app/my_dbt_project']
+[2024-12-10T09:19:19.853+0000] {subprocess.py:86} INFO - Output:
+[2024-12-10T09:19:19.997+0000] {subprocess.py:93} INFO - docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
+[2024-12-10T09:19:19.998+0000] {subprocess.py:93} INFO - See 'docker run --help'.
+[2024-12-10T09:19:19.998+0000] {subprocess.py:97} INFO - Command exited with return code 125
+[2024-12-10T09:19:20.010+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 211, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 125.
+[2024-12-10T09:19:20.014+0000] {taskinstance.py:1350} INFO - Marking task as UP_FOR_RETRY. dag_id=dbt_dag_example, task_id=run_dbt, execution_date=20241210T091918, start_date=20241210T091919, end_date=20241210T091920
+[2024-12-10T09:19:20.029+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 5 for task run_dbt (Bash command failed. The command returned a non-zero exit code 125.; 664)
+[2024-12-10T09:19:20.064+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-12-10T09:19:20.093+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

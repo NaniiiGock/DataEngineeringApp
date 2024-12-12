@@ -1,0 +1,22 @@
+[2024-12-04T08:36:34.205+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: verify_duckdb.validate_duckdb manual__2024-12-04T08:36:33.160240+00:00 [queued]>
+[2024-12-04T08:36:34.217+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: verify_duckdb.validate_duckdb manual__2024-12-04T08:36:33.160240+00:00 [queued]>
+[2024-12-04T08:36:34.218+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-12-04T08:36:34.236+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): validate_duckdb> on 2024-12-04 08:36:33.160240+00:00
+[2024-12-04T08:36:34.243+0000] {standard_task_runner.py:57} INFO - Started process 579 to run task
+[2024-12-04T08:36:34.250+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'verify_duckdb', 'validate_duckdb', 'manual__2024-12-04T08:36:33.160240+00:00', '--job-id', '98', '--raw', '--subdir', 'DAGS_FOLDER/verify_duckdb.py', '--cfg-path', '/tmp/tmpog89a7hc']
+[2024-12-04T08:36:34.256+0000] {standard_task_runner.py:85} INFO - Job 98: Subtask validate_duckdb
+[2024-12-04T08:36:34.317+0000] {task_command.py:410} INFO - Running <TaskInstance: verify_duckdb.validate_duckdb manual__2024-12-04T08:36:33.160240+00:00 [running]> on host e919c4bb8fbe
+[2024-12-04T08:36:34.431+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='verify_duckdb' AIRFLOW_CTX_TASK_ID='validate_duckdb' AIRFLOW_CTX_EXECUTION_DATE='2024-12-04T08:36:33.160240+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-04T08:36:33.160240+00:00'
+[2024-12-04T08:36:34.961+0000] {logging_mixin.py:150} INFO - First few rows from fortune_1000:
+[2024-12-04T08:36:34.981+0000] {logging_mixin.py:150} INFO -               company  rank  ...  Ticker  Market Cap
+0             Walmart     1  ...     WMT      352037
+1              Amazon     2  ...    AMZN     1202717
+2               Apple     3  ...    AAPL     2443962
+3          CVS Health     4  ...     CVS      125204
+4  UnitedHealth Group     5  ...     UNH      500468
+
+[5 rows x 18 columns]
+[2024-12-04T08:36:34.984+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-12-04T08:36:34.996+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=verify_duckdb, task_id=validate_duckdb, execution_date=20241204T083633, start_date=20241204T083634, end_date=20241204T083634
+[2024-12-04T08:36:35.064+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-12-04T08:36:35.088+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

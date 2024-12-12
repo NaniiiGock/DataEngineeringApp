@@ -1,0 +1,176 @@
+[2024-12-04T09:27:06.571+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kaggle_to_noaa.fetch_noaa_data scheduled__2024-12-03T09:21:43.756805+00:00 [queued]>
+[2024-12-04T09:27:06.582+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kaggle_to_noaa.fetch_noaa_data scheduled__2024-12-03T09:21:43.756805+00:00 [queued]>
+[2024-12-04T09:27:06.583+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-12-04T09:27:06.597+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): fetch_noaa_data> on 2024-12-03 09:21:43.756805+00:00
+[2024-12-04T09:27:06.604+0000] {standard_task_runner.py:57} INFO - Started process 2525 to run task
+[2024-12-04T09:27:06.607+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'kaggle_to_noaa', 'fetch_noaa_data', 'scheduled__2024-12-03T09:21:43.756805+00:00', '--job-id', '120', '--raw', '--subdir', 'DAGS_FOLDER/business_etl_v1.py', '--cfg-path', '/tmp/tmpm112ofsz']
+[2024-12-04T09:27:06.610+0000] {standard_task_runner.py:85} INFO - Job 120: Subtask fetch_noaa_data
+[2024-12-04T09:27:06.660+0000] {task_command.py:410} INFO - Running <TaskInstance: kaggle_to_noaa.fetch_noaa_data scheduled__2024-12-03T09:21:43.756805+00:00 [running]> on host 331557b4d310
+[2024-12-04T09:27:06.739+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kaggle_to_noaa' AIRFLOW_CTX_TASK_ID='fetch_noaa_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-03T09:21:43.756805+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-03T09:21:43.756805+00:00'
+[2024-12-04T09:27:37.209+0000] {logging_mixin.py:150} INFO - Failed to fetch data for FIPS 34005. Status code: 503
+[2024-12-04T09:27:43.583+0000] {logging_mixin.py:150} INFO - Data for FIPS 39017 saved.
+[2024-12-04T09:27:44.268+0000] {logging_mixin.py:150} INFO - Data for FIPS 00055 saved.
+[2024-12-04T09:27:48.754+0000] {logging_mixin.py:150} INFO - Data for FIPS 48141 saved.
+[2024-12-04T09:27:55.618+0000] {logging_mixin.py:150} INFO - Data for FIPS 29077 saved.
+[2024-12-04T09:28:02.568+0000] {logging_mixin.py:150} INFO - Data for FIPS 09003 saved.
+[2024-12-04T09:28:09.494+0000] {logging_mixin.py:150} INFO - Data for FIPS 01073 saved.
+[2024-12-04T09:28:15.859+0000] {logging_mixin.py:150} INFO - Data for FIPS 18085 saved.
+[2024-12-04T09:28:20.463+0000] {logging_mixin.py:150} INFO - Data for FIPS 12071 saved.
+[2024-12-04T09:28:27.053+0000] {logging_mixin.py:150} INFO - Data for FIPS 04013 saved.
+[2024-12-04T09:28:33.666+0000] {logging_mixin.py:150} INFO - Data for FIPS 34021 saved.
+[2024-12-04T09:28:39.479+0000] {logging_mixin.py:150} INFO - Data for FIPS 36055 saved.
+[2024-12-04T09:28:44.033+0000] {logging_mixin.py:150} INFO - Data for FIPS 10003 saved.
+[2024-12-04T09:28:50.628+0000] {logging_mixin.py:150} INFO - Data for FIPS 26125 saved.
+[2024-12-04T09:28:54.122+0000] {logging_mixin.py:150} INFO - Data for FIPS 13125 saved.
+[2024-12-04T09:28:57.409+0000] {logging_mixin.py:150} INFO - Data for FIPS 12095 saved.
+[2024-12-04T09:29:04.024+0000] {logging_mixin.py:150} INFO - Data for FIPS 19153 saved.
+[2024-12-04T09:29:11.682+0000] {logging_mixin.py:150} INFO - Data for FIPS 29510 saved.
+[2024-12-04T09:29:22.354+0000] {logging_mixin.py:150} INFO - Data for FIPS 06075 saved.
+[2024-12-04T09:29:29.108+0000] {logging_mixin.py:150} INFO - Data for FIPS 18163 saved.
+[2024-12-04T09:29:35.518+0000] {logging_mixin.py:150} INFO - Data for FIPS 36119 saved.
+[2024-12-04T09:29:40.497+0000] {logging_mixin.py:150} INFO - Data for FIPS 48491 saved.
+[2024-12-04T09:30:11.007+0000] {logging_mixin.py:150} INFO - Failed to fetch data for FIPS 55139. Status code: 503
+[2024-12-04T09:30:15.731+0000] {logging_mixin.py:150} INFO - Data for FIPS 39173 saved.
+[2024-12-04T09:30:22.852+0000] {logging_mixin.py:150} INFO - Data for FIPS 18003 saved.
+[2024-12-04T09:30:29.932+0000] {logging_mixin.py:150} INFO - Data for FIPS 26025 saved.
+[2024-12-04T09:30:36.675+0000] {logging_mixin.py:150} INFO - Data for FIPS 06013 saved.
+[2024-12-04T09:30:44.778+0000] {logging_mixin.py:150} INFO - Data for FIPS 39035 saved.
+[2024-12-04T09:30:51.912+0000] {logging_mixin.py:150} INFO - Data for FIPS 42043 saved.
+[2024-12-04T09:30:58.480+0000] {logging_mixin.py:150} INFO - Data for FIPS 39063 saved.
+[2024-12-04T09:31:03.938+0000] {logging_mixin.py:150} INFO - Data for FIPS 34019 saved.
+[2024-12-04T09:31:13.105+0000] {logging_mixin.py:150} INFO - Data for FIPS 06059 saved.
+[2024-12-04T09:31:27.136+0000] {logging_mixin.py:150} INFO - Data for FIPS 22073 saved.
+[2024-12-04T09:31:33.750+0000] {logging_mixin.py:150} INFO - Data for FIPS 12105 saved.
+[2024-12-04T09:31:40.039+0000] {logging_mixin.py:150} INFO - Data for FIPS 36081 saved.
+[2024-12-04T09:31:43.660+0000] {logging_mixin.py:150} INFO - Data for FIPS 36085 saved.
+[2024-12-04T09:31:48.454+0000] {logging_mixin.py:150} INFO - Data for FIPS 51161 saved.
+[2024-12-04T09:31:55.402+0000] {logging_mixin.py:150} INFO - Data for FIPS 06073 saved.
+[2024-12-04T09:32:01.450+0000] {logging_mixin.py:150} INFO - Data for FIPS 06085 saved.
+[2024-12-04T09:32:11.140+0000] {logging_mixin.py:150} INFO - Data for FIPS 39169 saved.
+[2024-12-04T09:32:16.325+0000] {logging_mixin.py:150} INFO - Data for FIPS 05007 saved.
+[2024-12-04T09:32:22.298+0000] {logging_mixin.py:150} INFO - Data for FIPS 47037 saved.
+[2024-12-04T09:32:28.111+0000] {logging_mixin.py:150} INFO - Data for FIPS 11001 saved.
+[2024-12-04T09:32:58.604+0000] {logging_mixin.py:150} INFO - Failed to fetch data for FIPS 51059. Status code: 503
+[2024-12-04T09:33:06.953+0000] {logging_mixin.py:150} INFO - Data for FIPS 37081 saved.
+[2024-12-04T09:33:37.437+0000] {logging_mixin.py:150} INFO - Failed to fetch data for FIPS 48201. Status code: 503
+[2024-12-04T09:33:37.959+0000] {logging_mixin.py:150} INFO - Data for FIPS 06201 saved.
+[2024-12-04T09:33:44.413+0000] {logging_mixin.py:150} INFO - Data for FIPS 12086 saved.
+[2024-12-04T09:33:50.832+0000] {logging_mixin.py:150} INFO - Data for FIPS 24031 saved.
+[2024-12-04T09:33:55.417+0000] {logging_mixin.py:150} INFO - Data for FIPS 17143 saved.
+[2024-12-04T09:34:01.963+0000] {logging_mixin.py:150} INFO - Data for FIPS 44007 saved.
+[2024-12-04T09:34:13.538+0000] {logging_mixin.py:150} INFO - Data for FIPS 49035 saved.
+[2024-12-04T09:34:21.152+0000] {logging_mixin.py:150} INFO - Data for FIPS 47163 saved.
+[2024-12-04T09:34:28.880+0000] {logging_mixin.py:150} INFO - Data for FIPS 39153 saved.
+[2024-12-04T09:34:33.474+0000] {logging_mixin.py:150} INFO - Data for FIPS 05139 saved.
+[2024-12-04T09:34:40.114+0000] {logging_mixin.py:150} INFO - Data for FIPS 47187 saved.
+[2024-12-04T09:34:45.699+0000] {logging_mixin.py:150} INFO - Data for FIPS 16001 saved.
+[2024-12-04T09:34:52.043+0000] {logging_mixin.py:150} INFO - Data for FIPS 17031 saved.
+[2024-12-04T09:34:57.892+0000] {logging_mixin.py:150} INFO - Data for FIPS 27037 saved.
+[2024-12-04T09:35:03.509+0000] {logging_mixin.py:150} INFO - Data for FIPS 48113 saved.
+[2024-12-04T09:35:08.328+0000] {logging_mixin.py:150} INFO - Data for FIPS 17043 saved.
+[2024-12-04T09:35:14.243+0000] {logging_mixin.py:150} INFO - Data for FIPS 26045 saved.
+[2024-12-04T09:35:44.722+0000] {logging_mixin.py:150} INFO - Failed to fetch data for FIPS 13121. Status code: 503
+[2024-12-04T09:35:51.143+0000] {logging_mixin.py:150} INFO - Data for FIPS 13135 saved.
+[2024-12-04T09:35:54.528+0000] {logging_mixin.py:150} INFO - Data for FIPS 20091 saved.
+[2024-12-04T09:35:58.200+0000] {logging_mixin.py:150} INFO - Data for FIPS 17097 saved.
+[2024-12-04T09:36:05.103+0000] {logging_mixin.py:150} INFO - Data for FIPS 19113 saved.
+[2024-12-04T09:36:11.300+0000] {logging_mixin.py:150} INFO - Data for FIPS 25017 saved.
+[2024-12-04T09:36:20.999+0000] {logging_mixin.py:150} INFO - Data for FIPS 36059 saved.
+[2024-12-04T09:36:26.595+0000] {logging_mixin.py:150} INFO - Data for FIPS 12099 saved.
+[2024-12-04T09:36:33.072+0000] {logging_mixin.py:150} INFO - Data for FIPS 12103 saved.
+[2024-12-04T09:36:38.900+0000] {logging_mixin.py:150} INFO - Data for FIPS 27123 saved.
+[2024-12-04T09:36:44.147+0000] {logging_mixin.py:150} INFO - Data for FIPS 20173 saved.
+[2024-12-04T09:36:49.763+0000] {logging_mixin.py:150} INFO - Data for FIPS 25023 saved.
+[2024-12-04T09:36:53.776+0000] {logging_mixin.py:150} INFO - Data for FIPS 34023 saved.
+[2024-12-04T09:36:56.903+0000] {logging_mixin.py:150} INFO - Data for FIPS 06001 saved.
+[2024-12-04T09:37:02.373+0000] {logging_mixin.py:150} INFO - Data for FIPS 51013 saved.
+[2024-12-04T09:37:08.331+0000] {logging_mixin.py:150} INFO - Data for FIPS 18005 saved.
+[2024-12-04T09:37:12.729+0000] {logging_mixin.py:150} INFO - Data for FIPS 48029 saved.
+[2024-12-04T09:37:19.103+0000] {logging_mixin.py:150} INFO - Data for FIPS 55025 saved.
+[2024-12-04T09:37:25.563+0000] {logging_mixin.py:150} INFO - Data for FIPS 42045 saved.
+[2024-12-04T09:37:32.390+0000] {logging_mixin.py:150} INFO - Data for FIPS 08031 saved.
+[2024-12-04T09:37:39.207+0000] {logging_mixin.py:150} INFO - Data for FIPS 42049 saved.
+[2024-12-04T09:37:45.858+0000] {logging_mixin.py:150} INFO - Data for FIPS 09001 saved.
+[2024-12-04T09:37:51.473+0000] {logging_mixin.py:150} INFO - Data for FIPS 37067 saved.
+[2024-12-04T09:37:58.430+0000] {logging_mixin.py:150} INFO - Data for FIPS 39061 saved.
+[2024-12-04T09:38:05.750+0000] {logging_mixin.py:150} INFO - Data for FIPS 25013 saved.
+[2024-12-04T09:38:12.462+0000] {logging_mixin.py:150} INFO - Data for FIPS 51087 saved.
+[2024-12-04T09:38:19.206+0000] {logging_mixin.py:150} INFO - Data for FIPS 21111 saved.
+[2024-12-04T09:38:25.389+0000] {logging_mixin.py:150} INFO - Data for FIPS 27097 saved.
+[2024-12-04T09:38:29.465+0000] {logging_mixin.py:150} INFO - Data for FIPS 06037 saved.
+[2024-12-04T09:38:34.907+0000] {logging_mixin.py:150} INFO - Data for FIPS 26111 saved.
+[2024-12-04T09:38:40.828+0000] {logging_mixin.py:150} INFO - Data for FIPS 55079 saved.
+[2024-12-04T09:38:45.701+0000] {logging_mixin.py:150} INFO - Data for FIPS 42091 saved.
+[2024-12-04T09:38:51.605+0000] {logging_mixin.py:150} INFO - Data for FIPS 40109 saved.
+[2024-12-04T09:38:56.736+0000] {logging_mixin.py:150} INFO - Data for FIPS 05119 saved.
+[2024-12-04T09:39:01.557+0000] {logging_mixin.py:150} INFO - Data for FIPS 55101 saved.
+[2024-12-04T09:39:06.865+0000] {logging_mixin.py:150} INFO - Data for FIPS 17161 saved.
+[2024-12-04T09:39:11.224+0000] {logging_mixin.py:150} INFO - Data for FIPS 36101 saved.
+[2024-12-04T09:39:15.463+0000] {logging_mixin.py:150} INFO - Data for FIPS 48439 saved.
+[2024-12-04T09:39:20.502+0000] {logging_mixin.py:150} INFO - Data for FIPS 34039 saved.
+[2024-12-04T09:39:50.975+0000] {logging_mixin.py:150} INFO - Failed to fetch data for FIPS 05143. Status code: 503
+[2024-12-04T09:39:54.888+0000] {logging_mixin.py:150} INFO - Data for FIPS 12009 saved.
+[2024-12-04T09:39:59.702+0000] {logging_mixin.py:150} INFO - Data for FIPS 08014 saved.
+[2024-12-04T09:40:04.013+0000] {logging_mixin.py:150} INFO - Data for FIPS 48085 saved.
+[2024-12-04T09:40:09.254+0000] {logging_mixin.py:150} INFO - Data for FIPS 37063 saved.
+[2024-12-04T09:40:09.953+0000] {logging_mixin.py:150} INFO - Data for FIPS 34121 saved.
+[2024-12-04T09:40:16.310+0000] {logging_mixin.py:150} INFO - Data for FIPS 51085 saved.
+[2024-12-04T09:40:46.796+0000] {logging_mixin.py:150} INFO - Failed to fetch data for FIPS 26075. Status code: 503
+[2024-12-04T09:40:51.447+0000] {logging_mixin.py:150} INFO - Data for FIPS 53033 saved.
+[2024-12-04T09:40:56.540+0000] {logging_mixin.py:150} INFO - Data for FIPS 42077 saved.
+[2024-12-04T09:41:01.289+0000] {logging_mixin.py:150} INFO - Data for FIPS 13215 saved.
+[2024-12-04T09:41:06.795+0000] {logging_mixin.py:150} INFO - Data for FIPS 36061 saved.
+[2024-12-04T09:41:13.671+0000] {logging_mixin.py:150} INFO - Data for FIPS 51710 saved.
+[2024-12-04T09:41:20.286+0000] {logging_mixin.py:150} INFO - Data for FIPS 22055 saved.
+[2024-12-04T09:41:26.143+0000] {logging_mixin.py:150} INFO - Data for FIPS 29189 saved.
+[2024-12-04T09:41:30.447+0000] {logging_mixin.py:150} INFO - Data for FIPS 48453 saved.
+[2024-12-04T09:41:35.179+0000] {logging_mixin.py:150} INFO - Data for FIPS 06111 saved.
+[2024-12-04T09:41:45.327+0000] {logging_mixin.py:150} INFO - Data for FIPS 41067 saved.
+[2024-12-04T09:41:49.594+0000] {logging_mixin.py:150} INFO - Data for FIPS 26081 saved.
+[2024-12-04T09:41:53.507+0000] {logging_mixin.py:150} INFO - Data for FIPS 37001 saved.
+[2024-12-04T09:41:56.433+0000] {logging_mixin.py:150} INFO - Data for FIPS 42003 saved.
+[2024-12-04T09:41:59.323+0000] {logging_mixin.py:150} INFO - Data for FIPS 08005 saved.
+[2024-12-04T09:42:04.269+0000] {logging_mixin.py:150} INFO - Data for FIPS 34003 saved.
+[2024-12-04T09:42:10.497+0000] {logging_mixin.py:150} INFO - Data for FIPS 26021 saved.
+[2024-12-04T09:42:15.160+0000] {logging_mixin.py:150} INFO - Data for FIPS 12011 saved.
+[2024-12-04T09:42:19.510+0000] {logging_mixin.py:150} INFO - Data for FIPS 51550 saved.
+[2024-12-04T09:42:23.751+0000] {logging_mixin.py:150} INFO - Data for FIPS 42029 saved.
+[2024-12-04T09:42:27.854+0000] {logging_mixin.py:150} INFO - Data for FIPS 42041 saved.
+[2024-12-04T09:42:31.914+0000] {logging_mixin.py:150} INFO - Data for FIPS 12031 saved.
+[2024-12-04T09:42:40.355+0000] {logging_mixin.py:150} INFO - Data for FIPS 36049 saved.
+[2024-12-04T09:42:44.575+0000] {logging_mixin.py:150} INFO - Data for FIPS 39049 saved.
+[2024-12-04T09:42:53.333+0000] {logging_mixin.py:150} INFO - Data for FIPS 51075 saved.
+[2024-12-04T09:42:57.397+0000] {logging_mixin.py:150} INFO - Data for FIPS 47065 saved.
+[2024-12-04T09:43:01.271+0000] {logging_mixin.py:150} INFO - Data for FIPS 27053 saved.
+[2024-12-04T09:43:06.199+0000] {logging_mixin.py:150} INFO - Data for FIPS 37097 saved.
+[2024-12-04T09:43:11.098+0000] {logging_mixin.py:150} INFO - Data for FIPS 41029 saved.
+[2024-12-04T09:43:16.317+0000] {logging_mixin.py:150} INFO - Data for FIPS 26077 saved.
+[2024-12-04T09:43:20.776+0000] {logging_mixin.py:150} INFO - Data for FIPS 36047 saved.
+[2024-12-04T09:43:51.239+0000] {logging_mixin.py:150} INFO - Failed to fetch data for FIPS 48037. Status code: 503
+[2024-12-04T09:43:55.141+0000] {logging_mixin.py:150} INFO - Data for FIPS 18097 saved.
+[2024-12-04T09:43:58.633+0000] {logging_mixin.py:150} INFO - Data for FIPS 17113 saved.
+[2024-12-04T09:44:01.669+0000] {logging_mixin.py:150} INFO - Data for FIPS 34027 saved.
+[2024-12-04T09:44:07.068+0000] {logging_mixin.py:150} INFO - Data for FIPS 51700 saved.
+[2024-12-04T09:44:12.921+0000] {logging_mixin.py:150} INFO - Data for FIPS 34031 saved.
+[2024-12-04T09:44:18.759+0000] {logging_mixin.py:150} INFO - Data for FIPS 51159 saved.
+[2024-12-04T09:44:24.713+0000] {logging_mixin.py:150} INFO - Data for FIPS 06081 saved.
+[2024-12-04T09:44:27.949+0000] {logging_mixin.py:150} INFO - Data for FIPS 40143 saved.
+[2024-12-04T09:44:31.685+0000] {logging_mixin.py:150} INFO - Data for FIPS 34007 saved.
+[2024-12-04T09:44:38.778+0000] {logging_mixin.py:150} INFO - Data for FIPS 32003 saved.
+[2024-12-04T09:44:44.072+0000] {logging_mixin.py:150} INFO - Data for FIPS 13067 saved.
+[2024-12-04T09:44:49.812+0000] {logging_mixin.py:150} INFO - Data for FIPS 34013 saved.
+[2024-12-04T09:44:55.207+0000] {logging_mixin.py:150} INFO - Data for FIPS 13129 saved.
+[2024-12-04T09:44:59.865+0000] {logging_mixin.py:150} INFO - Data for FIPS 12057 saved.
+[2024-12-04T09:45:05.265+0000] {logging_mixin.py:150} INFO - Data for FIPS 39095 saved.
+[2024-12-04T09:45:12.046+0000] {logging_mixin.py:150} INFO - Data for FIPS 17115 saved.
+[2024-12-04T09:45:17.968+0000] {logging_mixin.py:150} INFO - Data for FIPS 37119 saved.
+[2024-12-04T09:45:24.596+0000] {logging_mixin.py:150} INFO - Data for FIPS 48339 saved.
+[2024-12-04T09:45:31.784+0000] {logging_mixin.py:150} INFO - Data for FIPS 09009 saved.
+[2024-12-04T09:45:37.632+0000] {logging_mixin.py:150} INFO - Data for FIPS 42101 saved.
+[2024-12-04T09:45:43.592+0000] {logging_mixin.py:150} INFO - Data for FIPS 47157 saved.
+[2024-12-04T09:45:47.849+0000] {logging_mixin.py:150} INFO - Data for FIPS 26163 saved.
+[2024-12-04T09:45:52.524+0000] {logging_mixin.py:150} INFO - Data for FIPS 55133 saved.
+[2024-12-04T09:45:52.525+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-12-04T09:45:52.539+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=kaggle_to_noaa, task_id=fetch_noaa_data, execution_date=20241203T092143, start_date=20241204T092706, end_date=20241204T094552
+[2024-12-04T09:45:52.575+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-12-04T09:45:52.598+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

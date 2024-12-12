@@ -1,0 +1,22 @@
+[2024-12-10T13:13:07.170+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_processing.read_data_from_duckdb manual__2024-12-10T13:13:05.362829+00:00 [queued]>
+[2024-12-10T13:13:07.178+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_processing.read_data_from_duckdb manual__2024-12-10T13:13:05.362829+00:00 [queued]>
+[2024-12-10T13:13:07.178+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-12-10T13:13:07.193+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): read_data_from_duckdb> on 2024-12-10 13:13:05.362829+00:00
+[2024-12-10T13:13:07.199+0000] {standard_task_runner.py:57} INFO - Started process 7746 to run task
+[2024-12-10T13:13:07.201+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'weather_data_processing', 'read_data_from_duckdb', 'manual__2024-12-10T13:13:05.362829+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/weather_transform.py', '--cfg-path', '/tmp/tmp9o3l_pc1']
+[2024-12-10T13:13:07.204+0000] {standard_task_runner.py:85} INFO - Job 33: Subtask read_data_from_duckdb
+[2024-12-10T13:13:07.267+0000] {task_command.py:410} INFO - Running <TaskInstance: weather_data_processing.read_data_from_duckdb manual__2024-12-10T13:13:05.362829+00:00 [running]> on host 134bb3434cfb
+[2024-12-10T13:13:07.357+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_data_processing' AIRFLOW_CTX_TASK_ID='read_data_from_duckdb' AIRFLOW_CTX_EXECUTION_DATE='2024-12-10T13:13:05.362829+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-10T13:13:05.362829+00:00'
+[2024-12-10T13:13:07.361+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/weather_transform.py", line 11, in read_data_from_duckdb
+    conn = duckdb.connect(database=db_path, read_only=False)
+duckdb.duckdb.IOException: IO Error: Cannot open file "/opt/***/./data/my_duckdb_file.db": Permission denied
+[2024-12-10T13:13:07.375+0000] {taskinstance.py:1350} INFO - Marking task as UP_FOR_RETRY. dag_id=weather_data_processing, task_id=read_data_from_duckdb, execution_date=20241210T131305, start_date=20241210T131307, end_date=20241210T131307
+[2024-12-10T13:13:07.387+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 33 for task read_data_from_duckdb (IO Error: Cannot open file "/opt/***/./data/my_duckdb_file.db": Permission denied; 7746)
+[2024-12-10T13:13:07.414+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-12-10T13:13:07.439+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
