@@ -23,11 +23,14 @@ services:
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
       AIRFLOW__CORE__EXECUTOR: 'LocalExecutor'
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: 'postgresql+psycopg2://airflow:airflow@postgres/airflow'
+      _PIP_ADDITIONAL_REQUIREMENTS: 'dbt-core dbt-duckdb duckdb'
+      DBT_PROFILES_DIR: .profiles.yml
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
       - ./data:/opt/airflow/data
+      - ./my_dbt_project:/opt/airflow/my_dbt_project
     ports:
       - "8082:8080"
     depends_on:
@@ -41,11 +44,11 @@ services:
     stdin_open: true
     tty: true
     environment:
-      DBT_PROFILES_DIR: "/dbt"
+      DBT_PROFILES_DIR: "/my_dbt_project"
     volumes:
-      - ./dbt:/dbt  # Mount dbt project folder
+      - ./my_dbt_project:/my_dbt_project  # Mount dbt project folder
       - ./data:/data  # Folder to store data pulled from APIs, etc.
-    working_dir: /dbt
+    working_dir: /my_dbt_project
     ports:
       - "18080:8080"
 

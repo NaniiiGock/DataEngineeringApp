@@ -36,13 +36,13 @@ with DAG(
     
     check_dir = BashOperator(
     task_id='check_current_directory',
-    bash_command='pwd'  # This will print the current directory
+    bash_command='ls'  # This will print the current directory
     )
 
     # Task 1: Run dbt inside Docker
     run_dbt = BashOperator(
         task_id='run_dbt',
-        bash_command='docker exec -i dbt dbt run --models business_transformed'
+        bash_command='cd /opt/airflow/my_dbt_project && ls && dbt run --models business_transformed'
     )
 
 

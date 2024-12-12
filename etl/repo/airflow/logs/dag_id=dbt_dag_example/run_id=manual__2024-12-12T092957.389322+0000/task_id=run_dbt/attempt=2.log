@@ -1,0 +1,36 @@
+[2024-12-12T09:35:04.879+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_dag_example.run_dbt manual__2024-12-12T09:29:57.389322+00:00 [queued]>
+[2024-12-12T09:35:04.891+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_dag_example.run_dbt manual__2024-12-12T09:29:57.389322+00:00 [queued]>
+[2024-12-12T09:35:04.892+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2024-12-12T09:35:04.907+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): run_dbt> on 2024-12-12 09:29:57.389322+00:00
+[2024-12-12T09:35:04.913+0000] {standard_task_runner.py:57} INFO - Started process 8573 to run task
+[2024-12-12T09:35:04.918+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dbt_dag_example', 'run_dbt', 'manual__2024-12-12T09:29:57.389322+00:00', '--job-id', '194', '--raw', '--subdir', 'DAGS_FOLDER/dbt_duckdb_test.py', '--cfg-path', '/tmp/tmpod7ym_s0']
+[2024-12-12T09:35:04.927+0000] {standard_task_runner.py:85} INFO - Job 194: Subtask run_dbt
+[2024-12-12T09:35:04.977+0000] {task_command.py:410} INFO - Running <TaskInstance: dbt_dag_example.run_dbt manual__2024-12-12T09:29:57.389322+00:00 [running]> on host 15c1365b7b27
+[2024-12-12T09:35:05.056+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_dag_example' AIRFLOW_CTX_TASK_ID='run_dbt' AIRFLOW_CTX_EXECUTION_DATE='2024-12-12T09:29:57.389322+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-12T09:29:57.389322+00:00'
+[2024-12-12T09:35:05.059+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-12-12T09:35:05.060+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /opt/***/my_dbt_project && ls && dbt run --models business_transformed']
+[2024-12-12T09:35:05.072+0000] {subprocess.py:86} INFO - Output:
+[2024-12-12T09:35:05.076+0000] {subprocess.py:93} INFO - README.md
+[2024-12-12T09:35:05.077+0000] {subprocess.py:93} INFO - analyses
+[2024-12-12T09:35:05.077+0000] {subprocess.py:93} INFO - data
+[2024-12-12T09:35:05.078+0000] {subprocess.py:93} INFO - dbt_project.yml
+[2024-12-12T09:35:05.078+0000] {subprocess.py:93} INFO - dev.duckdb
+[2024-12-12T09:35:05.079+0000] {subprocess.py:93} INFO - macros
+[2024-12-12T09:35:05.079+0000] {subprocess.py:93} INFO - models
+[2024-12-12T09:35:05.080+0000] {subprocess.py:93} INFO - seeds
+[2024-12-12T09:35:05.080+0000] {subprocess.py:93} INFO - snapshots
+[2024-12-12T09:35:05.080+0000] {subprocess.py:93} INFO - tests
+[2024-12-12T09:35:07.595+0000] {subprocess.py:93} INFO - Usage: dbt run [OPTIONS]
+[2024-12-12T09:35:07.596+0000] {subprocess.py:93} INFO - Try 'dbt run -h' for help.
+[2024-12-12T09:35:07.597+0000] {subprocess.py:93} INFO - 
+[2024-12-12T09:35:07.597+0000] {subprocess.py:93} INFO - Error: Invalid value for '--profiles-dir': Path '/home/***/.dbt' does not exist.
+[2024-12-12T09:35:07.841+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-12-12T09:35:07.855+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 211, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-12-12T09:35:07.859+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=dbt_dag_example, task_id=run_dbt, execution_date=20241212T092957, start_date=20241212T093504, end_date=20241212T093507
+[2024-12-12T09:35:07.881+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 194 for task run_dbt (Bash command failed. The command returned a non-zero exit code 2.; 8573)
+[2024-12-12T09:35:07.909+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-12-12T09:35:07.940+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -320,3 +320,542 @@
 [2024-12-12T08:51:32.156+0000] {logging_mixin.py:150} INFO - [2024-12-12T08:51:32.155+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2024-12-12T08:51:32.203+0000] {logging_mixin.py:150} INFO - [2024-12-12T08:51:32.203+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
 [2024-12-12T08:51:32.230+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.716 seconds
+[2024-12-12T09:01:18.747+0000] {processor.py:157} INFO - Started process (PID=337) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:01:18.749+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:01:18.751+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:01:18.751+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:01:19.783+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:01:19.798+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:01:19.797+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:01:19.834+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:01:19.833+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:01:19.879+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 1.138 seconds
+[2024-12-12T09:01:50.257+0000] {processor.py:157} INFO - Started process (PID=600) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:01:50.259+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:01:50.260+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:01:50.260+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:01:50.755+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:01:50.784+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:01:50.784+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:01:50.816+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:01:50.816+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:01:50.840+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.586 seconds
+[2024-12-12T09:02:21.103+0000] {processor.py:157} INFO - Started process (PID=817) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:02:21.104+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:02:21.105+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:02:21.105+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:02:21.745+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:02:21.773+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:02:21.773+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:02:21.805+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:02:21.805+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:02:22.334+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 1.235 seconds
+[2024-12-12T09:02:52.454+0000] {processor.py:157} INFO - Started process (PID=1037) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:02:52.455+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:02:52.457+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:02:52.457+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:02:53.052+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:02:53.078+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:02:53.078+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:02:53.110+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:02:53.110+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:02:53.145+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.697 seconds
+[2024-12-12T09:03:23.221+0000] {processor.py:157} INFO - Started process (PID=1252) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:03:23.222+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:03:23.223+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:03:23.223+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:03:23.818+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:03:23.859+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:03:23.858+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:03:23.889+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:03:23.888+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:03:23.911+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.697 seconds
+[2024-12-12T09:03:54.292+0000] {processor.py:157} INFO - Started process (PID=1455) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:03:54.293+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:03:54.294+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:03:54.294+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:03:55.004+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:03:55.030+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:03:55.030+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:03:55.054+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:03:55.054+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:03:55.076+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.787 seconds
+[2024-12-12T09:04:25.258+0000] {processor.py:157} INFO - Started process (PID=1673) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:04:25.259+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:04:25.261+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:04:25.261+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:04:25.959+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:04:25.994+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:04:25.994+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:04:26.019+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:04:26.018+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:04:26.050+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.795 seconds
+[2024-12-12T09:04:56.345+0000] {processor.py:157} INFO - Started process (PID=1890) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:04:56.347+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:04:56.348+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:04:56.348+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:04:56.839+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:04:56.876+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:04:56.875+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:04:56.903+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:04:56.902+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:04:56.932+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.594 seconds
+[2024-12-12T09:05:27.049+0000] {processor.py:157} INFO - Started process (PID=2107) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:05:27.050+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:05:27.052+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:05:27.051+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:05:27.708+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:05:27.749+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:05:27.748+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:05:27.786+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:05:27.785+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:05:27.814+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.769 seconds
+[2024-12-12T09:05:58.142+0000] {processor.py:157} INFO - Started process (PID=2358) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:05:58.143+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:05:58.144+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:05:58.144+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:05:58.663+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:05:58.696+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:05:58.696+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:05:58.723+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:05:58.723+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:05:58.745+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.606 seconds
+[2024-12-12T09:06:28.985+0000] {processor.py:157} INFO - Started process (PID=2575) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:06:28.986+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:06:28.988+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:06:28.987+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:06:29.443+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:06:29.477+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:06:29.477+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:06:29.498+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:06:29.497+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:06:29.515+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.534 seconds
+[2024-12-12T09:07:00.304+0000] {processor.py:157} INFO - Started process (PID=2792) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:07:00.305+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:07:00.307+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:07:00.307+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:07:00.793+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:07:00.822+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:07:00.822+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:07:00.849+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:07:00.849+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:07:00.868+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.567 seconds
+[2024-12-12T09:07:31.611+0000] {processor.py:157} INFO - Started process (PID=3012) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:07:31.613+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:07:31.615+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:07:31.614+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:07:32.166+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:07:32.193+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:07:32.193+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:07:32.228+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:07:32.228+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:07:32.261+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.657 seconds
+[2024-12-12T09:08:02.927+0000] {processor.py:157} INFO - Started process (PID=3229) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:08:02.928+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:08:02.929+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:08:02.929+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:08:03.585+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:08:03.635+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:08:03.634+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:08:03.680+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:08:03.679+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:08:03.711+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.787 seconds
+[2024-12-12T09:08:34.082+0000] {processor.py:157} INFO - Started process (PID=3449) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:08:34.083+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:08:34.084+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:08:34.084+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:08:34.623+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:08:34.658+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:08:34.657+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:08:34.691+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:08:34.691+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:08:34.722+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.644 seconds
+[2024-12-12T09:09:04.886+0000] {processor.py:157} INFO - Started process (PID=3666) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:09:04.888+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:09:04.889+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:09:04.889+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:09:05.451+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:09:05.482+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:09:05.481+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:09:05.517+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:09:05.517+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:09:05.544+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.663 seconds
+[2024-12-12T09:09:36.159+0000] {processor.py:157} INFO - Started process (PID=3883) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:09:36.160+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:09:36.162+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:09:36.161+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:09:36.728+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:09:36.760+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:09:36.760+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:09:36.791+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:09:36.790+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:09:36.821+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.667 seconds
+[2024-12-12T09:10:06.899+0000] {processor.py:157} INFO - Started process (PID=4100) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:10:06.900+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:10:06.900+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:10:06.900+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:10:07.406+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:10:07.439+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:10:07.438+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:10:07.487+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:10:07.486+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:10:07.513+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.617 seconds
+[2024-12-12T09:10:38.146+0000] {processor.py:157} INFO - Started process (PID=4335) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:10:38.147+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:10:38.148+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:10:38.148+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:10:38.804+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:10:38.844+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:10:38.843+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:10:38.879+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:10:38.879+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:10:38.911+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.768 seconds
+[2024-12-12T09:11:09.625+0000] {processor.py:157} INFO - Started process (PID=4554) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:11:09.626+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:11:09.627+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:11:09.627+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:11:10.216+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:11:10.253+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:11:10.252+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:11:10.283+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:11:10.283+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:11:10.310+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.688 seconds
+[2024-12-12T09:11:40.393+0000] {processor.py:157} INFO - Started process (PID=4771) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:11:40.394+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:11:40.395+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:11:40.395+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:11:41.021+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:11:41.062+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:11:41.061+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:11:41.090+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:11:41.090+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:11:41.113+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.725 seconds
+[2024-12-12T09:12:11.731+0000] {processor.py:157} INFO - Started process (PID=4988) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:12:11.732+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:12:11.733+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:12:11.733+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:12:12.196+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:12:12.221+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:12:12.220+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:12:12.241+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:12:12.241+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:12:12.262+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.535 seconds
+[2024-12-12T09:12:43.008+0000] {processor.py:157} INFO - Started process (PID=5205) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:12:43.009+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:12:43.010+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:12:43.010+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:12:43.596+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:12:43.646+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:12:43.645+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:12:43.678+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:12:43.678+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:12:43.709+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.706 seconds
+[2024-12-12T09:13:14.303+0000] {processor.py:157} INFO - Started process (PID=5422) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:13:14.304+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:13:14.306+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:13:14.306+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:13:14.835+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:13:14.861+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:13:14.861+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:13:14.883+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:13:14.882+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:13:14.904+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.604 seconds
+[2024-12-12T09:13:45.039+0000] {processor.py:157} INFO - Started process (PID=5639) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:13:45.041+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:13:45.042+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:13:45.042+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:13:45.588+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:13:45.625+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:13:45.624+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:13:45.664+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:13:45.663+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:13:45.702+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.670 seconds
+[2024-12-12T09:14:16.448+0000] {processor.py:157} INFO - Started process (PID=5856) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:14:16.449+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:14:16.450+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:14:16.450+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:14:17.054+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:14:17.092+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:14:17.092+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:14:17.124+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:14:17.123+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:14:17.152+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.707 seconds
+[2024-12-12T09:14:47.790+0000] {processor.py:157} INFO - Started process (PID=6073) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:14:47.793+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:14:47.796+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:14:47.795+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:14:48.334+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:14:48.373+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:14:48.373+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:14:48.408+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:14:48.407+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:14:48.438+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.654 seconds
+[2024-12-12T09:15:19.329+0000] {processor.py:157} INFO - Started process (PID=6290) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:15:19.330+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:15:19.331+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:15:19.331+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:15:19.888+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:15:19.935+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:15:19.932+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:15:19.972+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:15:19.972+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:15:20.010+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.684 seconds
+[2024-12-12T09:15:50.754+0000] {processor.py:157} INFO - Started process (PID=6541) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:15:50.754+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:15:50.755+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:15:50.755+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:15:51.253+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:15:51.279+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:15:51.278+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:15:51.302+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:15:51.301+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:15:51.324+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.574 seconds
+[2024-12-12T09:17:09.595+0000] {processor.py:157} INFO - Started process (PID=334) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:17:09.597+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:17:09.599+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:17:09.598+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:17:10.454+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:17:10.471+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:17:10.470+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:17:10.511+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:17:10.510+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:17:10.544+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.955 seconds
+[2024-12-12T09:17:40.955+0000] {processor.py:157} INFO - Started process (PID=572) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:17:40.956+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:17:40.957+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:17:40.957+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:17:41.599+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:17:41.636+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:17:41.635+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:17:41.661+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:17:41.660+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:17:41.687+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.736 seconds
+[2024-12-12T09:18:12.123+0000] {processor.py:157} INFO - Started process (PID=822) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:18:12.124+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:18:12.126+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:18:12.125+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:18:12.818+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:18:12.841+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:18:12.841+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:18:12.859+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:18:12.859+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:18:12.895+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.777 seconds
+[2024-12-12T09:18:43.314+0000] {processor.py:157} INFO - Started process (PID=1039) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:18:43.316+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:18:43.318+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:18:43.317+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:18:44.076+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:18:44.111+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:18:44.110+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:18:44.138+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:18:44.138+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:18:44.167+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.859 seconds
+[2024-12-12T09:19:14.725+0000] {processor.py:157} INFO - Started process (PID=1257) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:19:14.727+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:19:14.729+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:19:14.728+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:19:15.541+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:19:15.579+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:19:15.578+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:19:15.610+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:19:15.609+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:19:15.652+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.931 seconds
+[2024-12-12T09:19:45.967+0000] {processor.py:157} INFO - Started process (PID=1527) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:19:45.969+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:19:45.971+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:19:45.970+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:19:46.966+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:19:47.030+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:19:47.029+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:19:47.091+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:19:47.091+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:19:47.142+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 1.182 seconds
+[2024-12-12T09:20:17.559+0000] {processor.py:157} INFO - Started process (PID=1809) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:20:17.561+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:20:17.563+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:20:17.562+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:20:18.228+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:20:18.270+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:20:18.269+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:20:18.305+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:20:18.305+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:20:18.333+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.779 seconds
+[2024-12-12T09:20:48.885+0000] {processor.py:157} INFO - Started process (PID=2042) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:20:48.887+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:20:48.889+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:20:48.889+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:20:49.325+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:20:49.364+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:20:49.363+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:20:49.398+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:20:49.398+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:20:49.452+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.573 seconds
+[2024-12-12T09:21:19.930+0000] {processor.py:157} INFO - Started process (PID=2262) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:21:19.931+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:21:19.932+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:21:19.932+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:21:20.452+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:21:20.502+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:21:20.501+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:21:20.533+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:21:20.532+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:21:20.561+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.634 seconds
+[2024-12-12T09:21:50.706+0000] {processor.py:157} INFO - Started process (PID=2484) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:21:50.708+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:21:50.711+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:21:50.710+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:21:51.217+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:21:51.248+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:21:51.247+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:21:51.279+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:21:51.279+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:21:51.312+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.609 seconds
+[2024-12-12T09:22:21.448+0000] {processor.py:157} INFO - Started process (PID=2704) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:22:21.449+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:22:21.450+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:22:21.450+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:22:21.960+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:22:22.015+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:22:22.014+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:22:22.045+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:22:22.044+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:22:22.093+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.652 seconds
+[2024-12-12T09:22:52.398+0000] {processor.py:157} INFO - Started process (PID=2924) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:22:52.399+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:22:52.401+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:22:52.400+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:22:53.020+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:22:53.062+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:22:53.062+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:22:53.101+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:22:53.101+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:22:53.133+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.738 seconds
+[2024-12-12T09:23:23.469+0000] {processor.py:157} INFO - Started process (PID=3176) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:23:23.470+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:23:23.472+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:23:23.471+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:23:23.923+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:23:23.979+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:23:23.978+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:23:24.033+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:23:24.033+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:23:24.080+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.613 seconds
+[2024-12-12T09:23:54.604+0000] {processor.py:157} INFO - Started process (PID=3427) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:23:54.606+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:23:54.608+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:23:54.608+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:23:55.170+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:23:55.215+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:23:55.215+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:23:55.252+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:23:55.252+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:23:55.278+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.680 seconds
+[2024-12-12T09:24:25.597+0000] {processor.py:157} INFO - Started process (PID=3679) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:24:25.599+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:24:25.600+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:24:25.600+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:24:26.280+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:24:26.311+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:24:26.310+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:24:26.347+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:24:26.347+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:24:26.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.786 seconds
+[2024-12-12T09:24:56.749+0000] {processor.py:157} INFO - Started process (PID=3915) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:24:56.750+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:24:56.751+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:24:56.751+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:24:57.237+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:24:57.276+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:24:57.276+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:24:57.300+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:24:57.300+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:24:57.320+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.575 seconds
+[2024-12-12T09:25:27.701+0000] {processor.py:157} INFO - Started process (PID=4151) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:25:27.703+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:25:27.705+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:25:27.704+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:25:28.202+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:25:28.241+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:25:28.241+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:25:28.268+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:25:28.267+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:25:28.292+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.600 seconds
+[2024-12-12T09:25:58.983+0000] {processor.py:157} INFO - Started process (PID=4400) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:25:58.984+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:25:58.985+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:25:58.985+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:25:59.443+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:25:59.481+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:25:59.480+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:25:59.507+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:25:59.506+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:25:59.541+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.562 seconds
+[2024-12-12T09:26:29.852+0000] {processor.py:157} INFO - Started process (PID=4668) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:26:29.854+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:26:29.856+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:26:29.856+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:26:30.435+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:26:30.464+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:26:30.464+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:26:30.490+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:26:30.490+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:26:30.523+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.677 seconds
+[2024-12-12T09:27:01.204+0000] {processor.py:157} INFO - Started process (PID=4905) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:27:01.205+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:27:01.207+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:27:01.206+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:27:01.608+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:27:01.643+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:27:01.642+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:27:01.674+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:27:01.674+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:27:01.699+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.498 seconds
+[2024-12-12T09:27:31.944+0000] {processor.py:157} INFO - Started process (PID=5074) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:27:31.946+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:27:31.947+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:27:31.946+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:27:32.411+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:27:32.438+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:27:32.437+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:27:32.463+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:27:32.462+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:27:32.506+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.564 seconds
+[2024-12-12T09:28:03.392+0000] {processor.py:157} INFO - Started process (PID=5291) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:28:03.393+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:28:03.394+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:28:03.394+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:28:03.974+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:28:04.013+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:28:04.012+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:28:04.044+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:28:04.043+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:28:04.075+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.687 seconds
+[2024-12-12T09:28:34.402+0000] {processor.py:157} INFO - Started process (PID=5508) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:28:34.404+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:28:34.406+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:28:34.405+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:28:35.041+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:28:35.083+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:28:35.082+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:28:35.118+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:28:35.118+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:28:35.152+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.759 seconds
+[2024-12-12T09:29:05.703+0000] {processor.py:157} INFO - Started process (PID=5777) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:29:05.704+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:29:05.705+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:29:05.705+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:29:06.252+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:29:06.308+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:29:06.308+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:29:06.355+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:29:06.354+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:29:06.393+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.694 seconds
+[2024-12-12T09:29:37.081+0000] {processor.py:157} INFO - Started process (PID=6015) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:29:37.083+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:29:37.084+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:29:37.084+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:29:37.824+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:29:37.877+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:29:37.876+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:29:37.923+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:29:37.922+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:29:37.975+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.898 seconds
+[2024-12-12T09:30:08.585+0000] {processor.py:157} INFO - Started process (PID=6267) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:30:08.586+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:30:08.587+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:30:08.587+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:30:09.070+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:30:09.100+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:30:09.100+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:30:09.120+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:30:09.120+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:30:09.138+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.555 seconds
+[2024-12-12T09:30:39.359+0000] {processor.py:157} INFO - Started process (PID=6484) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:30:39.364+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:30:39.366+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:30:39.366+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:30:39.961+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:30:40.006+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:30:40.005+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:30:40.037+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:30:40.037+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:30:40.085+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.728 seconds
+[2024-12-12T09:31:10.570+0000] {processor.py:157} INFO - Started process (PID=6736) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:31:10.571+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:31:10.572+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:31:10.571+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:31:11.050+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:31:11.075+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:31:11.075+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:31:11.097+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:31:11.096+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:31:11.114+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.548 seconds
+[2024-12-12T09:31:41.274+0000] {processor.py:157} INFO - Started process (PID=6972) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:31:41.275+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:31:41.276+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:31:41.276+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:31:41.867+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:31:41.905+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:31:41.904+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:31:41.946+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:31:41.946+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:31:41.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.709 seconds
+[2024-12-12T09:32:12.450+0000] {processor.py:157} INFO - Started process (PID=7224) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:32:12.451+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:32:12.452+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:32:12.452+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:32:13.078+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:32:13.118+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:32:13.117+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:32:13.148+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:32:13.148+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:32:13.173+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.726 seconds
+[2024-12-12T09:32:43.853+0000] {processor.py:157} INFO - Started process (PID=7441) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:32:43.854+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:32:43.855+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:32:43.855+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:32:44.465+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:32:44.501+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:32:44.501+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:32:44.528+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:32:44.528+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:32:44.551+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.704 seconds
+[2024-12-12T09:33:14.731+0000] {processor.py:157} INFO - Started process (PID=7691) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:33:14.733+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:33:14.734+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:33:14.734+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:33:15.272+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:33:15.308+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:33:15.308+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:33:15.350+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:33:15.350+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:33:15.388+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.664 seconds
+[2024-12-12T09:33:45.552+0000] {processor.py:157} INFO - Started process (PID=7910) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:33:45.554+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:33:45.555+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:33:45.555+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:33:46.023+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:33:46.064+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:33:46.063+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:33:46.094+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:33:46.094+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:33:46.136+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.590 seconds
+[2024-12-12T09:34:16.541+0000] {processor.py:157} INFO - Started process (PID=8146) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:34:16.542+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:34:16.543+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:34:16.543+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:34:17.073+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:34:17.103+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:34:17.103+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:34:17.139+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:34:17.139+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:34:17.167+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.631 seconds
+[2024-12-12T09:34:47.529+0000] {processor.py:157} INFO - Started process (PID=8363) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:34:47.530+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:34:47.531+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:34:47.530+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:34:47.964+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:34:47.988+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:34:47.988+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:34:48.006+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:34:48.005+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:34:48.045+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.519 seconds
+[2024-12-12T09:35:18.350+0000] {processor.py:157} INFO - Started process (PID=8599) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:35:18.351+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:35:18.352+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:35:18.352+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:35:18.866+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:35:18.898+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:35:18.898+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:35:18.925+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:35:18.925+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:35:18.952+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.604 seconds
+[2024-12-12T09:35:49.633+0000] {processor.py:157} INFO - Started process (PID=8816) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:35:49.635+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:35:49.637+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:35:49.636+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:35:50.242+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:35:50.283+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:35:50.282+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:35:50.310+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:35:50.309+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:35:50.330+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.702 seconds
+[2024-12-12T09:36:21.050+0000] {processor.py:157} INFO - Started process (PID=9087) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:36:21.052+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:36:21.054+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:36:21.054+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:36:21.605+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:36:21.638+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:36:21.637+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:36:21.666+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:36:21.666+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:36:21.703+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.658 seconds
+[2024-12-12T09:36:52.531+0000] {processor.py:157} INFO - Started process (PID=9304) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:36:52.533+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:36:52.545+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:36:52.545+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:36:53.005+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:36:53.034+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:36:53.033+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:36:53.070+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:36:53.069+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:36:53.096+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.571 seconds
+[2024-12-12T09:37:23.979+0000] {processor.py:157} INFO - Started process (PID=9540) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:37:23.980+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:37:23.980+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:37:23.980+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:37:24.462+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:37:24.493+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:37:24.492+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:37:24.518+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:37:24.518+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:37:24.544+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.568 seconds
+[2024-12-12T09:37:55.266+0000] {processor.py:157} INFO - Started process (PID=9757) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:37:55.267+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:37:55.270+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:37:55.269+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:37:55.754+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:37:55.785+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:37:55.785+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:37:55.826+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:37:55.826+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:37:55.868+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.605 seconds
+[2024-12-12T09:38:26.732+0000] {processor.py:157} INFO - Started process (PID=9993) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:38:26.734+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:38:26.735+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:38:26.735+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:38:27.318+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:38:27.347+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:38:27.347+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:38:27.370+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:38:27.370+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:38:27.397+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.668 seconds
+[2024-12-12T09:38:57.632+0000] {processor.py:157} INFO - Started process (PID=10210) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:38:57.634+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:38:57.635+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:38:57.635+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:38:58.162+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:38:58.196+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:38:58.195+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:38:58.236+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:38:58.236+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:38:58.271+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.642 seconds
+[2024-12-12T09:39:29.115+0000] {processor.py:157} INFO - Started process (PID=10427) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:39:29.117+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:39:29.118+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:39:29.118+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:39:29.665+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:39:29.701+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:39:29.701+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:39:29.734+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:39:29.733+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:39:29.758+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.646 seconds
+[2024-12-12T09:40:00.149+0000] {processor.py:157} INFO - Started process (PID=10644) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:40:00.150+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:40:00.152+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:40:00.151+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:40:00.730+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:40:00.779+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:40:00.778+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:40:00.825+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:40:00.824+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:40:00.851+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.705 seconds
+[2024-12-12T09:40:31.065+0000] {processor.py:157} INFO - Started process (PID=10861) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:40:31.066+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:40:31.067+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:40:31.067+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:40:31.543+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:40:31.576+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:40:31.575+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:40:31.600+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:40:31.600+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:40:31.627+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.566 seconds
+[2024-12-12T09:41:01.763+0000] {processor.py:157} INFO - Started process (PID=11095) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:41:01.770+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:41:01.774+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:41:01.774+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:41:02.298+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:41:02.340+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:41:02.340+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:41:02.370+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:41:02.369+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:41:02.396+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.636 seconds
+[2024-12-12T09:41:33.299+0000] {processor.py:157} INFO - Started process (PID=11314) to work on /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:41:33.300+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_to_duckdb.py for tasks to queue
+[2024-12-12T09:41:33.301+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:41:33.300+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:41:33.979+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_weather_data']) retrieved from /opt/airflow/dags/weather_to_duckdb.py
+[2024-12-12T09:41:34.037+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:41:34.036+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-12T09:41:34.085+0000] {logging_mixin.py:150} INFO - [2024-12-12T09:41:34.084+0000] {dag.py:3508} INFO - Setting next_dagrun for process_weather_data to None, run_after=None
+[2024-12-12T09:41:34.122+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_to_duckdb.py took 0.829 seconds
