@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   db:
     image: postgres:13
@@ -73,9 +71,61 @@ services:
     networks:
       - app_network
 
+  airflow:
+    image: my_airflow_image
+    environment:
+      KAGGLE_USERNAME: 'gustavnikopensiusut'
+      KAGGLE_KEY: "d33d24666d0d887067a73795a679cbf5"
+      PIP_ADDITIONAL_REQUIREMENTS: 'kaggle pandas duckdb'
+      _AIRFLOW_WWW_USER_CREATE: 'true'
+      _AIRFLOW_WWW_USER_USERNAME: 'admin'
+      _AIRFLOW_WWW_USER_PASSWORD: 'sergilolidtõeliseltsuuredkäed'
+      _AIRFLOW_WWW_USER_FIRSTNAME: 'Gustav'
+      _AIRFLOW_WWW_USER_LASTNAME: 'Nikopensius'
+      _AIRFLOW_WWW_USER_EMAIL: 'gustav.nikopensius@ut.ee'
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__CORE__EXECUTOR: 'LocalExecutor'
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: 'postgresql+psycopg2://airflow:airflow@postgres/airflow'
+      _PIP_ADDITIONAL_REQUIREMENTS: 'dbt-core dbt-duckdb duckdb'
+      DBT_PROFILES_DIR: .profiles.yml
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
+      - ./my_dbt_project:/opt/airflow/my_dbt_project
+    ports:
+      - "8082:8080"
+    depends_on:
+      - postgres
+    command: >
+      bash -c "airflow db init && airflow scheduler & airflow webserver"
+
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-core:1.8.8
+    container_name: dbt
+    stdin_open: true
+    tty: true
+    environment:
+      DBT_PROFILES_DIR: "/my_dbt_project"
+    volumes:
+      - ./my_dbt_project:/my_dbt_project  # Mount dbt project folder
+      - ./data:/data  # Folder to store data pulled from APIs, etc.
+    working_dir: /my_dbt_project
+    ports:
+      - "18080:8080"
+
+  duckdb:
+    image: datacatering/duckdb:v1.1.1
+    volumes:
+      - ./data:/data  # Share a volume with dbt to store DuckDB files here
+    stdin_open: true
+    tty: true
+      
 networks:
   app_network:
     driver: bridge
+
 
 volumes:
   db_data:
