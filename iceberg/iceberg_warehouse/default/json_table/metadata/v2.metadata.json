@@ -1,0 +1,81 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "ca8b4b13-fcd1-4bf5-83ec-a25d537f02e2",
+  "location" : "/Users/lilianahotsko/Desktop/DataEngineeringApp/iceberg_warehouse/default/json_table",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1733842769862,
+  "last-column-id" : 2,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "lilianahotsko",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 6339346415693051558,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 6339346415693051558,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 6339346415693051558,
+    "timestamp-ms" : 1733842769862,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1733842760360",
+      "added-data-files" : "2",
+      "added-records" : "8",
+      "added-files-size" : "1227",
+      "changed-partition-count" : "1",
+      "total-records" : "8",
+      "total-files-size" : "1227",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.3",
+      "app-id" : "local-1733842760360",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.7.1 (commit 4a432839233f2343a9eae8255532f911f06358ef)"
+    },
+    "manifest-list" : "/Users/lilianahotsko/Desktop/DataEngineeringApp/iceberg_warehouse/default/json_table/metadata/snap-6339346415693051558-1-93f2023a-edac-4db7-9aad-64707de3892d.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1733842769862,
+    "snapshot-id" : 6339346415693051558
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1733842722580,
+    "metadata-file" : "/Users/lilianahotsko/Desktop/DataEngineeringApp/iceberg_warehouse/default/json_table/metadata/v1.metadata.json"
+  } ]
+}

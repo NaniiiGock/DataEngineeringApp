@@ -1,6 +1,6 @@
-from db_connector import DBConnector
-from db_api_requests import APIConnector
-from chart_creator import ChartCreator
+from utils.db_connector import DBConnector
+from utils.db_api_requests import APIConnector
+from utils.chart_creator import ChartCreator
 from streamlit_google_auth import Authenticate
 import pandas as pd
 import streamlit as st
@@ -71,7 +71,7 @@ if st.session_state['connected']:
                 if data:
                     q1_data = pd.DataFrame(data)
                 else:
-                    q1_data = pd.read_csv("q1.csv")
+                    q1_data = pd.read_csv("data/q1.csv")
 
                 st.write("### Data Overview")
                 st.dataframe(q1_data)
@@ -121,7 +121,7 @@ if st.session_state['connected']:
                 if data:
                     q2_data = pd.DataFrame(data)
                 else:
-                    q2_data = pd.read_csv("q2.csv")
+                    q2_data = pd.read_csv("data/q2.csv")
 
                 st.dataframe(q2_data)
 
@@ -164,7 +164,7 @@ if st.session_state['connected']:
                     "dependent_variable": dependent_variable3,
                     "instruments": instruments3
                 }
-                data = api_connector.fetch_data("chart3", payload)
+                data = api_connector.fetch_data("data/chart3", payload)
 
                 if data:
                     q3_data = pd.DataFrame(data)
