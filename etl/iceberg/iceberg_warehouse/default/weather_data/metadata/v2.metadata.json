@@ -1,0 +1,96 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "274602bc-4ff0-44c5-9f22-510a90897a33",
+  "location" : "/Users/lilianahotsko/Documents/GitHub/DataEngineeringApp/etl/iceberg/iceberg_warehouse/default/weather_data",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1734000340951,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "date",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "datatype",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "station",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "attributes",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "value",
+      "required" : false,
+      "type" : "double"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "lilianahotsko",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 1068345072548305042,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 1068345072548305042,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 1068345072548305042,
+    "timestamp-ms" : 1734000340951,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1734000310346",
+      "added-data-files" : "8",
+      "added-records" : "157107",
+      "added-files-size" : "332817",
+      "changed-partition-count" : "1",
+      "total-records" : "157107",
+      "total-files-size" : "332817",
+      "total-data-files" : "8",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.3",
+      "app-id" : "local-1734000310346",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.7.1 (commit 4a432839233f2343a9eae8255532f911f06358ef)"
+    },
+    "manifest-list" : "/Users/lilianahotsko/Documents/GitHub/DataEngineeringApp/etl/iceberg/iceberg_warehouse/default/weather_data/metadata/snap-1068345072548305042-1-be9e6cb3-4b27-4807-8026-d323d971035f.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1734000340951,
+    "snapshot-id" : 1068345072548305042
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1734000334723,
+    "metadata-file" : "/Users/lilianahotsko/Documents/GitHub/DataEngineeringApp/etl/iceberg/iceberg_warehouse/default/weather_data/metadata/v1.metadata.json"
+  } ]
+}

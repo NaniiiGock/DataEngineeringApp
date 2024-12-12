@@ -1,25 +1,27 @@
-# Use the official Apache Airflow image as the base image
 FROM apache/airflow:2.6.3
 
-# Switch to the airflow user
 USER airflow
 
-# Install necessary packages
+# Update pip and install Python dependencies
 RUN pip install --upgrade pip
 RUN pip install --upgrade kaggle
-RUN pip install --no-cache-dir duckdb pandas requests jupyter dbt-duckdb
+RUN pip install --no-cache-dir duckdb pandas requests jupyter dbt-duckdb pyspark
 
-# Set Jupyter Notebook to run on port 8888
+# Expose port
 EXPOSE 8888
 
-# Set up working directory for dbt
+# Set working directory
 WORKDIR /app
 
-# Copy dbt project from repo folder
-COPY ./repo/my_dbt_project /app/my_dbt_project
-
-# Set dbt profiles directory (for connecting to DuckDB)
+# Copy your DBT project
+COPY ./my_dbt_project /app/my_dbt_project
 ENV DBT_PROFILES_DIR=/app/my_dbt_project
 
-# Set the default entry point as a shell
+# Copy the Iceberg script and required JAR file
+COPY ./etl/iceberg /app/iceberg
+
+# Execute the Iceberg script
+RUN python /app/iceberg/iceberg_write.py
+
+# Set the default entrypoint
 ENTRYPOINT ["/bin/bash"]
