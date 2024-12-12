@@ -1,6 +1,7 @@
 version: '3.8'
 
 services:
+
   db:
     image: postgres:13
     container_name: postgres_db
@@ -20,16 +21,16 @@ services:
       timeout: 5s
       retries: 5
 
-  postgres:
-    image: postgres:13
-    environment:
-      POSTGRES_USER: airflow
-      POSTGRES_PASSWORD: airflow
-      POSTGRES_DB: airflow
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    networks:
-      - app_network
+  # postgres:
+  #   image: postgres:13
+  #   environment:
+  #     POSTGRES_USER: airflow
+  #     POSTGRES_PASSWORD: airflow
+  #     POSTGRES_DB: airflow
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   networks:
+  #     - app_network
 
   streamlit:
     build:
@@ -48,16 +49,15 @@ services:
     networks:
       - app_network
 
-
-  jupyter:
-    image: jupyter/minimal-notebook
-    volumes:
-      - ./etl/repo/airflow/data:/data
-    ports:
-      - "8888:8888"
-    command: start-notebook.sh --NotebookApp.token=''
-    networks:
-      - app_network
+  # jupyter:
+  #   image: jupyter/minimal-notebook
+  #   volumes:
+  #     - ./etl/airflow/data:/data
+  #   ports:
+  #     - "8888:8888"
+  #   command: start-notebook.sh --NotebookApp.token=''
+  #   networks:
+  #     - app_network
 
   nginx:
     image: nginx:latest
@@ -70,6 +70,79 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./certs:/etc/nginx/certs
+    networks:
+      - app_network
+
+  # airflow:
+  #   build:
+  #     context: ./etl
+  #     dockerfile: Dockerfile
+  #   container_name: airflow_service
+  #   environment:
+  #     KAGGLE_USERNAME: 'gustavnikopensiusut'
+  #     KAGGLE_KEY: "d33d24666d0d887067a73795a679cbf5"
+  #     PIP_ADDITIONAL_REQUIREMENTS: 'kaggle pandas duckdb'
+  #     _AIRFLOW_WWW_USER_CREATE: 'true'
+  #     _AIRFLOW_WWW_USER_USERNAME: 'admin'
+  #     _AIRFLOW_WWW_USER_PASSWORD: 'sergilolidtõeliseltsuuredkäed'
+  #     _AIRFLOW_WWW_USER_FIRSTNAME: 'Gustav'
+  #     _AIRFLOW_WWW_USER_LASTNAME: 'Nikopensius'
+  #     _AIRFLOW_WWW_USER_EMAIL: 'gustav.nikopensius@ut.ee'
+  #     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+  #     AIRFLOW__CORE__EXECUTOR: 'LocalExecutor'
+  #     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: 'postgresql+psycopg2://airflow:airflow@postgres/airflow'
+  #   volumes:
+  #     - ./etl/airflow/dags:/opt/airflow/dags
+  #     - ./etl/airflow/logs:/opt/airflow/logs
+  #     - ./etl/airflow/plugins:/opt/airflow/plugins
+  #     - ./etl/airflow/data:/opt/airflow/data
+  #   ports:
+  #     - "8082:8080"
+  #   depends_on:
+  #     - postgres
+  #   networks:
+  #     - app_network
+  #   command: >
+  #     bash -c "airflow db init && airflow scheduler & airflow webserver"
+
+  # duckdb:
+  #   image: datacatering/duckdb:v1.1.1
+  #   platform: linux/amd64
+  #   volumes:
+  #     - ./etl/repo/airflow/data:/data
+  #   stdin_open: true
+  #   tty: true
+  #   networks:
+  #     - app_network
+
+  # dbt:
+  #   image: ghcr.io/dbt-labs/dbt-core:1.8.8
+  #   platform: linux/amd64
+  #   container_name: dbt
+  #   stdin_open: true
+  #   tty: true
+  #   environment:
+  #     DBT_PROFILES_DIR: "/dbt"
+  #   volumes:
+  #     - ./etl/repo/my_dbt_project:/dbt
+  #     - ./etl/repo/airflow/data:/data
+  #   working_dir: /dbt
+  #   ports:
+  #     - "18080:8080"
+  #   networks:
+  #     - app_network
+
+  analytics:
+    container_name: analytics
+    build:
+      context: service_api/
+    ports:
+      - 5001:5001
+    environment:
+      - FLASK_ENV=development
+      - FLASK_DEBUG=1
+    volumes:
+      - ./service_api:/serving
     networks:
       - app_network
 
