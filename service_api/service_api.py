@@ -12,7 +12,7 @@ def is_valid_date(date_str):
 
 app = Flask(__name__)
 
-con = duckdb.connect("/Users/lilianahotsko/Documents/GitHub/DataEngineeringApp/service_api/my_duckdb_file.db", read_only=True)
+con = duckdb.connect("my_duckdb_file.db", read_only=True)
 
 @app.route("/")
 def hello_world():

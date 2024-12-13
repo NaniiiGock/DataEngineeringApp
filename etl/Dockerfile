@@ -11,8 +11,5 @@ EXPOSE 8888
 
 WORKDIR /app
 
-COPY ./my_dbt_project /app/my_dbt_project
+# CMD ["jupyter", "notebook", "--ip", "0.0.0.0", "--port", "8888", "--no-browser", "--allow-root"]
 
-ENV DBT_PROFILES_DIR=/app/my_dbt_project
-
-ENTRYPOINT ["/bin/bash"]
