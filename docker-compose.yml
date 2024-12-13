@@ -27,10 +27,16 @@ services:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
       - app_network
+
 
   streamlit:
     build:
@@ -49,15 +55,15 @@ services:
     networks:
       - app_network
 
-  jupyter:
-    image: jupyter/minimal-notebook
-    volumes:
-      - ./etl/airflow/data:/data
-    ports:
-      - "8888:8888"
-    command: start-notebook.sh --NotebookApp.token=''
-    networks:
-      - app_network
+  # jupyter:
+  #   image: jupyter/minimal-notebook
+  #   volumes:
+  #     - ./etl/airflow/data:/data
+  #   ports:
+  #     - "8888:8888"
+  #   command: start-notebook.sh --NotebookApp.token=''
+  #   networks:
+  #     - app_network
 
   nginx:
     image: nginx:latest
@@ -79,35 +85,19 @@ services:
       dockerfile: Dockerfile
     container_name: airflow_service
     environment:
-      KAGGLE_USERNAME: 'gustavnikopensiusut'
-      KAGGLE_KEY: "d33d24666d0d887067a73795a679cbf5"
-      PIP_ADDITIONAL_REQUIREMENTS: 'kaggle pandas duckdb'
-      _AIRFLOW_WWW_USER_CREATE: 'true'
-      _AIRFLOW_WWW_USER_USERNAME: 'admin'
-      _AIRFLOW_WWW_USER_PASSWORD: 'sergilolidtõeliseltsuuredkäed'
-      _AIRFLOW_WWW_USER_FIRSTNAME: 'Gustav'
-      _AIRFLOW_WWW_USER_LASTNAME: 'Nikopensius'
-      _AIRFLOW_WWW_USER_EMAIL: 'gustav.nikopensius@ut.ee'
-      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
-      AIRFLOW__CORE__EXECUTOR: 'LocalExecutor'
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: 'postgresql+psycopg2://airflow:airflow@postgres/airflow'
     volumes:
       - ./etl/airflow/dags:/opt/airflow/dags
       - ./etl/airflow/logs:/opt/airflow/logs
       - ./etl/airflow/plugins:/opt/airflow/plugins
-      - ./etl/airflow/data:/opt/airflow/data
-      - ./etl/wait-for-postgres1.sh:/wait-for-postgres.sh
-
     ports:
       - "8082:8080"
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
     networks:
       - app_network
-    command: >
-      bash -c "./wait-for-postgres1.sh postgres airflow db init &&
-      airflow users create --username admin --password sergilolidtõeliseltsuuredkäed --firstname Gustav --lastname Nikopensius --role Admin --email gustav.nikopensius@ut.ee &&
-      airflow scheduler & airflow webserver"
+
 
 
   duckdb:
@@ -133,7 +123,9 @@ services:
       - ./etl/my_dbt_project:/dbt  
     working_dir: /dbt          
     platform: linux/amd64      
-    command: ["dbt", "debug"]  
+    command: ["tail", "-f", "/dev/null"] 
+    networks:
+      - app_network
 
   analytics:
     container_name: analytics

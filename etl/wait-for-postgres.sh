@@ -6,8 +6,8 @@ shift
 cmd="$@"
 
 until pg_isready -h "$host" -U "airflow"; do
-    >&2 echo "Postgres is unavailable - sleeping"
-    sleep 1
+  >&2 echo "Postgres is unavailable - sleeping"
+  sleep 5
 done
 
 >&2 echo "Postgres is up - executing command"
