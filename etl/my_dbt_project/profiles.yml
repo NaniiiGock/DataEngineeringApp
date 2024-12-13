@@ -1,8 +1,7 @@
-my_dbt_project:  
-  target: dev   
+my_dbt_project:
   outputs:
     dev:
       type: duckdb
-      path: ./data/my_duckdb_file.db  # Path to DuckDB database file
-      schema: main                   # Schema name in DuckDB
-      threads: 1
+      path: /dbt/data/my_duckdb.db
+      schema: main
+  target: dev

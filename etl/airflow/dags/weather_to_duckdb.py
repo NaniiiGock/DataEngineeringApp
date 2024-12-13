@@ -19,7 +19,7 @@ default_args = {
 }
 
 # Directory containing the JSON files
-DATA_DIR = './data'
+DATA_DIR = '/app/data'
 
 def load_weather_data_to_duckdb():
     db_path = os.path.join(DATA_DIR, 'my_duckdb_file.db')

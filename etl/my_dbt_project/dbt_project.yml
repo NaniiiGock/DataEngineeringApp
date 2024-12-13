@@ -10,10 +10,14 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
+# Define the packages-install-path explicitly
+packages-install-path: "/dbt/dbt_packages"
+
 clean-targets:       
   - "target"
   - "dbt_packages"
 
 models:
   my_dbt_project:
-    +materialized: view  # Default materialization
+    +schema: transformed
+    +materialized: table

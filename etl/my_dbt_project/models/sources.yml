@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw_data
+    tables:
+      - name: fortune_500
+        path: data/Fortune_500_Corporate_Headquarters.csv
+      - name: weather_data
+        description: NOAA JSON files transformed into a table
+        path: data/my_duckdb_file.db
+
+models:
+  - name: fortune_500
+    description: Table for Fortune 500 data loaded from CSV
+  - name: weather_data
+    description: Table for weather data from NOAA JSON files

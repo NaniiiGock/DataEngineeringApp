@@ -1,19 +1,0 @@
-[2024-12-04T08:23:58.743+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kaggle_to_duckdb.download_and_extract_kaggle_data manual__2024-12-04T08:23:57.473437+00:00 [queued]>
-[2024-12-04T08:23:58.752+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kaggle_to_duckdb.download_and_extract_kaggle_data manual__2024-12-04T08:23:57.473437+00:00 [queued]>
-[2024-12-04T08:23:58.753+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
-[2024-12-04T08:23:58.767+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): download_and_extract_kaggle_data> on 2024-12-04 08:23:57.473437+00:00
-[2024-12-04T08:23:58.775+0000] {standard_task_runner.py:57} INFO - Started process 585 to run task
-[2024-12-04T08:23:58.778+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'kaggle_to_duckdb', 'download_and_extract_kaggle_data', 'manual__2024-12-04T08:23:57.473437+00:00', '--job-id', '89', '--raw', '--subdir', 'DAGS_FOLDER/business_etl_v1.py', '--cfg-path', '/tmp/tmpq5l79qxi']
-[2024-12-04T08:23:58.781+0000] {standard_task_runner.py:85} INFO - Job 89: Subtask download_and_extract_kaggle_data
-[2024-12-04T08:23:58.827+0000] {task_command.py:410} INFO - Running <TaskInstance: kaggle_to_duckdb.download_and_extract_kaggle_data manual__2024-12-04T08:23:57.473437+00:00 [running]> on host aa4ec98ec0ed
-[2024-12-04T08:23:58.930+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kaggle_to_duckdb' AIRFLOW_CTX_TASK_ID='download_and_extract_kaggle_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-04T08:23:57.473437+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-04T08:23:57.473437+00:00'
-[2024-12-04T08:23:59.260+0000] {logging_mixin.py:150} INFO - Dataset URL: https://www.kaggle.com/datasets/winston56/fortune-500-data-2021
-[2024-12-04T08:23:59.261+0000] {logging_mixin.py:150} INFO - License(s): other
-[2024-12-04T08:23:59.827+0000] {logging_mixin.py:150} INFO - Downloading fortune-500-data-2021.zip to /opt/***
-[2024-12-04T08:23:59.848+0000] {logging_mixin.py:150} WARNING -   0%|          | 0.00/53.1k [00:00<?, ?B/s]
-[2024-12-04T08:23:59.947+0000] {logging_mixin.py:150} WARNING - 100%|##########| 53.1k/53.1k [00:00<00:00, 556kB/s]
-[2024-12-04T08:23:59.951+0000] {logging_mixin.py:150} INFO - Dataset fortune-500-data-2021 downloaded and extracted to ./data
-[2024-12-04T08:23:59.952+0000] {python.py:183} INFO - Done. Returned value was: None
-[2024-12-04T08:23:59.962+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=kaggle_to_duckdb, task_id=download_and_extract_kaggle_data, execution_date=20241204T082357, start_date=20241204T082358, end_date=20241204T082359
-[2024-12-04T08:23:59.995+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
-[2024-12-04T08:24:00.020+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

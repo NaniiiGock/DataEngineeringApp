@@ -1,8 +1,0 @@
-my_dbt_project:  # Match the profile in dbt_project.yml
-  target: dev    # Target environment
-  outputs:
-    dev:
-      type: duckdb
-      path: ./data/my_duckdb_file.db  # Path to DuckDB database file
-      schema: main                   # Schema name in DuckDB
-      threads: 1

@@ -5,9 +5,10 @@ from datetime import datetime
 import duckdb
 import pandas as pd
 
+DATA_DIR = '/app/data'
 # Function to read the data from DuckDB
 def read_data_from_duckdb():
-    db_path = "./data/my_duckdb_file.db"
+    db_path = f"{DATA_DIR}/my_duckdb_file.db"
     conn = duckdb.connect(database=db_path, read_only=False)
     # Read the "weather_data" table into a pandas DataFrame
     df = conn.execute("SELECT * FROM weather_data").fetchdf()
@@ -29,7 +30,7 @@ def pivot_data(**kwargs):
 # Function to load the pivoted data back into DuckDB
 def load_data_to_duckdb(**kwargs):
     tables = kwargs['ti'].xcom_pull(task_ids='pivot_data')
-    db_path = './data/my_duckdb_file.db'
+    db_path = f'{DATA_DIR}/my_duckdb_file.db'
     conn = duckdb.connect(database=db_path, read_only=False)
     
     # Load each DataFrame into DuckDB as a table if it doesn't exist
