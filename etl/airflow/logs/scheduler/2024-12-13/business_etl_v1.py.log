@@ -1,0 +1,56 @@
+[2024-12-13T17:30:45.107+0000] {processor.py:157} INFO - Started process (PID=258) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:30:45.110+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-13T17:30:45.112+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:30:45.112+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:30:45.122+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:30:45.118+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/business_etl_v1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/business_etl_v1.py", line 6, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2024-12-13T17:30:45.122+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:30:45.140+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.035 seconds
+[2024-12-13T17:32:45.152+0000] {processor.py:157} INFO - Started process (PID=259) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:32:45.153+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-13T17:32:45.153+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:32:45.153+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:32:45.161+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:32:45.160+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/business_etl_v1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/business_etl_v1.py", line 6, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2024-12-13T17:32:45.162+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:32:45.180+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.031 seconds
+[2024-12-13T17:33:19.022+0000] {processor.py:157} INFO - Started process (PID=329) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:33:19.028+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-13T17:33:19.029+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:33:19.028+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:33:19.033+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:33:19.032+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/business_etl_v1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/business_etl_v1.py", line 6, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2024-12-13T17:33:19.033+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:33:19.046+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.026 seconds
+[2024-12-13T17:33:50.718+0000] {processor.py:157} INFO - Started process (PID=433) to work on /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:33:50.719+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/business_etl_v1.py for tasks to queue
+[2024-12-13T17:33:50.719+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:33:50.719+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:33:50.722+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:33:50.721+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/business_etl_v1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/business_etl_v1.py", line 6, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2024-12-13T17:33:50.722+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/business_etl_v1.py
+[2024-12-13T17:33:50.735+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/business_etl_v1.py took 0.019 seconds

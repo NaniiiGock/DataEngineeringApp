@@ -1,0 +1,28 @@
+[2024-12-13T17:30:44.404+0000] {processor.py:157} INFO - Started process (PID=202) to work on /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:30:44.409+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_transform.py for tasks to queue
+[2024-12-13T17:30:44.412+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:30:44.412+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:30:44.893+0000] {processor.py:836} INFO - DAG(s) dict_keys(['weather_data_processing']) retrieved from /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:30:44.910+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:30:44.910+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-13T17:30:44.961+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:30:44.961+0000] {dag.py:3508} INFO - Setting next_dagrun for weather_data_processing to None, run_after=None
+[2024-12-13T17:30:44.995+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_transform.py took 0.598 seconds
+[2024-12-13T17:32:44.464+0000] {processor.py:157} INFO - Started process (PID=204) to work on /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:32:44.466+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_transform.py for tasks to queue
+[2024-12-13T17:32:44.466+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:32:44.466+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:32:44.978+0000] {processor.py:836} INFO - DAG(s) dict_keys(['weather_data_processing']) retrieved from /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:32:44.999+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:32:44.998+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-13T17:32:45.019+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:32:45.019+0000] {dag.py:3508} INFO - Setting next_dagrun for weather_data_processing to None, run_after=None
+[2024-12-13T17:32:45.034+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_transform.py took 0.574 seconds
+[2024-12-13T17:33:15.565+0000] {processor.py:157} INFO - Started process (PID=286) to work on /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:33:15.567+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_transform.py for tasks to queue
+[2024-12-13T17:33:15.568+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:33:15.568+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:33:18.870+0000] {processor.py:836} INFO - DAG(s) dict_keys(['weather_data_processing']) retrieved from /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:33:18.933+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:33:18.933+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-13T17:33:18.956+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:33:18.956+0000] {dag.py:3508} INFO - Setting next_dagrun for weather_data_processing to None, run_after=None
+[2024-12-13T17:33:18.971+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_transform.py took 3.413 seconds
+[2024-12-13T17:33:49.787+0000] {processor.py:157} INFO - Started process (PID=363) to work on /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:33:49.790+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/weather_transform.py for tasks to queue
+[2024-12-13T17:33:49.794+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:33:49.793+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:33:50.399+0000] {processor.py:836} INFO - DAG(s) dict_keys(['weather_data_processing']) retrieved from /opt/airflow/dags/weather_transform.py
+[2024-12-13T17:33:50.420+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:33:50.420+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-12-13T17:33:50.436+0000] {logging_mixin.py:150} INFO - [2024-12-13T17:33:50.436+0000] {dag.py:3508} INFO - Setting next_dagrun for weather_data_processing to None, run_after=None
+[2024-12-13T17:33:50.453+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/weather_transform.py took 0.675 seconds
