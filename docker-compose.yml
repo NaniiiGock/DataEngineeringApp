@@ -143,11 +143,13 @@ services:
       - SPARK_NO_DAEMONIZE=true
       - SPARK_WORKER_CORES=2
       - SPARK_WORKER_MEMORY=2g
+
     volumes:
       - ./etl:/app/etl
-      - ./etl/airflow/data:/app/data 
+      - ./etl/data:/app/data 
       - ./etl/iceberg/warehouse:/app/etl/iceberg/warehouse 
       - ./etl/iceberg/jars:/opt/spark/jars 
+
     entrypoint: ["/opt/bitnami/scripts/spark/entrypoint.sh"]
     command: ["bash", "-c", "tail -f /dev/null"]
     networks:

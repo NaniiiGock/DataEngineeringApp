@@ -79,5 +79,4 @@ load_data_task = PythonOperator(
     dag=dag,
 )
 
-# Set task dependencies
 read_data_task >> pivot_data_task >> load_data_task

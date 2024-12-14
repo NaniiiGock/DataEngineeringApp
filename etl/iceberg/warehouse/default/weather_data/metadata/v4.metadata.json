@@ -1,0 +1,158 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "186b578c-b5c9-42ec-8518-923c9fdedb01",
+  "location" : "/app/etl/iceberg/warehouse/default/weather_data",
+  "last-sequence-number" : 3,
+  "last-updated-ms" : 1734179339159,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "date",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "datatype",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "station",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "attributes",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "value",
+      "required" : false,
+      "type" : "double"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "spark",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 634953212629887124,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 634953212629887124,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 2752477636376387852,
+    "timestamp-ms" : 1734177399983,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1734177395011",
+      "added-data-files" : "8",
+      "added-records" : "2942",
+      "added-files-size" : "25042",
+      "changed-partition-count" : "1",
+      "total-records" : "2942",
+      "total-files-size" : "25042",
+      "total-data-files" : "8",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.0",
+      "app-id" : "local-1734177395011",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.7.1 (commit 4a432839233f2343a9eae8255532f911f06358ef)"
+    },
+    "manifest-list" : "/app/etl/iceberg/warehouse/default/weather_data/metadata/snap-2752477636376387852-1-87bbdd68-2d91-496d-8ce7-d23f34822c65.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 46132845633712901,
+    "parent-snapshot-id" : 2752477636376387852,
+    "timestamp-ms" : 1734179247174,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1734179243503",
+      "added-data-files" : "8",
+      "added-records" : "4000",
+      "added-files-size" : "26621",
+      "changed-partition-count" : "1",
+      "total-records" : "6942",
+      "total-files-size" : "51663",
+      "total-data-files" : "16",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.0",
+      "app-id" : "local-1734179243503",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.7.1 (commit 4a432839233f2343a9eae8255532f911f06358ef)"
+    },
+    "manifest-list" : "/app/etl/iceberg/warehouse/default/weather_data/metadata/snap-46132845633712901-1-26d79fbd-5e01-4e3b-8190-4a80859b26cd.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 3,
+    "snapshot-id" : 634953212629887124,
+    "parent-snapshot-id" : 46132845633712901,
+    "timestamp-ms" : 1734179339159,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1734179335472",
+      "added-data-files" : "8",
+      "added-records" : "4000",
+      "added-files-size" : "26621",
+      "changed-partition-count" : "1",
+      "total-records" : "10942",
+      "total-files-size" : "78284",
+      "total-data-files" : "24",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.0",
+      "app-id" : "local-1734179335472",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.7.1 (commit 4a432839233f2343a9eae8255532f911f06358ef)"
+    },
+    "manifest-list" : "/app/etl/iceberg/warehouse/default/weather_data/metadata/snap-634953212629887124-1-580d3350-c345-479b-9bad-b0d4a02ba308.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1734177399983,
+    "snapshot-id" : 2752477636376387852
+  }, {
+    "timestamp-ms" : 1734179247174,
+    "snapshot-id" : 46132845633712901
+  }, {
+    "timestamp-ms" : 1734179339159,
+    "snapshot-id" : 634953212629887124
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1734177397129,
+    "metadata-file" : "/app/etl/iceberg/warehouse/default/weather_data/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1734177399983,
+    "metadata-file" : "/app/etl/iceberg/warehouse/default/weather_data/metadata/v2.metadata.json"
+  }, {
+    "timestamp-ms" : 1734179247174,
+    "metadata-file" : "/app/etl/iceberg/warehouse/default/weather_data/metadata/v3.metadata.json"
+  } ]
+}
