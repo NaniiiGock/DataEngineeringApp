@@ -1,71 +1,27 @@
-# DataEngineeringApp
+# DELTA/TERMINAL
 
+## Tool for analysing business data with environmental factors
 
-# Plan:
-
-
-**Q1: How the weather affects employees' productivity?**
-
-Filters: start_date, end_date, location (country, city)
-
-Charts:
-
--> heatmap which compares correlation between temperature and 
-productivity over the time
-
--> list of countries + correlation (map where each country is colored 
-into different colors based on the correlation)
-
--> temperature and productivity over the time in the country -> for each country NUMBER
--> estonia: 6.5, france 4.5
-
-
-**Q2: How the weather affects the rank?**
-Filters: start_date, end_date, companies list
-Chart:
-correlation separatly for each company over the same time period
--> list of companies + correlation 
-Google - 0.5, Apple - 0.3, Microsoft - 0.7
-
-
-**Q3: yearly average temperature correlation with revenue?**
-Filters: start_date, end_date, companies list
-Chart:
-correlation separatly for each company over the same time period
--> list of companies + correlation
-Google 1, Apple 0.5, Microsoft 0.7
-
-
-
-## Tasks:
-
-### Gustav:
-1) scraping the data from APIS/DataBases
-2) pushing needed data into the database
-*) Apache Airflow, dbt, data governance, DuckDB
-
-### Simon:
-3) Write templates for queries for 3 questions
-4) for each question do correlation calculations
-5) form dataframes for UI for each question
-6) implement service with endpoints to get filters and return results
-*) Flask, Swagger - API documentation
-
-### Liliana:
-7) Users managements(roles, login, security of the app, UI, filters, plotting, manage sessions)
-8) get filters from the user
-9) implement service with requests to the data analysis service
-10) plot on UI
-*) Streamlit, Google Auth, flask, postgres, secrets manager, Iceberg
+## Project created in context of the course Data Engineering in winter term 2024 at University of Tartu
 
 
 ### General:
-*) Docker compose - mesh of services: 
-1) datascrapping(everyone is waiting for it)
-2) data analysis service
-3) db for users
-4) ui service
-'''
+We created an multi-container application. Our Application consists of four modules:
+1) Data Extraction
+2) Data Analysis Service
+3) Database for Users
+4) UI Service
+
+
+> Create the application with `docker compose up -d
+
+> [!WARNING]  
+> After all containers started, you must `docker compose stop analytics`  
+> to run DAGs in Airflow Service. After all DAGs successfully ran,  
+>`docker compose stop airflow` and `docker compose up analytics`
+
+>[!NOTE]  
+> Open `https://localhost/` for the UI. 
 
 ---
 # Data Model
@@ -107,17 +63,71 @@ erDiagram
 ---
 
 # ETL PROCESS
-To see which DAGs to trigger for the ETL process, see **Walkthrough of the ETL** subsection ***Transformations as DAGs***
+To see which DAGs trigger the ETL process, see **Walkthrough of the ETL** subsection ***Transformations as DAGs***
 
 ## The Datasets
 
 This ETL process combines two datasets:
-* Business data - The Forbes 500 Corporate Headquarters dataset from Kaggle, and
-* Weather data - Weather observations from NOAA.
+- Business data - The Forbes 500 Corporate Headquarters dataset from Kaggle, and
+- Weather data - Weather observations from NOAA.
 These datasets will be linked together by the **counties** in which the headquarters are located.
 
 ## Walkthrough of the ETL
 ### High-level walkthrough
+
+### DAG 1: `kaggle_to_noaa`
+
+```mermaid
+graph LR
+    A[Load Data to DuckDB] --> B[Extract COUNTYFIPS]
+    B --> C[Fetch NOAA Data]
+```
+
+### DAG 2: `fortune_500_data_processing`
+
+```mermaid
+graph LR
+    A[Read Data from DuckDB] --> B[Transform Data]
+    B --> C[Load Data to DuckDB]
+```
+
+### DAG 3: `dbt_execution_dag1`
+
+```mermaid
+graph LR
+    A[Run dbt Commands]
+```
+
+### DAG 4: `load_weather_json_to_iceberg`
+
+```mermaid
+graph LR
+    A[Process Weather Data to Iceberg]
+```
+
+### DAG 5: `load_and_transform_data`
+
+```mermaid
+graph LR
+    A[Load Fortune 500 CSV into DuckDB] --> C[Run dbt Transformations]
+    B[Load NOAA Data into DuckDB] --> C[Run dbt Transformations]
+```
+
+### DAG 6: `process_weather_data`
+
+```mermaid
+graph LR
+    A[Load Weather Data to DuckDB]
+```
+
+### DAG 7: `weather_data_processing`
+
+```mermaid
+graph LR
+    A[Read Data from DuckDB] --> B[Pivot Data]
+    B --> C[Load Data to DuckDB]
+```
+
 
 The ETL can be broken down into two basic steps:
 1) ETL the business data,
@@ -137,7 +147,42 @@ To ETL the Weather data, we
 4) This data is then transformed using Pandas.
 
 ### Transformations in detail
-The Business transformations consist mostly of breaking the source dataset down into three tables to fit the start schema:
+The Business transformations consist mostly of breaking the source dataset down into three tables to fit the star schema:
+
+```mermaid
+erDiagram
+    BusinessFACT }|--|| BusinessDIM : ranks
+    BusinessFACT {
+        int ID PK
+        int BUSINESSID FK
+        int RANK
+        int EMPLOYEES
+        int REVENUES
+        int PROFIT
+    }
+    CountyDIM ||--|{ BusinessDIM : contains
+    CountyDIM {
+        int COUNTYFIPS PK
+        string COUNTY
+        string STATE
+    }
+    BusinessDIM{
+        int ID PK
+        string NAME
+        int COUNTYFIPS FK
+    }
+    WeatherFACT }|--|| CountyDIM : occurs_in
+    WeatherFACT {
+        int ID PK
+        int COUNTYFIPS FK
+        date DATE
+        int TMIN
+        int TMAX
+        int TAV
+        int PRCP
+    }
+```
+
 1) BusinessFACT which contains
     * the company identifier (business id),
     * measurables like revenue, profits and number of employees for a given company
@@ -166,7 +211,7 @@ Each row in the WeatherFACT table now describes the weather of a single day in a
 <br>2) **process_weather_data**
 <br>3) **weather_data_processing**
 <br> You can run *fortune_500_data_processing* and *process_weather_data* in which-ever order, the rest have to be ordered as listed.
-<br>\* fortune_500_data_processing and dbt_execution_dag1 perform the same transformations on the business data. The difference is that dbt_execution_dag1 uses dbt instead of pandas - the changes can be recorded for Data Covernance with dbt.
+<br>\* fortune_500_data_processing and dbt_execution_dag1 perform the same transformations on the business data. The difference is that dbt_execution_dag1 uses dbt instead of pandas - the changes can be recorded for Data Governance with dbt.
 
 What follows is a more thorough documentation of the ETL process:
 
@@ -248,3 +293,19 @@ dbt-generated dictionary in catalog.json.
 
 ## Data Lineage
 dbt-generated data lineage in manifest.json
+
+---
+# Serving the Data
+
+The application consists of a **Flask API** and a **Streamlit frontend**. The Flask API handles data retrieval and processing, while the Streamlit app provides an interactive user interface for exploring the data.
+
+## Our API 
+Start the API Service. When you enter the root domain of this service, you will see a documentation how to use the API. 
+
+## Streamlit Frontend
+A user have to login into the frontend with his Google Account. Our System track user activities. People with admin role can see the activities. 
+
+>[!NOTE]
+> A detailed `README.md` according to our frontend in directory `UI`
+
+
