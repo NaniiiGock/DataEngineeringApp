@@ -161,12 +161,12 @@ The Weather transformations result in a single table:
 Each row in the WeatherFACT table now describes the weather of a single day in a single county with these four measurements.
 
 ### Transformations as DAGs
-Important DAGs in the ETL process are as follows.
 <br>1) **kaggle_to_noaa**
-<br>2) **fortune_500_data_processing**
+<br>2) **fortune_500_data_processing**/**dbt_execution_dag1**\*
 <br>2) **process_weather_data**
 <br>3) **weather_data_processing**
 <br> You can run *fortune_500_data_processing* and *process_weather_data* in which-ever order, the rest have to be ordered as listed.
+<br>\* fortune_500_data_processing and dbt_execution_dag1 perform the same transformations on the business data. The difference is that dbt_execution_dag1 uses dbt instead of pandas - the changes can be recorded for Data Covernance with dbt.
 
 What follows is a more thorough documentation of the ETL process:
 
@@ -175,9 +175,10 @@ In /etl/repo/airflow/dags we have 4 important python files:
 * business_transform.py
 * weather_to_duckdb.py
 * weather_transform.py
+* dbt_dag.py
 
 **business_etl_v1.py**
-An important part is to have something to tie the business and weather data together. The businesses are headquartered in counties and we can aggregate the weather observations to county level averages.
+<br>An important part is to have something to tie the business and weather data together. The businesses are headquartered in counties and we can aggregate the weather observations to county level averages.
 <br>We extract the county identifiers from the business dataset and use these to fetch only the weather observations that are relevant to our business data.
 <br>**DAG name: 'kaggle_to_noaa'**
 1) pulls the business dataset from Kaggle,
@@ -187,14 +188,14 @@ An important part is to have something to tie the business and weather data toge
 5) saves it in json format, a json file for each county
 
 **business_transform.py**
-We want the data in star schema, thus we break down the dataset into facts and dimensions.
+<br>We want the data in star schema, thus we break down the dataset into facts and dimensions.
 <br>**DAG name: 'fortune_500_data_processing'**
 1) reads business data from DuckDB,
 2) transforms the business data as described previously in "Transformations in detail" under Business transformations,
 3) loads the data back into DuckDB database.
 
 **weather_to_duckdb.py**
-We pulled the weather data as separate json files for each county.
+<br>We pulled the weather data as separate json files for each county.
 Now we want to combine them into a single table and load that into a database.
 <br>**DAG name: 'process_weather_data'**
 1) locates the weather jsons in the data folder,
@@ -202,7 +203,7 @@ Now we want to combine them into a single table and load that into a database.
 3) loads that into the DuckDB databse.
 
 **weather_transform.py**
-The big weather table we loaded into DuckDB has four columns: *date, county, datatype, value*
+<br>The big weather table we loaded into DuckDB has four columns: *date, county, datatype, value*
 <br>Datatype has four possible values: *TMIN, TAVG, TMAX and PRCP.*
 <br>These are weather observations like minimum temperature or amount of precipitation.
 <br>For ease of use, we want to have a column for each observation. To accomplish this, we need to pivot the table.
@@ -210,6 +211,11 @@ The big weather table we loaded into DuckDB has four columns: *date, county, dat
 1) reads the big weather table from DuckDB,
 2) pivots the table,
 3) loads the pivoted table back into the database.
+
+<br>**business_etl_v1.py**
+<br>Transforms business data into Business Dimension and Fact tables using dbt.
+<br>**DAG name: dbt_execution_dag1**
+
 
 ## The datasets in more detail
 *See DICTIONARY.MD for comprehensive explanation of datasets after transformations*
@@ -234,8 +240,11 @@ Also, we only pull data for the year 2016 - which is the year on which the Fortu
 The data is stored first in json files - each json file contains weather observations for a single county. The contents of said json files are aggregated. The reason being, a single county will have multiple weather stations - we want to take an average over these different stations so that we have a single average measurement for each day.
 
 # Data Governance
+
+The dbt-generated data governance files are located in /etl/my_dbt_project/target/
 ## Data Dictionary
-The data dictionary is provided in a separate file **DICTIONARY.MD** and contains definitions of the tables in our data models, definitions for their respective field with explanations of the meanings behind the data.
+dbt-generated dictionary in catalog.json.
+<br>A manually composed data dictionary is provided in a separate file **DICTIONARY.MD** and contains definitions of the tables in our data models, definitions for their respective field with explanations of the meanings behind the data.
 
 ## Data Lineage
-A simple Data Catalog `catalog.json` is generated using dbt's built in functionalities.
+dbt-generated data lineage in manifest.json
