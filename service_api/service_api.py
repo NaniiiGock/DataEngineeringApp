@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 from datetime import datetime
 import pandas as pd
 import duckdb
@@ -16,7 +16,7 @@ con = duckdb.connect("my_duckdb_file.db", read_only=True)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return send_file("README.html")
 
 @app.route("/api/get-data-q1", methods=["POST"])
 def get_data_q1():
@@ -121,15 +121,21 @@ def get_data_q2():
 
 @app.route("/api/get-data-q3", methods=["GET"])
 def get_data_q3():
-    query = f"""
-    SELECT SUM(b.EMPLOYEES), bd.countyfips, cd.latitude, cd.longtitude
-    FROM BusinessFACT b
-    JOIN BusinessDIM bd ON b.BUSINESSID = bd.ID
-    JOIN CountyDIM cd ON bd.COUNTYFIPS = cd.COUNTYFIPS
-    GROUP BY bd.countyfips
-    """
-    result = pd.read_sql(query, con) 
-    return jsonify(result.to_dict(orient="records"))
+    try:
+        query = f"""
+        SELECT SUM(b.EMPLOYEES), bd.COUNTYFIPS, cd.LATITUDE, cd.LONGITUDE
+        FROM BusinessFACT b
+        JOIN BusinessDIM bd ON b.BUSINESSID = bd.ID
+        JOIN CountyDIM cd ON bd.COUNTYFIPS = cd.COUNTYFIPS
+        GROUP BY bd.countyfips
+        """
+        result = pd.read_sql(query, con) 
+        return jsonify(result.to_dict(orient="records"))
+    except Exception as e:
+        return (
+            jsonify({"success": False, "error": f"Error processing request: {str(e)}"}),
+            500,
+        )
 
 
 @app.route("/api/get/dependent_vars", methods=["GET"])
