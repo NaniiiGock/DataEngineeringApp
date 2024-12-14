@@ -1,0 +1,1 @@
+SELECT ID, NAME, COUNTYFIPS FROM main_transformed.stg_Business
