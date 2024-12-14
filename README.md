@@ -105,6 +105,9 @@ graph LR
     A[Process Weather Data to Iceberg]
 ```
 
+ICEBERG DATA LOAD FINISHED:
+![alt text](pictures/image.png)
+
 ### DAG 5: `load_and_transform_data`
 
 ```mermaid

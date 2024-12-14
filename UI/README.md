@@ -13,6 +13,7 @@ The **Delta/Terminal Dashboard** is a user-friendly web application built with *
 
 ![alt text](pictures/image.png)
 
+- created certificate using `openssl`
 
 ### 🔒 **Authentication**
 - **Google OAuth Integration**: Secure user authentication with Google accounts.
