@@ -29,5 +29,4 @@ with DAG(
             /app/etl/iceberg/iceberg_write.py"
         )
     )
-
     process_weather_data

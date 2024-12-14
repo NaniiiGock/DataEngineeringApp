@@ -2,6 +2,6 @@ my_dbt_project:
   outputs:
     dev:
       type: duckdb
-      path: /dbt/data/my_duckdb.db
+      path: /dbt/data/my_duckdb_file.db
       schema: main
   target: dev

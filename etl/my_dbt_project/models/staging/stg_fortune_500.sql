@@ -1,0 +1,1 @@
+SELECT * FROM fortune_500 LIMIT 5
