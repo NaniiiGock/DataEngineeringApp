@@ -36,7 +36,7 @@ def transform_data(**kwargs):
     business_dim = df.copy()[['ID', 'NAME', 'COUNTYFIPS']]
 
     # Create County dimension table
-    county_dim = df.copy()[['COUNTYFIPS', 'COUNTY', 'STATE']]
+    county_dim = df.copy()[['COUNTYFIPS', 'COUNTY', 'STATE', 'LATITUDE', 'LONGITUDE']]
     county_dim = county_dim.drop_duplicates()
 
     # Return transformed tables
