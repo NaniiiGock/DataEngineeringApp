@@ -40,9 +40,9 @@ Google 1, Apple 0.5, Microsoft 0.7
 ## Tasks:
 
 ### Gustav:
-1) scrapping the data from APIS/DataBases
+1) scraping the data from APIS/DataBases
 2) pushing needed data into the database
-*) Apache Airflow, dbt, data governance, duck db, iceberg 
+*) Apache Airflow, dbt, data governance, DuckDB
 
 ### Simon:
 3) Write templates for queries for 3 questions
@@ -56,7 +56,7 @@ Google 1, Apple 0.5, Microsoft 0.7
 8) get filters from the user
 9) implement service with requests to the data analysis service
 10) plot on UI
-*) Streamlit, Google Auth, flask, postgres, secrets manager
+*) Streamlit, Google Auth, flask, postgres, secrets manager, Iceberg
 
 
 ### General:
@@ -67,21 +67,57 @@ Google 1, Apple 0.5, Microsoft 0.7
 4) ui service
 '''
 
+---
+# Data Model
+```mermaid
+erDiagram
+    BusinessFACT }|--|| BusinessDIM : ranks
+    BusinessFACT {
+        int ID PK
+        int BUSINESSID FK
+        int RANK
+        int EMPLOYEES
+        int REVENUES
+        int PROFIT
+    }
+    CountyDIM ||--|{ BusinessDIM : contains
+    CountyDIM {
+        int COUNTYFIPS PK
+        string COUNTY
+        string STATE
+    }
+    BusinessDIM{
+        int ID PK
+        string NAME
+        int COUNTYFIPS FK
+    }
+    WeatherFACT }|--|| CountyDIM : occurs_in
+    WeatherFACT {
+        int ID PK
+        int COUNTYFIPS FK
+        date DATE
+        int TMIN
+        int TMAX
+        int TAV
+        int PRCP
+    }
+```
 
 
 ---
 
 # ETL PROCESS
+To see which DAGs to trigger for the ETL process, see **Walkthrough of the ETL** subsection ***Transformations as DAGs***
 
-# The Datasets
+## The Datasets
 
 This ETL process combines two datasets:
 * Business data - The Forbes 500 Corporate Headquarters dataset from Kaggle, and
 * Weather data - Weather observations from NOAA.
 These datasets will be linked together by the **counties** in which the headquarters are located.
 
-# Walkthrough of the ETL
-## High-level walkthrough
+## Walkthrough of the ETL
+### High-level walkthrough
 
 The ETL can be broken down into two basic steps:
 1) ETL the business data,
@@ -100,7 +136,7 @@ To ETL the Weather data, we
 3) These json files are then combined into a single weather table and loaded into the DuckDB database.
 4) This data is then transformed using Pandas.
 
-## Transformations in detail
+### Transformations in detail
 The Business transformations consist mostly of breaking the source dataset down into three tables to fit the start schema:
 1) BusinessFACT which contains
     * the company identifier (business id),
@@ -124,7 +160,16 @@ The Weather transformations result in a single table:
 
 Each row in the WeatherFACT table now describes the weather of a single day in a single county with these four measurements.
 
-## Transformation as DAGs
+### Transformations as DAGs
+Important DAGs in the ETL process are as follows.
+<br>1) **kaggle_to_noaa**
+<br>2) **fortune_500_data_processing**
+<br>2) **process_weather_data**
+<br>3) **weather_data_processing**
+<br> You can run *fortune_500_data_processing* and *process_weather_data* in which-ever order, the rest have to be ordered as listed.
+
+What follows is a more thorough documentation of the ETL process:
+
 In /etl/repo/airflow/dags we have 4 important python files:
 * business_etl_v1.py
 * business_transform.py
@@ -166,7 +211,7 @@ The big weather table we loaded into DuckDB has four columns: *date, county, dat
 2) pivots the table,
 3) loads the pivoted table back into the database.
 
-# The datasets in more detail
+## The datasets in more detail
 *See DICTIONARY.MD for comprehensive explanation of datasets after transformations*
 We are working with two data sources
 1) The Corporate Headquarters dataset (or the business data)
@@ -188,13 +233,9 @@ Also, we only pull data for the year 2016 - which is the year on which the Fortu
 
 The data is stored first in json files - each json file contains weather observations for a single county. The contents of said json files are aggregated. The reason being, a single county will have multiple weather stations - we want to take an average over these different stations so that we have a single average measurement for each day.
 
-# Debugging / problems
+# Data Governance
+## Data Dictionary
+The data dictionary is provided in a separate file **DICTIONARY.MD** and contains definitions of the tables in our data models, definitions for their respective field with explanations of the meanings behind the data.
 
-* If you're having problems with getting Docker up, try <docker build -t my_airflow_image .>
-* After that, try to up Docker again.
-* If you're still having issues, say Airflow isn't initializing, then the problem might be with initializing postgres for Airflow.
-* run <docker-compose run airflow bash>
-* in the bash <airflow db init>
-* now and afterwards, Airflow should initialize fine.
-
-
+## Data Lineage
+A simple Data Catalog `catalog.json` is generated using dbt's built in functionalities.
