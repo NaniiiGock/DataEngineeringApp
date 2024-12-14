@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS activity_fact (
     activity_id SERIAL PRIMARY KEY,
     user_id INT REFERENCES user_dim(user_id),
     action_id INT REFERENCES action_dim(action_id),
+    details TEXT,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 """
@@ -51,7 +52,6 @@ VALUES
     ('view_dashboard', 'User viewed the dashboard')
 ON CONFLICT (action_name) DO NOTHING;
 
--- Insert predefined users with specific roles
 INSERT INTO user_dim (email, name, role_id)
 VALUES 
     ('nanigock@gmail.com', 'Admin User', (SELECT role_id FROM role_dim WHERE role_name = 'admin')),

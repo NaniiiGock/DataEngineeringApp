@@ -2,8 +2,6 @@ FROM python:3.13-slim
 
 WORKDIR /serving
 
-COPY my_duckdb_file.db service_api.py /serving/
-
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir flask pandas requests duckdb
 

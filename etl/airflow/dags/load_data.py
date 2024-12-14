@@ -11,17 +11,15 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 
-# Define the DAG
 with DAG(
     dag_id='load_and_transform_data',
     default_args=default_args,
     description='Load and transform raw data using dbt',
-    schedule_interval=None,  # Trigger manually or set a CRON schedule
+    schedule_interval=None, 
     start_date=datetime(2024, 12, 13),
     catchup=False,
 ) as dag:
 
-    # Load Fortune 500 CSV into DuckDB
     load_fortune_500 = BashOperator(
         task_id='load_fortune_500',
         bash_command=(
@@ -30,7 +28,6 @@ with DAG(
         ),
     )
 
-    # Transform NOAA JSON files into a weather_data table
     load_noaa_data = BashOperator(
         task_id='load_noaa_data',
         bash_command=(
@@ -39,11 +36,9 @@ with DAG(
         ),
     )
 
-    # Run dbt transformations
     dbt_run = BashOperator(
         task_id='dbt_run',
         bash_command='dbt run --project-dir /dbt --profiles-dir /dbt',
     )
 
-    # Define task dependencies
     [load_fortune_500, load_noaa_data] >> dbt_run

@@ -22,9 +22,7 @@ with DAG(
     
     run_my_table_model = BashOperator(
         task_id='run_my_table_model',
-        bash_command='dbt run --project-dir /dbt --profiles-dir /dbt'
-
-        
+        bash_command='dbt run --project-dir /dbt --profiles-dir /dbt' 
     )
 
     run_my_table_model

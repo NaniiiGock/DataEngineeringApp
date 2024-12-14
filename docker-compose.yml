@@ -43,6 +43,7 @@ services:
     container_name: streamlit_app
     depends_on:
       - db
+      - analytics
     environment:
       DB_HOST: db
       DB_PORT: 5432
@@ -133,6 +134,7 @@ services:
       - FLASK_DEBUG=1
     volumes:
       - ./service_api:/serving
+      - ./etl/airflow/data:/data
     networks:
       - app_network
 

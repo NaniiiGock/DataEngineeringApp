@@ -1,5 +1,4 @@
 import unittest
-import json
 from service_api.service_api import app  
 
 class TestAPI(unittest.TestCase):
@@ -26,7 +25,7 @@ class TestAPI(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         data = response.get_json()
         print("Data Q1:", data)
-        self.assertIsInstance(data, list)  # Check if the response is a list
+        self.assertIsInstance(data, list)
 
     def test_get_data_q1_missing_parameters(self):
         payload = {
@@ -77,7 +76,6 @@ class TestAPI(unittest.TestCase):
         response = self.client.get("/api/get/companies")
         self.assertEqual(response.status_code, 200)
         data = response.get_json()
-        # print("Companies:", data)
         self.assertIsInstance(data, list)
 
 if __name__ == "__main__":

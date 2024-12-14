@@ -18,7 +18,6 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 
-# Directory containing the JSON files
 DATA_DIR = '/app/data'
 
 def load_weather_data_to_duckdb():
@@ -26,7 +25,6 @@ def load_weather_data_to_duckdb():
     conn = duckdb.connect(database=db_path, read_only=False)
     table_name = 'weather_data'
 
-    # Initialize table if it doesn't exist
     conn.execute(f"""
         CREATE OR REPLACE TABLE {table_name} (
             date TIMESTAMP,
@@ -36,7 +34,6 @@ def load_weather_data_to_duckdb():
         )
     """)
 
-    # Regex pattern to match weather JSON files
     pattern = re.compile(r'^noaa_.*\.json$')
     for file_name in os.listdir(DATA_DIR):
         if pattern.match(file_name):
@@ -44,15 +41,10 @@ def load_weather_data_to_duckdb():
             with open(file_path, 'r') as f:
                 try:
                     data = json.load(f)
-                    # Skip empty JSON files
                     if not data.get('results'):
                         continue
-                    
-                    # Convert station IDs to COUNTYFIPS (from file name or mapping logic)
-                    # Assuming file names like 'noaa_<county_fips>.json'
                     county_fips = file_name.split('_')[1].split('.')[0]
 
-                    # Aggregate data by date and datatype
                     df = pd.DataFrame(data['results'])
                     df['county_fips'] = county_fips
                     aggregated_df = (
@@ -62,7 +54,6 @@ def load_weather_data_to_duckdb():
                     )
                     aggregated_df['county_fips'] = county_fips
 
-                    # Insert rows into DuckDB
                     conn.executemany(f"""
                         INSERT INTO {table_name} (date, datatype, value, county_fips)
                         VALUES (?, ?, ?, ?)
@@ -75,7 +66,7 @@ def load_weather_data_to_duckdb():
     conn.close()
     print(f"Aggregated weather data loaded into DuckDB table: {table_name}")
 
-# Define the DAG
+
 with DAG(
     'process_weather_data',
     default_args=default_args,
@@ -85,7 +76,6 @@ with DAG(
     catchup=False,
 ) as dag:
 
-    # Task to process JSON files and load into DuckDB
     process_files = PythonOperator(
         task_id='load_weather_data_to_duckdb',
         python_callable=load_weather_data_to_duckdb

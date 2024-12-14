@@ -12,7 +12,7 @@ def is_valid_date(date_str):
 
 app = Flask(__name__)
 
-con = duckdb.connect("my_duckdb_file.db", read_only=True)
+con = duckdb.connect("/data/my_duckdb_file.db", read_only=True)
 
 @app.route("/")
 def hello_world():
@@ -123,10 +123,9 @@ def get_data_q2():
 def get_data_q3():
     try:
         query = f"""
-        SELECT SUM(b.EMPLOYEES), bd.COUNTYFIPS, cd.LATITUDE, cd.LONGITUDE
+        SELECT SUM(b.EMPLOYEES), bd.COUNTYFIPS
         FROM BusinessFACT b
         JOIN BusinessDIM bd ON b.BUSINESSID = bd.ID
-        JOIN CountyDIM cd ON bd.COUNTYFIPS = cd.COUNTYFIPS
         GROUP BY bd.countyfips
         """
         result = pd.read_sql(query, con) 
@@ -136,7 +135,6 @@ def get_data_q3():
             jsonify({"success": False, "error": f"Error processing request: {str(e)}"}),
             500,
         )
-
 
 @app.route("/api/get/dependent_vars", methods=["GET"])
 def get_data_dependent_vars():
