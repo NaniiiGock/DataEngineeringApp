@@ -122,9 +122,10 @@ def get_data_q2():
 @app.route("/api/get-data-q3", methods=["GET"])
 def get_data_q3():
     query = f"""
-    SELECT SUM(b.EMPLOYEES), bd.countyfips
+    SELECT SUM(b.EMPLOYEES), bd.countyfips, cd.latitude, cd.longtitude
     FROM BusinessFACT b
     JOIN BusinessDIM bd ON b.BUSINESSID = bd.ID
+    JOIN CountyDIM cd ON bd.COUNTYFIPS = cd.COUNTYFIPS
     GROUP BY bd.countyfips
     """
     result = pd.read_sql(query, con) 
