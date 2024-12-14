@@ -1,0 +1,1 @@
+SELECT ID, NAME, COUNTYFIPS from main_transformed.stg_BusinessDIM

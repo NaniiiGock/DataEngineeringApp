@@ -4,6 +4,8 @@ models:
     description: "Staging model for weather data"
   - name: stg_fortune_500
     description: "Staging model for company data"
+  - name: stg_BusinessDIM.yml
+    description: "Staging model test for company data"
   - name: aggregated_weather
     description: "Aggregated weather data for each county"
     columns:
