@@ -50,7 +50,7 @@ with DAG(
         task_id='validate_duckdb',
         python_callable=check_duckdb_file,
         op_kwargs={
-            'db_path': './data/my_duckdb_file.db', 
+            'db_path': '/app/data/my_duckdb_file.db', 
             'table_name': 'weather_data', 
         },
     )
