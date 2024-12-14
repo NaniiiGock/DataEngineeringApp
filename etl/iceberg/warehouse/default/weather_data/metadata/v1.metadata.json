@@ -1,9 +1,9 @@
 {
   "format-version" : 2,
-  "table-uuid" : "274602bc-4ff0-44c5-9f22-510a90897a33",
-  "location" : "/Users/lilianahotsko/Documents/GitHub/DataEngineeringApp/etl/iceberg/iceberg_warehouse/default/weather_data",
+  "table-uuid" : "186b578c-b5c9-42ec-8518-923c9fdedb01",
+  "location" : "/app/etl/iceberg/warehouse/default/weather_data",
   "last-sequence-number" : 0,
-  "last-updated-ms" : 1734000334723,
+  "last-updated-ms" : 1734177397129,
   "last-column-id" : 5,
   "current-schema-id" : 0,
   "schemas" : [ {
@@ -48,7 +48,7 @@
     "fields" : [ ]
   } ],
   "properties" : {
-    "owner" : "lilianahotsko",
+    "owner" : "spark",
     "write.parquet.compression-codec" : "zstd"
   },
   "current-snapshot-id" : -1,

@@ -1,7 +1,6 @@
 from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow.operators.bash import BashOperator
 from datetime import datetime, timedelta
-import subprocess
 
 default_args = {
     'owner': 'airflow',
@@ -12,25 +11,22 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 
-def run_iceberg_script():
-    script_path = '/app/etl/iceberg/write.py'
-    result = subprocess.run(["python3", script_path], capture_output=True, text=True)
-    if result.returncode != 0:
-        raise Exception(f"Error running Iceberg script: {result.stderr}")
-    print(result.stdout)
-
 with DAG(
-    dag_id='load_data_to_iceberg',
+    dag_id='load_weather_json_to_iceberg',
     default_args=default_args,
-    description='Load and process data into Iceberg',
+    description='Load NOAA weather JSON files into Iceberg using Spark',
     schedule_interval=None,
     start_date=datetime(2024, 1, 1),
     catchup=False,
 ) as dag:
 
-    load_data_task = PythonOperator(
-        task_id='load_data_to_iceberg',
-        python_callable=run_iceberg_script
+    process_weather_data = BashOperator(
+        task_id='process_weather_data_to_iceberg',
+        bash_command=(
+            "docker exec spark_service spark-submit \
+            --master local[*] \
+            --jars /opt/spark/jars/iceberg-spark-runtime-3.5_2.12-1.7.1.jar \
+            /app/etl/iceberg/iceberg_write.py"
+        )
     )
-
-    load_data_task
+    process_weather_data
