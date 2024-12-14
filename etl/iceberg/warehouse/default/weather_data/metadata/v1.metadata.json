@@ -1,0 +1,61 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "186b578c-b5c9-42ec-8518-923c9fdedb01",
+  "location" : "/app/etl/iceberg/warehouse/default/weather_data",
+  "last-sequence-number" : 0,
+  "last-updated-ms" : 1734177397129,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "date",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "datatype",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "station",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "attributes",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "value",
+      "required" : false,
+      "type" : "double"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "spark",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : -1,
+  "refs" : { },
+  "snapshots" : [ ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ ],
+  "metadata-log" : [ ]
+}

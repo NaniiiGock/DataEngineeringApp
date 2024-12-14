@@ -37,7 +37,6 @@ services:
     networks:
       - app_network
 
-
   streamlit:
     build:
       context: ./UI
@@ -54,16 +53,6 @@ services:
       - "8501:8501"
     networks:
       - app_network
-
-  # jupyter:
-  #   image: jupyter/minimal-notebook
-  #   volumes:
-  #     - ./etl/airflow/data:/data
-  #   ports:
-  #     - "8888:8888"
-  #   command: start-notebook.sh --NotebookApp.token=''
-  #   networks:
-  #     - app_network
 
   nginx:
     image: nginx:latest
@@ -93,6 +82,7 @@ services:
       - ./etl/my_dbt_project:/dbt
       - ./etl/airflow/data:/app/data 
       # - ./etl/iceberg:/app/etl/iceberg
+      - /var/run/docker.sock:/var/run/docker.sock 
       
     ports:
       - "8082:8080"
@@ -125,6 +115,7 @@ services:
       DBT_PROFILES_DIR: "/dbt"  
     volumes:
       - ./etl/my_dbt_project:/dbt  
+      - ./etl/airflow/data:/app/data
     working_dir: /dbt          
     platform: linux/amd64      
     command: ["tail", "-f", "/dev/null"] 
@@ -145,25 +136,25 @@ services:
     networks:
       - app_network
 
-  # spark:
-  #   image: bitnami/spark:3.5.0
-  #   container_name: spark_service
-  #   environment:
-  #     - SPARK_NO_DAEMONIZE=true
-  #     - SPARK_WORKER_CORES=2
-  #     - SPARK_WORKER_MEMORY=2g
-  #   volumes:
-  #     - ./etl:/app/etl
-  #     - ./etl/iceberg/warehouse:/app/etl/iceberg/warehouse  # Iceberg warehouse
-  #     - ./etl/iceberg/jars:/opt/spark/jars  # Iceberg JARs for Spark
-  #   entrypoint: ["/opt/bitnami/scripts/spark/entrypoint.sh"]
-  #   command: ["bash", "-c", "tail -f /dev/null"]
-  #   networks:
-  #     - app_network
-  #   depends_on:
-  #     - airflow
-  #     - duckdb
-
+  spark:
+    image: bitnami/spark:3.5.0
+    container_name: spark_service
+    environment:
+      - SPARK_NO_DAEMONIZE=true
+      - SPARK_WORKER_CORES=2
+      - SPARK_WORKER_MEMORY=2g
+    volumes:
+      - ./etl:/app/etl
+      - ./etl/airflow/data:/app/data 
+      - ./etl/iceberg/warehouse:/app/etl/iceberg/warehouse 
+      - ./etl/iceberg/jars:/opt/spark/jars 
+    entrypoint: ["/opt/bitnami/scripts/spark/entrypoint.sh"]
+    command: ["bash", "-c", "tail -f /dev/null"]
+    networks:
+      - app_network
+    depends_on:
+      - airflow
+      - duckdb
 
 networks:
   app_network:

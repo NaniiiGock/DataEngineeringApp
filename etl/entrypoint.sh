@@ -14,7 +14,6 @@ echo "Postgres is up - running initialization commands"
 # Run database initialization
 airflow db init
 
-# Create an admin user
 airflow users create \
   --username admin \
   --password sergilolidtõeliseltsuuredkäed \
@@ -23,6 +22,6 @@ airflow users create \
   --role Admin \
   --email gustav.nikopensius@ut.ee
 
-# Start the Airflow webserver and scheduler
+
 exec airflow webserver &
 exec airflow scheduler
