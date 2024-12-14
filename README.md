@@ -13,7 +13,7 @@ We created an multi-container application. Our Application consists of four modu
 4) UI Service
 
 
-> Create the application with `docker compose up -d
+> Create the application with `docker compose up -d`
 
 > [!WARNING]  
 > After all containers started, you must `docker compose stop analytics`  
