@@ -1,0 +1,15 @@
+version: 2
+models:
+  - name: stg_weather_data
+    description: "Staging model for weather data"
+  - name: stg_fortune_500
+    description: "Staging model for company data"
+  - name: aggregated_weather
+    description: "Aggregated weather data for each county"
+    columns:
+      - name: county_fips
+        description: "County FIPS code"
+      - name: avg_value
+        description: "Average weather measurement value"
+      - name: datatype
+        description: "Type of weather measurement"
