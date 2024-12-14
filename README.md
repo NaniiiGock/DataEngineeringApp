@@ -12,7 +12,6 @@ We created an multi-container application. Our Application consists of four modu
 3) Database for Users
 4) UI Service
 
-
 > Create the application with `docker compose up -d`
 
 > [!WARNING]  
@@ -22,6 +21,21 @@ We created an multi-container application. Our Application consists of four modu
 
 >[!NOTE]  
 > Open `https://localhost/` for the UI. 
+
+---
+
+# Technologies
+
+- Dockerization
+- Airflow
+- Postgres(separate for airflow and UI activity logging for admin users)
+- DuckDB (storage for weather and companies' data, fetching and transformations)
+- DBT (transformations + views)
+- Iceberg + Spark (data landing zone)
+- Streamlit 
+- Nginx
+- Flask (API for data fetching from DuckDB microservice)
+- Google OAuth2.0
 
 ---
 # Data Model
@@ -310,5 +324,4 @@ A user have to login into the frontend with his Google Account. Our System track
 
 >[!NOTE]
 > A detailed `README.md` according to our frontend in directory `UI`
-
 
